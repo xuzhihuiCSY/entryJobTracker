@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from typing import Any
-from urllib.parse import urljoin
 
 import requests
 
@@ -76,7 +75,7 @@ def _raw_job(posting: dict[str, Any], query: str) -> dict[str, Any]:
     bullet_fields = posting.get("bulletFields") or []
     if bullet_fields:
         job_code = str(bullet_fields[0])
-    apply_url = urljoin(BASE_URL, external_path)
+    apply_url = _apply_url(external_path)
     return {
         "external_id": job_code or external_path,
         "title": posting.get("title") or "",
@@ -86,6 +85,12 @@ def _raw_job(posting: dict[str, Any], query: str) -> dict[str, Any]:
         "source_url": BASE_URL + f"?q={query}",
         "source_platform": "custom_nvidia",
     }
+
+
+def _apply_url(external_path: str) -> str:
+    if not external_path:
+        return BASE_URL
+    return BASE_URL + (external_path if external_path.startswith("/") else f"/{external_path}")
 
 
 def _dedupe(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:

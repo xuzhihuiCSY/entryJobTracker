@@ -1,9 +1,13 @@
 from __future__ import annotations
 
+import logging
 from typing import Any
 
-from .placeholder import fetch_company_jobs as _placeholder
+LOGGER = logging.getLogger(__name__)
 
 
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
-    return _placeholder(company_config)
+    LOGGER.warning(
+        "Microsoft's current public careers site did not expose a stable unauthenticated jobs API during verification; skipping"
+    )
+    return []

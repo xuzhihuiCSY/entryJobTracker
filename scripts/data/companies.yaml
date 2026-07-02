@@ -14,7 +14,7 @@
   source_key:
   career_url: https://www.google.com/about/careers/applications/jobs/results/
   sync_priority: 1
-  enabled: false
+  enabled: true
 
 - name: Microsoft
   slug: microsoft
@@ -41,7 +41,7 @@
   source_key:
   career_url: https://jobs.apple.com/en-us/search
   sync_priority: 1
-  enabled: false
+  enabled: true
 
 - name: NVIDIA
   slug: nvidia
@@ -50,7 +50,7 @@
   source_key:
   career_url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite
   sync_priority: 1
-  enabled: false
+  enabled: true
 
 - name: Databricks
   slug: databricks

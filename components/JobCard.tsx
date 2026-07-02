@@ -30,6 +30,21 @@ function visaLabel(value: string): string {
   return "Visa: unknown";
 }
 
+function sourceLabel(value: string): string {
+  const labels: Record<string, string> = {
+    ashby: "Ashby",
+    greenhouse: "Greenhouse",
+    lever: "Lever",
+    custom_amazon: "Amazon Jobs",
+    custom_apple: "Apple Jobs",
+    custom_google: "Google Careers",
+    custom_meta_jobsyn: "Meta Careers",
+    custom_microsoft: "Microsoft Careers",
+    custom_nvidia: "NVIDIA Careers"
+  };
+  return labels[value] ?? value.replaceAll("_", " ");
+}
+
 export function JobCard({ job }: JobCardProps) {
   return (
     <article className="rounded-lg border border-line bg-white p-4 shadow-subtle">
@@ -53,7 +68,7 @@ export function JobCard({ job }: JobCardProps) {
             </span>
             <span className="capitalize">{job.remote_type}</span>
             <span>{relativeTime(job.first_seen)}</span>
-            <span>{job.source_platform}</span>
+            <span>{sourceLabel(job.source_platform)}</span>
           </div>
           {job.description_snippet ? (
             <p className="mt-3 line-clamp-2 text-sm leading-6 text-slate-600">

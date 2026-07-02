@@ -4,6 +4,7 @@ export const ENTRY_LEVELS = ["Intern", "New Grad", "Entry", "Early Career"];
 
 export const DEFAULT_FILTERS: JobFilterState = {
   query: "",
+  company: "all",
   category: "all",
   level: "all",
   companyGroup: "all",
@@ -32,6 +33,7 @@ export function filterJobs(jobs: Job[], filters: JobFilterState): Job[] {
   const filtered = jobs.filter((job) => {
     const haystack = `${job.company} ${job.title} ${job.location_raw}`.toLowerCase();
     if (query && !haystack.includes(query)) return false;
+    if (filters.company !== "all" && job.company !== filters.company) return false;
     if (filters.category !== "all" && job.category !== filters.category) return false;
     if (filters.level !== "all" && job.level !== filters.level) return false;
     if (filters.companyGroup !== "all" && job.company_group !== filters.companyGroup) return false;
@@ -47,6 +49,11 @@ export function filterJobs(jobs: Job[], filters: JobFilterState): Job[] {
 
 export function sortJobs(jobs: Job[], sort: JobFilterState["sort"]): Job[] {
   return [...jobs].sort((a, b) => {
+    if (sort === "entry_first") {
+      const entryDelta = Number(isEntryLevel(b)) - Number(isEntryLevel(a));
+      if (entryDelta !== 0) return entryDelta;
+      return Date.parse(b.first_seen) - Date.parse(a.first_seen);
+    }
     if (sort === "company_asc") {
       return a.company.localeCompare(b.company) || a.title.localeCompare(b.title);
     }

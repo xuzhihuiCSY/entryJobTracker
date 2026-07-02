@@ -71,10 +71,11 @@ export type LastUpdated = {
   sources_synced: number;
 };
 
-export type JobSort = "first_seen_desc" | "company_asc" | "title_asc";
+export type JobSort = "first_seen_desc" | "entry_first" | "company_asc" | "title_asc";
 
 export type JobFilterState = {
   query: string;
+  company: string;
   category: string;
   level: string;
   companyGroup: string;

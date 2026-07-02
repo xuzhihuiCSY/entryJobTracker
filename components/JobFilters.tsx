@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
-import { DEFAULT_FILTERS, filterJobs, uniqueValues } from "@/lib/filters";
+import { DEFAULT_FILTERS, filterJobs, isEntryLevel, uniqueValues } from "@/lib/filters";
 import type { Job, JobFilterState, JobSort } from "@/lib/types";
 import { JobCard } from "@/components/JobCard";
 
@@ -10,6 +10,7 @@ type JobFiltersProps = {
   jobs: Job[];
   initialFilters?: Partial<JobFilterState>;
   emptyMessage?: string;
+  defaultEntryOnly?: boolean;
 };
 
 const PAGE_SIZE_OPTIONS = [25, 50, 100];
@@ -131,17 +132,20 @@ function PaginationControls({
 export function JobFilters({
   jobs,
   initialFilters,
-  emptyMessage = "No matching jobs found."
+  emptyMessage = "No matching jobs found.",
+  defaultEntryOnly = false
 }: JobFiltersProps) {
   const [filters, setFilters] = useState<JobFilterState>({
     ...DEFAULT_FILTERS,
     ...initialFilters
   });
+  const [entryOnly, setEntryOnly] = useState(defaultEntryOnly);
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(25);
 
   const options = useMemo(
     () => ({
+      companies: uniqueValues(jobs, "company"),
       categories: uniqueValues(jobs, "category"),
       levels: uniqueValues(jobs, "level"),
       companyGroups: uniqueValues(jobs, "company_group"),
@@ -151,7 +155,14 @@ export function JobFilters({
     [jobs]
   );
 
-  const visibleJobs = useMemo(() => filterJobs(jobs, filters), [jobs, filters]);
+  const baseVisibleJobs = useMemo(() => filterJobs(jobs, filters), [jobs, filters]);
+  const visibleJobs = useMemo(
+    () =>
+      entryOnly && filters.level === "all"
+        ? baseVisibleJobs.filter((job) => isEntryLevel(job))
+        : baseVisibleJobs,
+    [baseVisibleJobs, entryOnly, filters.level]
+  );
   const totalPages = Math.max(1, Math.ceil(visibleJobs.length / pageSize));
   const currentPage = Math.min(page, totalPages);
   const pageStart = (currentPage - 1) * pageSize;
@@ -161,7 +172,7 @@ export function JobFilters({
 
   useEffect(() => {
     setPage(1);
-  }, [filters, jobs, pageSize]);
+  }, [filters, jobs, pageSize, entryOnly]);
 
   useEffect(() => {
     setPage((current) => Math.min(current, totalPages));
@@ -170,6 +181,34 @@ export function JobFilters({
   return (
     <div className="grid gap-5">
       <section className="rounded-lg border border-line bg-white p-4 shadow-subtle">
+        <div className="mb-4 flex flex-col gap-3 border-b border-line pb-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold text-ink">Level focus</p>
+            <p className="mt-1 text-xs text-muted">
+              Entry focus includes Intern, New Grad, Entry, and Early Career roles.
+            </p>
+          </div>
+          <div className="inline-flex w-fit rounded-md border border-line bg-slate-50 p-1">
+            <button
+              type="button"
+              onClick={() => setEntryOnly(true)}
+              className={`rounded px-3 py-1.5 text-sm font-medium ${
+                entryOnly ? "bg-slate-900 text-white" : "text-slate-600 hover:text-slate-950"
+              }`}
+            >
+              Entry focus
+            </button>
+            <button
+              type="button"
+              onClick={() => setEntryOnly(false)}
+              className={`rounded px-3 py-1.5 text-sm font-medium ${
+                !entryOnly ? "bg-slate-900 text-white" : "text-slate-600 hover:text-slate-950"
+              }`}
+            >
+              All levels
+            </button>
+          </div>
+        </div>
         <div className="grid gap-3 lg:grid-cols-[minmax(16rem,1.4fr)_repeat(3,minmax(10rem,1fr))]">
           <label className="grid gap-1 text-sm font-medium text-slate-700">
             Search
@@ -188,6 +227,12 @@ export function JobFilters({
               />
             </span>
           </label>
+          <SelectField
+            label="Company"
+            value={filters.company}
+            options={options.companies}
+            onChange={(company) => setFilters((current) => ({ ...current, company }))}
+          />
           <SelectField
             label="Category"
             value={filters.category}
@@ -230,6 +275,7 @@ export function JobFilters({
               className="h-10 rounded-md border border-line bg-white px-3 text-sm text-ink outline-none focus:border-accent focus:ring-2 focus:ring-teal-100"
             >
               <option value="first_seen_desc">First seen newest</option>
+              <option value="entry_first">Entry roles first</option>
               <option value="company_asc">Company</option>
               <option value="title_asc">Title</option>
             </select>
@@ -293,7 +339,10 @@ export function JobFilters({
           </label>
           <button
             type="button"
-            onClick={() => setFilters({ ...DEFAULT_FILTERS, ...initialFilters })}
+            onClick={() => {
+              setFilters({ ...DEFAULT_FILTERS, ...initialFilters });
+              setEntryOnly(defaultEntryOnly);
+            }}
             className="h-9 rounded-md border border-line bg-white px-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
           >
             Reset

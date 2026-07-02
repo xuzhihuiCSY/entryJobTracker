@@ -1,0 +1,71 @@
+name: Update jobs
+
+on:
+  workflow_dispatch:
+    inputs:
+      priority:
+        description: "Priority to sync"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - "1"
+          - "2"
+          - "3"
+  schedule:
+    - cron: "0 */6 * * *"
+    - cron: "30 8 * * *"
+    - cron: "0 9 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resolve sync args
+        id: sync
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            case "${{ inputs.priority }}" in
+              all) echo "args=--all" >> "$GITHUB_OUTPUT" ;;
+              1|2|3) echo "args=--priority=${{ inputs.priority }}" >> "$GITHUB_OUTPUT" ;;
+            esac
+          elif [[ "${{ github.event.schedule }}" == "0 */6 * * *" ]]; then
+            echo "args=--priority=1" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.event.schedule }}" == "30 8 * * *" ]]; then
+            echo "args=--priority=2" >> "$GITHUB_OUTPUT"
+          else
+            echo "args=--priority=3" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch jobs
+        run: python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}
+
+      - name: Commit data changes
+        shell: bash
+        run: |
+          if git diff --quiet -- public/data/*.json; then
+            echo "No public data changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/*.json
+          git commit -m "Update job data"
+          git push

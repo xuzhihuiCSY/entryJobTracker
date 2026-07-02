@@ -23,7 +23,6 @@ def _contains(text: str, phrases: list[str]) -> bool:
 
 
 def classify_category(title: str, description: str = "") -> str:
-    text = _text(title, description)
     checks: list[tuple[str, list[str]]] = [
         ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
         ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer"]),
@@ -46,6 +45,11 @@ def classify_category(title: str, description: str = "") -> str:
             ],
         ),
     ]
+    title_text = _text(title)
+    for category, phrases in checks:
+        if _contains(title_text, phrases):
+            return category
+    text = _text(title, description)
     for category, phrases in checks:
         if _contains(text, phrases):
             return category

@@ -50,20 +50,19 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 jobs.append(_raw_job(item, query))
             if not data.get("pagination", {}).get("has_more_pages"):
                 break
-    return _dedupe(jobs)
+    return _filter_active_official_jobs(_dedupe(jobs))
 
 
 def _raw_job(item: dict[str, Any], query: str) -> dict[str, Any]:
     title = item.get("title_exact") or ""
     location = item.get("location_exact") or _location_from_parts(item)
     reqid = item.get("reqid") or item.get("guid") or item.get("id") or ""
-    detail_path = _detail_path(item)
     return {
         "external_id": _slug(f"{reqid}-{location}") or _slug(f"{title}-{location}"),
         "title": title,
         "location_raw": location,
         "description": item.get("description") or "",
-        "apply_url": f"https://metacareers.dejobs.org{detail_path}" if detail_path else SOURCE_URL,
+        "apply_url": f"https://www.metacareers.com/jobs/{reqid}/" if reqid else SOURCE_URL,
         "source_url": SOURCE_URL + f"?q={quote_plus(query)}",
         "source_platform": "custom_meta_jobsyn",
     }
@@ -72,17 +71,6 @@ def _raw_job(item: dict[str, Any], query: str) -> dict[str, Any]:
 def _location_from_parts(item: dict[str, Any]) -> str:
     parts = [item.get("city_exact"), item.get("state_short"), item.get("country_short_exact")]
     return ", ".join(str(part) for part in parts if part)
-
-
-def _detail_path(item: dict[str, Any]) -> str:
-    city = _slug(str(item.get("city_exact") or "remote"))
-    state = _slug(str(item.get("state_short") or ""))
-    title = item.get("title_slug") or _slug(item.get("title_exact") or "job")
-    reqid = _slug(str(item.get("reqid") or item.get("guid") or item.get("id") or ""))
-    if not reqid:
-        return ""
-    location = f"{city}-{state}" if state else city
-    return f"/{location}/{title}/job/{reqid}/"
 
 
 def _slug(value: str) -> str:
@@ -101,3 +89,29 @@ def _dedupe(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
         seen.add(key)
         deduped.append(job)
     return deduped
+
+
+def _filter_active_official_jobs(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    active_by_url: dict[str, bool] = {}
+    active_jobs: list[dict[str, Any]] = []
+    for job in jobs:
+        apply_url = job.get("apply_url", "")
+        if apply_url not in active_by_url:
+            active_by_url[apply_url] = _is_active_official_url(apply_url)
+        if active_by_url[apply_url]:
+            active_jobs.append(job)
+    return active_jobs
+
+
+def _is_active_official_url(url: str) -> bool:
+    try:
+        response = requests.get(
+            url,
+            headers={**DEFAULT_HEADERS, "Accept": "text/html,text/plain,*/*"},
+            timeout=REQUEST_TIMEOUT_SECONDS,
+            allow_redirects=True,
+        )
+    except requests.RequestException as exc:
+        LOGGER.warning("Meta official job URL validation failed for %s: %s", url, exc)
+        return False
+    return response.status_code == 200 and "position-not-available" not in response.url

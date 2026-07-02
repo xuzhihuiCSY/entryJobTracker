@@ -16150,5 +16150,41 @@
   },
   "meta-a1kdp00000czneamah-menlo-park-ca": {
     "first_seen": "2026-07-02T09:22:05Z"
+  },
+  "databricks-8612964002": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "databricks-8613192002": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "databricks-8612968002": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "stripe-8042978": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "stripe-7947074": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "stripe-7530580": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "stripe-8040143": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "datadog-8042600": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "waymo-7947071": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "affirm-7784128003": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "perplexity-b00cbb00-f672-4909-a7be-bbd02c7d7b5f": {
+    "first_seen": "2026-07-02T11:06:08Z"
+  },
+  "cursor-c2fb18fe-8d3d-4803-b21b-2f7e8b700d9d": {
+    "first_seen": "2026-07-02T11:06:08Z"
   }
 }

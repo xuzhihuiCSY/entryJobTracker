@@ -20,6 +20,8 @@ from classifier import (
 def clean_html(value: str | None) -> str:
     if not value:
         return ""
+    if "<" not in value and ">" not in value:
+        return re.sub(r"\s+", " ", unescape(value)).strip()
     soup = BeautifulSoup(value, "html.parser")
     text = soup.get_text(" ", strip=True)
     return re.sub(r"\s+", " ", unescape(text)).strip()
@@ -55,7 +57,7 @@ def build_description_snippet(description: str, max_length: int = 260) -> str:
     cleaned = clean_html(description)
     if len(cleaned) <= max_length:
         return cleaned
-    return cleaned[: max_length - 1].rstrip() + "…"
+    return cleaned[: max_length - 3].rstrip() + "..."
 
 
 def normalize_job(raw_job: dict[str, Any], company: dict[str, Any], checked_at: str, first_seen: str) -> dict[str, Any]:

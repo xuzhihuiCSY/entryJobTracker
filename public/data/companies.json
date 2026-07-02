@@ -54,6 +54,78 @@
     "last_synced": ""
   },
   {
+    "name": "Affirm",
+    "slug": "affirm",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/affirm",
+    "source_type": "greenhouse",
+    "active_job_count": 35,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Airbnb",
+    "slug": "airbnb",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/airbnb",
+    "source_type": "greenhouse",
+    "active_job_count": 46,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Cohere",
+    "slug": "cohere",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/cohere",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Coinbase",
+    "slug": "coinbase",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/coinbase",
+    "source_type": "greenhouse",
+    "active_job_count": 46,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Cursor",
+    "slug": "cursor",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/cursor",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Databricks",
+    "slug": "databricks",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/databricks",
+    "source_type": "greenhouse",
+    "active_job_count": 185,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Datadog",
+    "slug": "datadog",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/datadog",
+    "source_type": "greenhouse",
+    "active_job_count": 64,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Dropbox",
+    "slug": "dropbox",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/dropbox",
+    "source_type": "greenhouse",
+    "active_job_count": 10,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
     "name": "Example Ashby Company",
     "slug": "example-ashby",
     "company_group": "startup",
@@ -79,5 +151,113 @@
     "source_type": "lever",
     "active_job_count": 0,
     "last_synced": ""
+  },
+  {
+    "name": "Figma",
+    "slug": "figma",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/figma",
+    "source_type": "greenhouse",
+    "active_job_count": 41,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Linear",
+    "slug": "linear",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/linear",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Modal",
+    "slug": "modal",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/modal",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "MongoDB",
+    "slug": "mongodb",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/mongodb",
+    "source_type": "greenhouse",
+    "active_job_count": 34,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Perplexity",
+    "slug": "perplexity",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/perplexity",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Replit",
+    "slug": "replit",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/replit",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Roblox",
+    "slug": "roblox",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/roblox",
+    "source_type": "greenhouse",
+    "active_job_count": 136,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Samsara",
+    "slug": "samsara",
+    "company_group": "public",
+    "career_url": "https://boards.greenhouse.io/samsara",
+    "source_type": "greenhouse",
+    "active_job_count": 38,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Scale AI",
+    "slug": "scale-ai",
+    "company_group": "private",
+    "career_url": "https://boards.greenhouse.io/scaleai",
+    "source_type": "greenhouse",
+    "active_job_count": 54,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Stripe",
+    "slug": "stripe",
+    "company_group": "private",
+    "career_url": "https://boards.greenhouse.io/stripe",
+    "source_type": "greenhouse",
+    "active_job_count": 43,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Waymo",
+    "slug": "waymo",
+    "company_group": "private",
+    "career_url": "https://boards.greenhouse.io/waymo",
+    "source_type": "greenhouse",
+    "active_job_count": 173,
+    "last_synced": "2026-07-02T00:06:19Z"
+  },
+  {
+    "name": "Writer",
+    "slug": "writer",
+    "company_group": "startup",
+    "career_url": "https://jobs.ashbyhq.com/writer",
+    "source_type": "ashby",
+    "active_job_count": 0,
+    "last_synced": "2026-07-02T00:06:19Z"
   }
 ]

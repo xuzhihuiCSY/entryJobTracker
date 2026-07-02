@@ -52,6 +52,186 @@
   sync_priority: 1
   enabled: false
 
+- name: Databricks
+  slug: databricks
+  company_group: public
+  source_type: greenhouse
+  source_key: databricks
+  career_url: https://boards.greenhouse.io/databricks
+  sync_priority: 2
+  enabled: true
+
+- name: Stripe
+  slug: stripe
+  company_group: private
+  source_type: greenhouse
+  source_key: stripe
+  career_url: https://boards.greenhouse.io/stripe
+  sync_priority: 2
+  enabled: true
+
+- name: Figma
+  slug: figma
+  company_group: public
+  source_type: greenhouse
+  source_key: figma
+  career_url: https://boards.greenhouse.io/figma
+  sync_priority: 2
+  enabled: true
+
+- name: Dropbox
+  slug: dropbox
+  company_group: public
+  source_type: greenhouse
+  source_key: dropbox
+  career_url: https://boards.greenhouse.io/dropbox
+  sync_priority: 2
+  enabled: true
+
+- name: Roblox
+  slug: roblox
+  company_group: public
+  source_type: greenhouse
+  source_key: roblox
+  career_url: https://boards.greenhouse.io/roblox
+  sync_priority: 2
+  enabled: true
+
+- name: Coinbase
+  slug: coinbase
+  company_group: public
+  source_type: greenhouse
+  source_key: coinbase
+  career_url: https://boards.greenhouse.io/coinbase
+  sync_priority: 2
+  enabled: true
+
+- name: Datadog
+  slug: datadog
+  company_group: public
+  source_type: greenhouse
+  source_key: datadog
+  career_url: https://boards.greenhouse.io/datadog
+  sync_priority: 2
+  enabled: true
+
+- name: MongoDB
+  slug: mongodb
+  company_group: public
+  source_type: greenhouse
+  source_key: mongodb
+  career_url: https://boards.greenhouse.io/mongodb
+  sync_priority: 2
+  enabled: true
+
+- name: Samsara
+  slug: samsara
+  company_group: public
+  source_type: greenhouse
+  source_key: samsara
+  career_url: https://boards.greenhouse.io/samsara
+  sync_priority: 2
+  enabled: true
+
+- name: Waymo
+  slug: waymo
+  company_group: private
+  source_type: greenhouse
+  source_key: waymo
+  career_url: https://boards.greenhouse.io/waymo
+  sync_priority: 2
+  enabled: true
+
+- name: Affirm
+  slug: affirm
+  company_group: public
+  source_type: greenhouse
+  source_key: affirm
+  career_url: https://boards.greenhouse.io/affirm
+  sync_priority: 2
+  enabled: true
+
+- name: Airbnb
+  slug: airbnb
+  company_group: public
+  source_type: greenhouse
+  source_key: airbnb
+  career_url: https://boards.greenhouse.io/airbnb
+  sync_priority: 2
+  enabled: true
+
+- name: Scale AI
+  slug: scale-ai
+  company_group: private
+  source_type: greenhouse
+  source_key: scaleai
+  career_url: https://boards.greenhouse.io/scaleai
+  sync_priority: 2
+  enabled: true
+
+- name: Perplexity
+  slug: perplexity
+  company_group: startup
+  source_type: ashby
+  source_key: perplexity
+  career_url: https://jobs.ashbyhq.com/perplexity
+  sync_priority: 2
+  enabled: true
+
+- name: Cursor
+  slug: cursor
+  company_group: startup
+  source_type: ashby
+  source_key: cursor
+  career_url: https://jobs.ashbyhq.com/cursor
+  sync_priority: 2
+  enabled: true
+
+- name: Linear
+  slug: linear
+  company_group: startup
+  source_type: ashby
+  source_key: linear
+  career_url: https://jobs.ashbyhq.com/linear
+  sync_priority: 2
+  enabled: true
+
+- name: Modal
+  slug: modal
+  company_group: startup
+  source_type: ashby
+  source_key: modal
+  career_url: https://jobs.ashbyhq.com/modal
+  sync_priority: 2
+  enabled: true
+
+- name: Writer
+  slug: writer
+  company_group: startup
+  source_type: ashby
+  source_key: writer
+  career_url: https://jobs.ashbyhq.com/writer
+  sync_priority: 2
+  enabled: true
+
+- name: Cohere
+  slug: cohere
+  company_group: startup
+  source_type: ashby
+  source_key: cohere
+  career_url: https://jobs.ashbyhq.com/cohere
+  sync_priority: 2
+  enabled: true
+
+- name: Replit
+  slug: replit
+  company_group: startup
+  source_type: ashby
+  source_key: replit
+  career_url: https://jobs.ashbyhq.com/replit
+  sync_priority: 2
+  enabled: true
+
 - name: Example Greenhouse Company
   slug: example-greenhouse
   company_group: startup

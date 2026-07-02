@@ -147,10 +147,7 @@ export function JobFilters({
     () => ({
       companies: uniqueValues(jobs, "company"),
       categories: uniqueValues(jobs, "category"),
-      levels: uniqueValues(jobs, "level"),
-      companyGroups: uniqueValues(jobs, "company_group"),
-      remoteTypes: uniqueValues(jobs, "remote_type"),
-      visaSignals: uniqueValues(jobs, "visa_signal")
+      levels: uniqueValues(jobs, "level")
     }),
     [jobs]
   );
@@ -209,7 +206,7 @@ export function JobFilters({
             </button>
           </div>
         </div>
-        <div className="grid gap-3 lg:grid-cols-[minmax(16rem,1.4fr)_repeat(3,minmax(10rem,1fr))]">
+        <div className="grid gap-3 lg:grid-cols-[minmax(18rem,1.4fr)_repeat(4,minmax(10rem,1fr))]">
           <label className="grid gap-1 text-sm font-medium text-slate-700">
             Search
             <span className="relative">
@@ -245,26 +242,6 @@ export function JobFilters({
             options={options.levels}
             onChange={(level) => setFilters((current) => ({ ...current, level }))}
           />
-          <SelectField
-            label="Company group"
-            value={filters.companyGroup}
-            options={options.companyGroups}
-            onChange={(companyGroup) =>
-              setFilters((current) => ({ ...current, companyGroup }))
-            }
-          />
-          <SelectField
-            label="Remote"
-            value={filters.remoteType}
-            options={options.remoteTypes}
-            onChange={(remoteType) => setFilters((current) => ({ ...current, remoteType }))}
-          />
-          <SelectField
-            label="Visa"
-            value={filters.visaSignal}
-            options={options.visaSignals}
-            onChange={(visaSignal) => setFilters((current) => ({ ...current, visaSignal }))}
-          />
           <label className="grid gap-1 text-sm font-medium text-slate-700">
             Sort
             <select
@@ -280,36 +257,6 @@ export function JobFilters({
               <option value="title_asc">Title</option>
             </select>
           </label>
-          <div className="flex flex-col justify-end gap-2 text-sm text-slate-700">
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={filters.excludeCitizenship}
-                onChange={(event) =>
-                  setFilters((current) => ({
-                    ...current,
-                    excludeCitizenship: event.target.checked
-                  }))
-                }
-                className="h-4 w-4 rounded border-line text-accent"
-              />
-              Exclude citizenship required
-            </label>
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={filters.excludeClearance}
-                onChange={(event) =>
-                  setFilters((current) => ({
-                    ...current,
-                    excludeClearance: event.target.checked
-                  }))
-                }
-                className="h-4 w-4 rounded border-line text-accent"
-              />
-              Exclude clearance required
-            </label>
-          </div>
         </div>
       </section>
 

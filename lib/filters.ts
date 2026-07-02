@@ -7,11 +7,6 @@ export const DEFAULT_FILTERS: JobFilterState = {
   company: "all",
   category: "all",
   level: "all",
-  companyGroup: "all",
-  remoteType: "all",
-  visaSignal: "all",
-  excludeCitizenship: false,
-  excludeClearance: false,
   sort: "first_seen_desc"
 };
 
@@ -36,11 +31,6 @@ export function filterJobs(jobs: Job[], filters: JobFilterState): Job[] {
     if (filters.company !== "all" && job.company !== filters.company) return false;
     if (filters.category !== "all" && job.category !== filters.category) return false;
     if (filters.level !== "all" && job.level !== filters.level) return false;
-    if (filters.companyGroup !== "all" && job.company_group !== filters.companyGroup) return false;
-    if (filters.remoteType !== "all" && job.remote_type !== filters.remoteType) return false;
-    if (filters.visaSignal !== "all" && job.visa_signal !== filters.visaSignal) return false;
-    if (filters.excludeCitizenship && job.requires_citizenship) return false;
-    if (filters.excludeClearance && job.requires_clearance) return false;
     return true;
   });
 

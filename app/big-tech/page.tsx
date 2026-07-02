@@ -14,7 +14,6 @@ export default function BigTechPage() {
       </div>
       <JobFilters
         jobs={jobs}
-        initialFilters={{ excludeCitizenship: false, excludeClearance: false }}
         emptyMessage="No Big Tech early-career roles are currently available in the data file."
       />
     </div>

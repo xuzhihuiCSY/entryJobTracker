@@ -78,10 +78,5 @@ export type JobFilterState = {
   company: string;
   category: string;
   level: string;
-  companyGroup: string;
-  remoteType: string;
-  visaSignal: string;
-  excludeCitizenship: boolean;
-  excludeClearance: boolean;
   sort: JobSort;
 };

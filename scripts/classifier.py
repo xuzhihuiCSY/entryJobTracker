@@ -22,6 +22,10 @@ def _contains(text: str, phrases: list[str]) -> bool:
     return any(phrase in text for phrase in phrases)
 
 
+def _contains_pattern(text: str, patterns: list[str]) -> bool:
+    return any(re.search(pattern, text) for pattern in patterns)
+
+
 def classify_category(title: str, description: str = "") -> str:
     checks: list[tuple[str, list[str]]] = [
         ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
@@ -62,7 +66,15 @@ def classify_level(title: str, description: str = "") -> str:
 
     if _contains(title_text, ["manager", "director"]):
         return "Manager"
-    if _contains(title_text, ["intern", "internship", "co-op", "summer intern"]):
+    if _contains_pattern(
+        title_text,
+        [
+            r"\bintern\b",
+            r"\binternship\b",
+            r"\bco-?op\b",
+            r"\bsummer intern\b",
+        ],
+    ):
         return "Intern"
     if _contains(title_text, ["new grad", "university grad", "university graduate", "new college grad", "recent graduate"]):
         return "New Grad"
@@ -71,6 +83,12 @@ def classify_level(title: str, description: str = "") -> str:
     if _contains(title_text, ["entry level", "associate software engineer"]):
         return "Entry"
 
+    if _contains(title_text, ["staff", "principal"]):
+        return "Staff"
+    if _contains(title_text, ["senior", "sr."]):
+        return "Senior"
+    if _contains(title_text, ["lead"]):
+        return "Manager"
     entry_patterns = [
         r"\bsoftware engineer\s+(i|1)\b",
         r"\bsde\s+(i|1)\b",
@@ -83,12 +101,6 @@ def classify_level(title: str, description: str = "") -> str:
         return "Entry"
     if _contains(all_text, ["graduate software engineer"]):
         return "New Grad"
-    if _contains(title_text, ["staff", "principal"]):
-        return "Staff"
-    if _contains(title_text, ["senior", "sr."]):
-        return "Senior"
-    if _contains(title_text, ["lead"]):
-        return "Manager"
     if re.search(r"\biii\b|\b3\b", title_text):
         return "Mid"
     return "Unknown"

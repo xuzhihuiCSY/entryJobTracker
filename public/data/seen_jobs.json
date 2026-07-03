@@ -16327,5 +16327,146 @@
   },
   "nvidia-jr2020567": {
     "first_seen": "2026-07-02T19:39:49Z"
+  },
+  "amazon-87380282-4296-40cb-a612-1f972f358bed": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "amazon-f3ca449c-8a4a-4464-880a-50fa3ba22e9c": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "amazon-1d7d04d5-e15b-46ea-8753-781d9e2af34d": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "amazon-826dec91-500b-49e6-82df-73bba3fe2181": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "amazon-efe5c9bf-476a-40d5-b8bf-5ce29aacdb7f": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "amazon-ec98783f-856b-4dc4-9172-a9c4bf4b0117": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "microsoft-1970393556924452": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "microsoft-1970393556924447": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "microsoft-1970393556923938": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "microsoft-1970393556922655": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000bb9gmaw-virtual-usa": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp00000e2k2umav-montpelier-vt": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp00000e2juzmav-montpelier-vt": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000bbs3mao-menlo-park-ca": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000bbrtmao-menlo-park-ca": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-des-moines-ia": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-tallahassee-fl": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-trenton-nj": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-baton-rouge-la": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-columbus-oh": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-springfield-il": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-boston-ma": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-montgomery-al": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-indianapolis-in": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-albany-ny": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-salem-or": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp000000b9rumac-richmond-va": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "meta-a1kdp00000czn8kmax-virtual-usa": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200668517-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200655313-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670922-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200652923-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200669226-3337": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200667317-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670751-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670761-0157": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670843-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200648818-3401": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670876-0670": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670517-3543": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670517-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200670874-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200649767-0836": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "apple-200659183-2268": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "nvidia-jr2017604": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "nvidia-jr2020637": {
+    "first_seen": "2026-07-03T03:45:37Z"
+  },
+  "nvidia-jr2018221": {
+    "first_seen": "2026-07-03T03:45:37Z"
   }
 }

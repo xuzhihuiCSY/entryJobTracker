@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from classifier import classify_level, parse_location
+from classifier import classify_category, classify_level, parse_location
 
 
 def test_internals_is_not_intern() -> None:
@@ -38,6 +38,16 @@ def test_remote_and_hybrid_location_detection() -> None:
     assert parse_location("Redmond, WA", "This role requires 3 days / week in-office.").remote_type == "hybrid"
 
 
+def test_hyphenated_front_end_title_is_frontend() -> None:
+    assert (
+        classify_category(
+            "Front-End Engineer, AWS Holmes, AWS Holmes",
+            "Own the front-end architecture and work with backend services.",
+        )
+        == "Frontend"
+    )
+
+
 if __name__ == "__main__":
     test_internals_is_not_intern()
     test_actual_intern_titles()
@@ -45,4 +55,5 @@ if __name__ == "__main__":
     test_numbered_engineering_levels()
     test_leadership_titles_are_excluded_from_entry()
     test_remote_and_hybrid_location_detection()
+    test_hyphenated_front_end_title_is_frontend()
     print("classifier tests passed")

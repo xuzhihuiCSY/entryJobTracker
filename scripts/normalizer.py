@@ -21,10 +21,16 @@ def clean_html(value: str | None) -> str:
     if not value:
         return ""
     if "<" not in value and ">" not in value:
-        return re.sub(r"\s+", " ", unescape(value)).strip()
+        return clean_markdown_text(unescape(value))
     soup = BeautifulSoup(value, "html.parser")
     text = soup.get_text(" ", strip=True)
-    return re.sub(r"\s+", " ", unescape(text)).strip()
+    return clean_markdown_text(unescape(text))
+
+
+def clean_markdown_text(value: str) -> str:
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", value)
+    text = re.sub(r"__(.+?)__", r"\1", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _slugify(value: str) -> str:

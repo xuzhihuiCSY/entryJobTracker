@@ -110,7 +110,7 @@ export function JobCard({ job, isApplied = false, onAppliedChange }: JobCardProp
                 onChange={(event) => onAppliedChange?.(job.id, event.target.checked)}
                 className="h-3.5 w-3.5 rounded border-slate-300 text-accent focus:ring-accent"
               />
-              Already applied
+              {isApplied ? "Already applied" : "Mark applied"}
             </label>
             {job.requires_citizenship ? (
               <span className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-1 font-medium text-amber-800">

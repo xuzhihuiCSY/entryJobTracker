@@ -14,6 +14,7 @@ type JobFiltersProps = {
 };
 
 const PAGE_SIZE_OPTIONS = [25, 50, 100];
+const APPLIED_STORAGE_KEY = "entryJobTracker.appliedJobIds";
 
 function SelectField({
   label,
@@ -140,6 +141,9 @@ export function JobFilters({
     ...initialFilters
   });
   const [entryOnly, setEntryOnly] = useState(defaultEntryOnly);
+  const [hideApplied, setHideApplied] = useState(false);
+  const [appliedJobIds, setAppliedJobIds] = useState<Set<string>>(new Set());
+  const [appliedLoaded, setAppliedLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(25);
 
@@ -153,13 +157,14 @@ export function JobFilters({
   );
 
   const baseVisibleJobs = useMemo(() => filterJobs(jobs, filters), [jobs, filters]);
-  const visibleJobs = useMemo(
-    () =>
+  const visibleJobs = useMemo(() => {
+    const levelFilteredJobs =
       entryOnly && filters.level === "all"
         ? baseVisibleJobs.filter((job) => isEntryLevel(job))
-        : baseVisibleJobs,
-    [baseVisibleJobs, entryOnly, filters.level]
-  );
+        : baseVisibleJobs;
+    if (!hideApplied) return levelFilteredJobs;
+    return levelFilteredJobs.filter((job) => !appliedJobIds.has(job.id));
+  }, [appliedJobIds, baseVisibleJobs, entryOnly, filters.level, hideApplied]);
   const totalPages = Math.max(1, Math.ceil(visibleJobs.length / pageSize));
   const currentPage = Math.min(page, totalPages);
   const pageStart = (currentPage - 1) * pageSize;
@@ -169,11 +174,42 @@ export function JobFilters({
 
   useEffect(() => {
     setPage(1);
-  }, [filters, jobs, pageSize, entryOnly]);
+  }, [filters, jobs, pageSize, entryOnly, hideApplied]);
 
   useEffect(() => {
     setPage((current) => Math.min(current, totalPages));
   }, [totalPages]);
+
+  useEffect(() => {
+    try {
+      const storedValue = window.localStorage.getItem(APPLIED_STORAGE_KEY);
+      const parsedValue = storedValue ? JSON.parse(storedValue) : [];
+      if (Array.isArray(parsedValue)) {
+        setAppliedJobIds(new Set(parsedValue.filter((value) => typeof value === "string")));
+      }
+    } catch {
+      setAppliedJobIds(new Set());
+    } finally {
+      setAppliedLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!appliedLoaded) return;
+    window.localStorage.setItem(APPLIED_STORAGE_KEY, JSON.stringify(Array.from(appliedJobIds)));
+  }, [appliedJobIds, appliedLoaded]);
+
+  function handleAppliedChange(jobId: string, isApplied: boolean) {
+    setAppliedJobIds((current) => {
+      const next = new Set(current);
+      if (isApplied) {
+        next.add(jobId);
+      } else {
+        next.delete(jobId);
+      }
+      return next;
+    });
+  }
 
   return (
     <div className="grid gap-5">
@@ -205,6 +241,28 @@ export function JobFilters({
               All levels
             </button>
           </div>
+        </div>
+        <div className="mb-4 flex flex-col gap-3 border-b border-line pb-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold text-ink">Application status</p>
+            <p className="mt-1 text-xs text-muted">
+              Applied jobs are saved in this browser.
+            </p>
+          </div>
+          <label className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-line bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+            <input
+              type="checkbox"
+              checked={hideApplied}
+              onChange={(event) => setHideApplied(event.target.checked)}
+              className="h-4 w-4 rounded border-slate-300 text-accent focus:ring-accent"
+            />
+            Hide already applied
+            {appliedJobIds.size > 0 ? (
+              <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600">
+                {appliedJobIds.size}
+              </span>
+            ) : null}
+          </label>
         </div>
         <div className="grid gap-3 lg:grid-cols-[minmax(18rem,1.4fr)_repeat(4,minmax(10rem,1fr))]">
           <label className="grid gap-1 text-sm font-medium text-slate-700">
@@ -289,6 +347,7 @@ export function JobFilters({
             onClick={() => {
               setFilters({ ...DEFAULT_FILTERS, ...initialFilters });
               setEntryOnly(defaultEntryOnly);
+              setHideApplied(false);
             }}
             className="h-9 rounded-md border border-line bg-white px-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
           >
@@ -299,7 +358,14 @@ export function JobFilters({
 
       <section className="grid gap-3">
         {pageJobs.length > 0 ? (
-          pageJobs.map((job) => <JobCard key={job.id} job={job} />)
+          pageJobs.map((job) => (
+            <JobCard
+              key={job.id}
+              job={job}
+              isApplied={appliedJobIds.has(job.id)}
+              onAppliedChange={handleAppliedChange}
+            />
+          ))
         ) : (
           <div className="rounded-lg border border-dashed border-line bg-white p-8 text-center text-sm text-muted">
             {emptyMessage}

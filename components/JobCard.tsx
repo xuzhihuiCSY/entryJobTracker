@@ -4,6 +4,8 @@ import type { Job } from "@/lib/types";
 
 type JobCardProps = {
   job: Job;
+  isApplied?: boolean;
+  onAppliedChange?: (jobId: string, isApplied: boolean) => void;
 };
 
 function relativeTime(value: string): string {
@@ -45,7 +47,7 @@ function sourceLabel(value: string): string {
   return labels[value] ?? value.replaceAll("_", " ");
 }
 
-export function JobCard({ job }: JobCardProps) {
+export function JobCard({ job, isApplied = false, onAppliedChange }: JobCardProps) {
   const hasMultipleLocations = Boolean(job.location_count && job.location_count > 1);
   const locationText = hasMultipleLocations
     ? `${job.location_count} locations`
@@ -97,6 +99,19 @@ export function JobCard({ job }: JobCardProps) {
             <span className="rounded-md bg-slate-100 px-2 py-1 text-slate-700">
               {visaLabel(job.visa_signal)}
             </span>
+            <label
+              className={`inline-flex cursor-pointer items-center gap-1.5 rounded-md px-2 py-1 font-medium ${
+                isApplied ? "bg-emerald-50 text-emerald-800" : "bg-slate-100 text-slate-700"
+              }`}
+            >
+              <input
+                type="checkbox"
+                checked={isApplied}
+                onChange={(event) => onAppliedChange?.(job.id, event.target.checked)}
+                className="h-3.5 w-3.5 rounded border-slate-300 text-accent focus:ring-accent"
+              />
+              Already applied
+            </label>
             {job.requires_citizenship ? (
               <span className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-1 font-medium text-amber-800">
                 <AlertTriangle aria-hidden="true" className="h-3.5 w-3.5" />

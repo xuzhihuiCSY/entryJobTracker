@@ -37,6 +37,8 @@ export type Job = {
   category: JobCategory | string;
   level: JobLevel | string;
   location_raw: string;
+  locations?: string[];
+  location_count?: number;
   city: string;
   state: string;
   country: string;

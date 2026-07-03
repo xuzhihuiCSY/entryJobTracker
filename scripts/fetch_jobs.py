@@ -51,10 +51,17 @@ def fetch_raw_jobs(company: dict[str, Any]) -> list[dict[str, Any]]:
         return []
 
 
-def merge_first_seen(raw_job: dict[str, Any], company: dict[str, Any], seen_jobs: dict[str, Any], checked_at: str) -> str:
+def merge_first_seen(
+    raw_job: dict[str, Any],
+    company: dict[str, Any],
+    seen_jobs: dict[str, Any],
+    checked_at: str,
+    previous_first_seen_by_apply_url: dict[str, str],
+) -> str:
     job_id = make_job_id(company["slug"], raw_job)
     existing = seen_jobs.get(job_id) or {}
-    first_seen = existing.get("first_seen") or checked_at
+    apply_url = str(raw_job.get("apply_url") or raw_job.get("source_url") or "").strip()
+    first_seen = existing.get("first_seen") or previous_first_seen_by_apply_url.get(apply_url) or checked_at
     seen_jobs[job_id] = {"first_seen": first_seen}
     return first_seen
 
@@ -95,6 +102,17 @@ def run(priority: int | None, include_all: bool) -> None:
     selected = select_companies(companies, priority, include_all)
     seen_jobs = read_json(PUBLIC_DATA / "seen_jobs.json", {})
     previous_jobs = read_json(PUBLIC_DATA / "jobs.json", [])
+    previous_first_seen_by_apply_url: dict[str, str] = {}
+    for job in previous_jobs:
+        if not isinstance(job, dict):
+            continue
+        apply_url = str(job.get("apply_url") or "").strip()
+        first_seen = str(job.get("first_seen") or "").strip()
+        if not apply_url or not first_seen:
+            continue
+        previous = previous_first_seen_by_apply_url.get(apply_url)
+        if not previous or first_seen < previous:
+            previous_first_seen_by_apply_url[apply_url] = first_seen
     previous_by_unsynced_company = {
         job["id"]: job
         for job in previous_jobs
@@ -109,7 +127,7 @@ def run(priority: int | None, include_all: bool) -> None:
         raw_jobs = fetch_raw_jobs(company)
         synced_slugs.add(company["slug"])
         for raw_job in raw_jobs:
-            first_seen = merge_first_seen(raw_job, company, seen_jobs, checked_at)
+            first_seen = merge_first_seen(raw_job, company, seen_jobs, checked_at, previous_first_seen_by_apply_url)
             job = normalize_job(raw_job, company, checked_at, first_seen)
             if is_relevant_technical_job(job):
                 normalized_jobs.append(job)

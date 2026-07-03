@@ -64,7 +64,7 @@ def classify_level(title: str, description: str = "") -> str:
     title_text = _text(title)
     all_text = _text(title, description)
 
-    if _contains(title_text, ["manager", "director"]):
+    if _contains_pattern(title_text, [r"\bmanager\b", r"\bdirector\b", r"\blead\b", r"\bleadership\b"]):
         return "Manager"
     if _contains_pattern(
         title_text,
@@ -83,16 +83,18 @@ def classify_level(title: str, description: str = "") -> str:
     if _contains(title_text, ["entry level", "associate software engineer"]):
         return "Entry"
 
-    if _contains(title_text, ["staff", "principal"]):
+    if _contains_pattern(title_text, [r"\bstaff\b", r"\bprincipal\b"]):
         return "Staff"
-    if _contains(title_text, ["senior", "sr."]):
+    if _contains_pattern(title_text, [r"\bsenior\b", r"\bsr\.?\b"]):
         return "Senior"
-    if _contains(title_text, ["lead"]):
-        return "Manager"
+    mid_title_patterns = [
+        r"\b(?:software(?: development)? engineer|sde|data scientist|data engineer|machine learning engineer|research engineer|applied scientist|engineer|scientist|developer|analyst)\s+(?:ii|2)\b",
+        r"\b(?:ii|2)\s*[,/-]\s*(?:software|data|machine learning|research|applied|backend|frontend|full stack)",
+    ]
+    if any(re.search(pattern, title_text) for pattern in mid_title_patterns):
+        return "Mid"
     entry_patterns = [
-        r"\bsoftware engineer\s+(i|1)\b",
-        r"\bsde\s+(i|1)\b",
-        r"\bdata scientist\s+(i|1)\b",
+        r"\b(?:software(?: development)? engineer|sde|data scientist|data engineer|machine learning engineer|research engineer|applied scientist|engineer|scientist|developer|analyst)\s+(?:i|1)\b",
         r"\b0\s*-\s*2 years\b",
         r"\b1\+ years\b",
         r"\b2\+ years\b",
@@ -141,14 +143,26 @@ NON_US_SIGNALS = [
 ]
 
 
-def parse_location(location_raw: str) -> ParsedLocation:
+def parse_location(location_raw: str, description: str = "") -> ParsedLocation:
     raw = location_raw or ""
     text = raw.lower()
+    combined_text = _text(raw, description)
     remote_type = "unknown"
-    if "remote" in text:
+    if _contains_pattern(
+        combined_text,
+        [
+            r"\bvirtual\s*,?\s*(usa|us|united states)\b",
+            r"\bremote\s*[-,]?\s*(usa|us|united states)\b",
+            r"\b(united states|usa|us)\s+remote\b",
+        ],
+    ):
         remote_type = "remote"
-    elif "hybrid" in text:
+    elif _contains_pattern(combined_text, [r"\bhybrid\b", r"\b\d+\s+days?\s*/\s*week\s+in-?office\b"]):
         remote_type = "hybrid"
+    elif text.strip() in {"united states", "usa", "u.s.", "us", "multiple locations"} or re.fullmatch(
+        r"\d+\s+locations?", text.strip()
+    ):
+        remote_type = "unknown"
     elif raw:
         remote_type = "onsite"
 

@@ -50,7 +50,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 jobs.append(_raw_job(item, query))
             if not data.get("pagination", {}).get("has_more_pages"):
                 break
-    return _filter_active_official_jobs(_dedupe(jobs))
+    return _filter_active_official_jobs(_aggregate_locations(jobs))
 
 
 def _raw_job(item: dict[str, Any], query: str) -> dict[str, Any]:
@@ -58,9 +58,10 @@ def _raw_job(item: dict[str, Any], query: str) -> dict[str, Any]:
     location = item.get("location_exact") or _location_from_parts(item)
     reqid = item.get("reqid") or item.get("guid") or item.get("id") or ""
     return {
-        "external_id": _slug(f"{reqid}-{location}") or _slug(f"{title}-{location}"),
+        "external_id": _slug(reqid) or _slug(f"{title}-{location}"),
         "title": title,
         "location_raw": location,
+        "locations": [location] if location else [],
         "description": item.get("description") or "",
         "apply_url": f"https://www.metacareers.com/jobs/{reqid}/" if reqid else SOURCE_URL,
         "source_url": SOURCE_URL + f"?q={quote_plus(query)}",
@@ -77,6 +78,28 @@ def _slug(value: str) -> str:
     value = value.lower().strip()
     value = re.sub(r"[^a-z0-9]+", "-", value)
     return value.strip("-")
+
+
+def _aggregate_locations(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[str, dict[str, Any]] = {}
+    for job in jobs:
+        key = str(job.get("apply_url") or job.get("external_id") or _slug(job.get("title", "")))
+        if key not in grouped:
+            grouped[key] = {**job, "locations": []}
+        locations = grouped[key]["locations"]
+        for location in job.get("locations", []):
+            if location and location not in locations:
+                locations.append(location)
+        if not grouped[key].get("description") and job.get("description"):
+            grouped[key]["description"] = job["description"]
+    aggregated: list[dict[str, Any]] = []
+    for job in grouped.values():
+        locations = job.get("locations", [])
+        if locations:
+            job["location_raw"] = "; ".join(locations)
+            job["location_count"] = len(locations)
+        aggregated.append(job)
+    return aggregated
 
 
 def _dedupe(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:

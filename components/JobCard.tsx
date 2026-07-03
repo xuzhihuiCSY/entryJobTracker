@@ -46,6 +46,11 @@ function sourceLabel(value: string): string {
 }
 
 export function JobCard({ job }: JobCardProps) {
+  const hasMultipleLocations = Boolean(job.location_count && job.location_count > 1);
+  const locationText = hasMultipleLocations
+    ? `${job.location_count} locations`
+    : job.location_raw || "Location not listed";
+
   return (
     <article className="rounded-lg border border-line bg-white p-4 shadow-subtle">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
@@ -64,12 +69,25 @@ export function JobCard({ job }: JobCardProps) {
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
             <span className="inline-flex items-center gap-1">
               <MapPin aria-hidden="true" className="h-4 w-4" />
-              {job.location_raw || "Location not listed"}
+              {hasMultipleLocations ? "Locations: " : ""}
+              {locationText}
             </span>
             <span className="capitalize">{job.remote_type}</span>
             <span>{relativeTime(job.first_seen)}</span>
             <span>{sourceLabel(job.source_platform)}</span>
           </div>
+          {hasMultipleLocations && job.locations?.length ? (
+            <details className="mt-2 text-sm text-muted">
+              <summary className="cursor-pointer text-accent hover:text-teal-800">View locations</summary>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {job.locations.map((location) => (
+                  <span key={location} className="rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-700">
+                    {location}
+                  </span>
+                ))}
+              </div>
+            </details>
+          ) : null}
           {job.description_snippet ? (
             <p className="mt-3 line-clamp-2 text-sm leading-6 text-slate-600">
               {job.description_snippet}

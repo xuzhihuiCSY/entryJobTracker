@@ -26,7 +26,8 @@ export function filterJobs(jobs: Job[], filters: JobFilterState): Job[] {
   const query = filters.query.trim().toLowerCase();
 
   const filtered = jobs.filter((job) => {
-    const haystack = `${job.company} ${job.title} ${job.location_raw}`.toLowerCase();
+    const locations = job.locations?.join(" ") ?? "";
+    const haystack = `${job.company} ${job.title} ${job.location_raw} ${locations}`.toLowerCase();
     if (query && !haystack.includes(query)) return false;
     if (filters.company !== "all" && job.company !== filters.company) return false;
     if (filters.category !== "all" && job.category !== filters.category) return false;

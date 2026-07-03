@@ -64,8 +64,8 @@ def normalize_job(raw_job: dict[str, Any], company: dict[str, Any], checked_at: 
     title = normalize_title(raw_job.get("title"))
     description = clean_html(raw_job.get("description"))
     location_raw = normalize_location(raw_job.get("location_raw"))
-    parsed_location = parse_location(location_raw)
-    return {
+    parsed_location = parse_location(location_raw, description)
+    job = {
         "id": make_job_id(company["slug"], raw_job),
         "company": company["name"],
         "company_slug": company["slug"],
@@ -89,6 +89,15 @@ def normalize_job(raw_job: dict[str, Any], company: dict[str, Any], checked_at: 
         "visa_signal": detect_visa_signal(description),
         "description_snippet": build_description_snippet(description),
     }
+    locations = raw_job.get("locations")
+    if isinstance(locations, list):
+        cleaned_locations = [normalize_location(str(location)) for location in locations if normalize_location(str(location))]
+        if cleaned_locations:
+            job["locations"] = cleaned_locations
+            job["location_count"] = int(raw_job.get("location_count") or len(cleaned_locations))
+            if len(cleaned_locations) > 1 and job["remote_type"] == "onsite":
+                job["remote_type"] = "unknown"
+    return job
 
 
 def is_relevant_technical_job(job: dict[str, Any]) -> bool:

@@ -231,30 +231,3 @@
   career_url: https://jobs.ashbyhq.com/replit
   sync_priority: 2
   enabled: true
-
-- name: Example Greenhouse Company
-  slug: example-greenhouse
-  company_group: startup
-  source_type: greenhouse
-  source_key:
-  career_url: https://boards.greenhouse.io/YOUR_BOARD_TOKEN
-  sync_priority: 2
-  enabled: false
-
-- name: Example Lever Company
-  slug: example-lever
-  company_group: startup
-  source_type: lever
-  source_key:
-  career_url: https://jobs.lever.co/YOUR_LEVER_SLUG
-  sync_priority: 2
-  enabled: false
-
-- name: Example Ashby Company
-  slug: example-ashby
-  company_group: startup
-  source_type: ashby
-  source_key:
-  career_url: https://jobs.ashbyhq.com/YOUR_ASHBY_ORG
-  sync_priority: 2
-  enabled: false

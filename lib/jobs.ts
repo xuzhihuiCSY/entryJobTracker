@@ -44,13 +44,3 @@ export function getBigTechEntryJobs(): Job[] {
     "first_seen_desc"
   );
 }
-
-export function formatDateTime(value: string): string {
-  if (!value) return "Not synced yet";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return "Not synced yet";
-  return new Intl.DateTimeFormat("en-US", {
-    dateStyle: "medium",
-    timeStyle: "short"
-  }).format(date);
-}

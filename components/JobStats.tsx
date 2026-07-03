@@ -1,5 +1,5 @@
 import { Clock3, Landmark, RefreshCw, Rows3 } from "lucide-react";
-import { formatDateTime } from "@/lib/jobs";
+import { LocalDateTime } from "@/components/LocalDateTime";
 import type { LastUpdated } from "@/lib/types";
 
 type JobStatsProps = {
@@ -29,7 +29,7 @@ export function JobStats({ stats }: JobStatsProps) {
         );
       })}
       <p className="sm:col-span-2 lg:col-span-4 text-sm text-muted">
-        Last updated: {formatDateTime(stats.last_updated)}
+        Last updated: <LocalDateTime value={stats.last_updated} />
       </p>
     </section>
   );

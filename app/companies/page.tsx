@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { CompanyBadge } from "@/components/CompanyBadge";
-import { formatDateTime, getCompanies } from "@/lib/jobs";
+import { LocalDateTime } from "@/components/LocalDateTime";
+import { getCompanies } from "@/lib/jobs";
 
 export default function CompaniesPage() {
   const companies = getCompanies();
@@ -37,7 +38,7 @@ export default function CompaniesPage() {
                     <td className="px-4 py-3 text-slate-600">{company.source_type}</td>
                     <td className="px-4 py-3 text-slate-600">{company.active_job_count}</td>
                     <td className="px-4 py-3 text-slate-600">
-                      {formatDateTime(company.last_synced)}
+                      <LocalDateTime value={company.last_synced} />
                     </td>
                     <td className="px-4 py-3">
                       <a

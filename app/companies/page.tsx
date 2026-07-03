@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
 import { ExternalLink } from "lucide-react";
 import { CompanyBadge } from "@/components/CompanyBadge";
 import { LocalDateTime } from "@/components/LocalDateTime";
 import { getCompanies } from "@/lib/jobs";
+
+export const metadata: Metadata = {
+  title: "Tracked Companies",
+  description:
+    "Review company career sources, active job counts, and latest sync status for US Tech Entry Jobs Tracker.",
+  alternates: {
+    canonical: "/companies"
+  }
+};
 
 export default function CompaniesPage() {
   const companies = getCompanies();

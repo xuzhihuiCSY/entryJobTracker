@@ -3,14 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BriefcaseBusiness } from "lucide-react";
-
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/jobs", label: "Jobs" },
-  { href: "/fresh", label: "Fresh" },
-  { href: "/big-tech", label: "Big Tech" },
-  { href: "/companies", label: "Companies" }
-];
+import { SITE_NAV_ITEMS } from "@/lib/site";
 
 export function Header() {
   const pathname = usePathname();
@@ -25,7 +18,7 @@ export function Header() {
           US Tech Entry Jobs Tracker
         </Link>
         <nav className="flex flex-wrap gap-1">
-          {navItems.map((item) => {
+          {SITE_NAV_ITEMS.map((item) => {
             const active =
               item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
             return (

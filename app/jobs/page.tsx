@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { JobFilters } from "@/components/JobFilters";
 import { getJobs } from "@/lib/jobs";
+
+export const metadata: Metadata = {
+  title: "Entry-Focused Tech Jobs",
+  description:
+    "Browse U.S. intern, new grad, entry-level, and early-career software, data, and ML job postings.",
+  alternates: {
+    canonical: "/jobs"
+  }
+};
 
 export default function JobsPage() {
   const jobs = getJobs();

@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { JobFilters } from "@/components/JobFilters";
 import { getBigTechEntryJobs } from "@/lib/jobs";
+
+export const metadata: Metadata = {
+  title: "Big Tech Early Career Jobs",
+  description:
+    "Track U.S.-based early-career roles from Amazon, Google, Microsoft, Meta, Apple, NVIDIA, and other big tech sources.",
+  alternates: {
+    canonical: "/big-tech"
+  }
+};
 
 export default function BigTechPage() {
   const jobs = getBigTechEntryJobs();

@@ -181,11 +181,11 @@
 - name: Rippling
   slug: rippling
   company_group: private
-  source_type: placeholder
-  source_key:
+  source_type: rippling
+  source_key: careers_en-US_production
   career_url: https://www.rippling.com/careers/open-roles
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Tesla
   slug: tesla
@@ -200,11 +200,11 @@
 - name: ByteDance
   slug: bytedance
   company_group: private
-  source_type: placeholder
-  source_key:
+  source_type: bytedance
+  source_key: US_R_AND_D
   career_url: https://joinbytedance.com/search
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Databricks
   slug: databricks

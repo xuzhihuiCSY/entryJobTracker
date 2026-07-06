@@ -1,6 +1,6 @@
 # US Tech Entry Jobs Tracker
 
-A lightweight static tracker for curated U.S. tech job application links, focused on SDE, DS, ML, Data Engineering, AI, Backend, Full Stack, Cloud, DevOps, and related roles.
+A lightweight static tracker for curated U.S. tech job application links, focused on SDE, DS, ML, Data Engineering, AI, Backend, Full Stack, Cloud, DevOps, Security, and related roles.
 
 The MVP is intentionally simple:
 
@@ -94,6 +94,8 @@ Supported `source_type` values:
 - `greenhouse`
 - `lever`
 - `ashby`
+- `bytedance`
+- `rippling`
 - `workday`
 - `oracle_hcm`
 - `zoom`

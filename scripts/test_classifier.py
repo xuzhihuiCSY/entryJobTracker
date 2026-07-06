@@ -52,6 +52,10 @@ def test_hyphenated_front_end_title_is_frontend() -> None:
     )
 
 
+def test_product_security_title_is_technical() -> None:
+    assert classify_category("Senior Product Security Engineer") == "Security"
+
+
 if __name__ == "__main__":
     test_internals_is_not_intern()
     test_actual_intern_titles()
@@ -60,4 +64,5 @@ if __name__ == "__main__":
     test_leadership_titles_are_excluded_from_entry()
     test_remote_and_hybrid_location_detection()
     test_hyphenated_front_end_title_is_frontend()
+    test_product_security_title_is_technical()
     print("classifier tests passed")

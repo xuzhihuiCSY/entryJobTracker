@@ -103,9 +103,9 @@
     "slug": "bytedance",
     "company_group": "private",
     "career_url": "https://joinbytedance.com/search",
-    "source_type": "placeholder",
-    "active_job_count": 0,
-    "last_synced": ""
+    "source_type": "bytedance",
+    "active_job_count": 211,
+    "last_synced": "2026-07-06T05:08:27Z"
   },
   {
     "name": "Cloudflare",
@@ -292,9 +292,9 @@
     "slug": "rippling",
     "company_group": "private",
     "career_url": "https://www.rippling.com/careers/open-roles",
-    "source_type": "placeholder",
-    "active_job_count": 0,
-    "last_synced": ""
+    "source_type": "rippling",
+    "active_job_count": 61,
+    "last_synced": "2026-07-06T05:08:27Z"
   },
   {
     "name": "Roblox",

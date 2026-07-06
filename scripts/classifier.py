@@ -37,6 +37,7 @@ def classify_category(title: str, description: str = "") -> str:
         ("Full Stack", ["full stack engineer", "full-stack engineer"]),
         ("Cloud", ["cloud engineer"]),
         ("DevOps", ["devops engineer", "site reliability engineer", "sre"]),
+        ("Security", ["security engineer", "product security engineer", "application security engineer"]),
         ("Quant", ["quant developer", "quantitative developer", "quantitative researcher", "trading engineer"]),
         (
             "SDE",

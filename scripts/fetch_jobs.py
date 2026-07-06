@@ -42,13 +42,13 @@ def select_companies(companies: list[dict[str, Any]], priority: int | None, incl
     return [company for company in selected if int(company.get("sync_priority", 3)) == priority]
 
 
-def fetch_raw_jobs(company: dict[str, Any]) -> list[dict[str, Any]]:
+def fetch_raw_jobs(company: dict[str, Any]) -> list[dict[str, Any]] | None:
     adapter = get_adapter(company.get("source_type", "placeholder"))
     try:
         return adapter(company)
     except Exception:
         LOGGER.exception("Failed to fetch jobs for %s", company.get("name", company.get("slug")))
-        return []
+        return None
 
 
 def merge_first_seen(
@@ -118,6 +118,13 @@ def run(priority: int | None, include_all: bool) -> None:
         for job in previous_jobs
         if job.get("company_slug") not in {company["slug"] for company in selected}
     }
+    previous_by_company_slug: dict[str, list[dict[str, Any]]] = {}
+    for job in previous_jobs:
+        if not isinstance(job, dict):
+            continue
+        company_slug = str(job.get("company_slug") or "")
+        if company_slug:
+            previous_by_company_slug.setdefault(company_slug, []).append(job)
 
     normalized_jobs: list[dict[str, Any]] = list(previous_by_unsynced_company.values())
     synced_slugs: set[str] = set()
@@ -125,12 +132,19 @@ def run(priority: int | None, include_all: bool) -> None:
     for company in selected:
         LOGGER.info("Fetching %s via %s", company.get("name"), company.get("source_type"))
         raw_jobs = fetch_raw_jobs(company)
+        if raw_jobs is None:
+            normalized_jobs.extend(previous_by_company_slug.get(company["slug"], []))
+            continue
         synced_slugs.add(company["slug"])
         for raw_job in raw_jobs:
             first_seen = merge_first_seen(raw_job, company, seen_jobs, checked_at, previous_first_seen_by_apply_url)
             job = normalize_job(raw_job, company, checked_at, first_seen)
             if is_relevant_technical_job(job):
                 normalized_jobs.append(job)
+
+    if selected and not synced_slugs:
+        LOGGER.warning("No selected sources synced successfully; leaving public data unchanged")
+        return
 
     active_jobs = dedupe_jobs(normalized_jobs)
     active_jobs.sort(key=lambda item: item.get("first_seen", ""), reverse=True)
@@ -153,10 +167,10 @@ def run(priority: int | None, include_all: bool) -> None:
             "total_jobs": len(active_jobs),
             "big_tech_jobs": sum(1 for job in active_jobs if job.get("company_group") == "big_tech"),
             "fresh_24h_jobs": fresh_24h,
-            "sources_synced": len(selected),
+            "sources_synced": len(synced_slugs),
         },
     )
-    LOGGER.info("Wrote %s active jobs from %s synced sources", len(active_jobs), len(selected))
+    LOGGER.info("Wrote %s active jobs from %s synced sources", len(active_jobs), len(synced_slugs))
 
 
 def parse_args() -> argparse.Namespace:

@@ -9,6 +9,7 @@ __pycache__/
 *.py[cod]
 
 .env
+.cache/
 .next-dev.*.log
 npm-debug.log*
 yarn-debug.log*

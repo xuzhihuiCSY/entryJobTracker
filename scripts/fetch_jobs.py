@@ -113,10 +113,13 @@ def run(priority: int | None, include_all: bool) -> None:
         previous = previous_first_seen_by_apply_url.get(apply_url)
         if not previous or first_seen < previous:
             previous_first_seen_by_apply_url[apply_url] = first_seen
+    configured_slugs = {company["slug"] for company in companies}
+    selected_slugs = {company["slug"] for company in selected}
     previous_by_unsynced_company = {
         job["id"]: job
         for job in previous_jobs
-        if job.get("company_slug") not in {company["slug"] for company in selected}
+        if job.get("company_slug") in configured_slugs
+        and job.get("company_slug") not in selected_slugs
     }
     previous_by_company_slug: dict[str, list[dict[str, Any]]] = {}
     for job in previous_jobs:

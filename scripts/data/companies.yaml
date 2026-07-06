@@ -187,16 +187,6 @@
   sync_priority: 3
   enabled: true
 
-- name: Tesla
-  slug: tesla
-  company_group: public
-  source_type: tesla
-  source_key: US
-  career_url: https://www.tesla.com/careers/search
-  source_url: https://www.tesla.com/cua-api/apps/careers/state?site=US
-  sync_priority: 3
-  enabled: true
-
 - name: ByteDance
   slug: bytedance
   company_group: private

@@ -41,20 +41,10 @@ jobs:
         id: sync
         shell: bash
         run: |
-          capture_tesla=false
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             case "${{ inputs.priority }}" in
-              all)
-                echo "args=--all" >> "$GITHUB_OUTPUT"
-                capture_tesla=true
-                ;;
-              1|2)
-                echo "args=--priority=${{ inputs.priority }}" >> "$GITHUB_OUTPUT"
-                ;;
-              3)
-                echo "args=--priority=3" >> "$GITHUB_OUTPUT"
-                capture_tesla=true
-                ;;
+              all) echo "args=--all" >> "$GITHUB_OUTPUT" ;;
+              1|2|3) echo "args=--priority=${{ inputs.priority }}" >> "$GITHUB_OUTPUT" ;;
             esac
           elif [[ "${{ github.event.schedule }}" == "0 */6 * * *" ]]; then
             echo "args=--priority=1" >> "$GITHUB_OUTPUT"
@@ -62,32 +52,7 @@ jobs:
             echo "args=--priority=2" >> "$GITHUB_OUTPUT"
           else
             echo "args=--priority=3" >> "$GITHUB_OUTPUT"
-            capture_tesla=true
           fi
-          echo "capture_tesla=$capture_tesla" >> "$GITHUB_OUTPUT"
-
-      - name: Install Playwright Chrome
-        if: steps.sync.outputs.capture_tesla == 'true'
-        run: python -m playwright install --with-deps chrome
-
-      - name: Capture Tesla careers state
-        if: steps.sync.outputs.capture_tesla == 'true'
-        shell: bash
-        run: |
-          mkdir -p .cache
-          if xvfb-run -a python scripts/capture_tesla_state.py --channel chrome --timeout-ms 120000 --wait-ms 45000 --output .cache/tesla_careers_state.json; then
-            echo "ENTRYJOBTRACKER_TESLA_STATE_PATH=.cache/tesla_careers_state.json" >> "$GITHUB_ENV"
-          else
-            echo "Tesla browser capture failed; fetch_jobs.py will fall back to direct request and preserve previous Tesla data if blocked."
-          fi
-
-      - name: Upload Tesla capture screenshot
-        if: steps.sync.outputs.capture_tesla == 'true' && always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: tesla-capture-debug
-          path: .cache/tesla_careers_state.png
-          if-no-files-found: ignore
 
       - name: Fetch jobs
         run: python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}

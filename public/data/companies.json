@@ -105,7 +105,7 @@
     "career_url": "https://joinbytedance.com/search",
     "source_type": "bytedance",
     "active_job_count": 211,
-    "last_synced": "2026-07-06T05:17:24Z"
+    "last_synced": "2026-07-06T05:25:17Z"
   },
   {
     "name": "Cloudflare",
@@ -294,7 +294,7 @@
     "career_url": "https://www.rippling.com/careers/open-roles",
     "source_type": "rippling",
     "active_job_count": 61,
-    "last_synced": "2026-07-06T05:17:24Z"
+    "last_synced": "2026-07-06T05:25:17Z"
   },
   {
     "name": "Roblox",
@@ -340,15 +340,6 @@
     "source_type": "greenhouse",
     "active_job_count": 42,
     "last_synced": "2026-07-06T04:17:04Z"
-  },
-  {
-    "name": "Tesla",
-    "slug": "tesla",
-    "company_group": "public",
-    "career_url": "https://www.tesla.com/careers/search",
-    "source_type": "tesla",
-    "active_job_count": 204,
-    "last_synced": "2026-07-06T04:46:46Z"
   },
   {
     "name": "Vercel",

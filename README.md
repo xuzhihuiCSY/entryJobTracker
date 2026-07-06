@@ -58,22 +58,6 @@ The crawler writes:
 - `public/data/seen_jobs.json`
 - `public/data/last_updated.json`
 
-### Tesla local capture fallback
-
-Tesla's careers state API can be blocked for non-browser HTTP clients. If the direct Tesla sync is blocked locally, capture the state payload from a real browser session:
-
-```bash
-python scripts/capture_tesla_state.py
-```
-
-Then run the priority 3 sync with that captured payload:
-
-```bash
-set ENTRYJOBTRACKER_TESLA_STATE_PATH=.cache\tesla_careers_state.json
-python scripts/fetch_jobs.py --priority=3
-set ENTRYJOBTRACKER_TESLA_STATE_PATH=
-```
-
 ## Configure companies.yaml
 
 Company sources live in `scripts/data/companies.yaml`.
@@ -99,7 +83,6 @@ Supported `source_type` values:
 - `workday`
 - `oracle_hcm`
 - `zoom`
-- `tesla`
 - `custom_google`
 - `custom_amazon`
 - `custom_microsoft`

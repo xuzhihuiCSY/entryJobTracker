@@ -52,6 +52,159 @@
   sync_priority: 1
   enabled: true
 
+- name: OpenAI
+  slug: openai
+  company_group: private
+  source_type: ashby
+  source_key: openai
+  career_url: https://jobs.ashbyhq.com/openai
+  sync_priority: 2
+  enabled: true
+
+- name: Anthropic
+  slug: anthropic
+  company_group: private
+  source_type: greenhouse
+  source_key: anthropic
+  career_url: https://boards.greenhouse.io/anthropic
+  sync_priority: 2
+  enabled: true
+
+- name: Cloudflare
+  slug: cloudflare
+  company_group: public
+  source_type: greenhouse
+  source_key: cloudflare
+  career_url: https://boards.greenhouse.io/cloudflare
+  sync_priority: 2
+  enabled: true
+
+- name: Snowflake
+  slug: snowflake
+  company_group: public
+  source_type: ashby
+  source_key: snowflake
+  career_url: https://jobs.ashbyhq.com/snowflake
+  sync_priority: 2
+  enabled: true
+
+- name: Vercel
+  slug: vercel
+  company_group: private
+  source_type: greenhouse
+  source_key: vercel
+  career_url: https://boards.greenhouse.io/vercel
+  sync_priority: 2
+  enabled: true
+
+- name: Ramp
+  slug: ramp
+  company_group: private
+  source_type: ashby
+  source_key: ramp
+  career_url: https://jobs.ashbyhq.com/ramp
+  sync_priority: 2
+  enabled: true
+
+- name: Plaid
+  slug: plaid
+  company_group: private
+  source_type: ashby
+  source_key: plaid
+  career_url: https://jobs.ashbyhq.com/plaid
+  sync_priority: 2
+  enabled: true
+
+- name: Notion
+  slug: notion
+  company_group: private
+  source_type: ashby
+  source_key: notion
+  career_url: https://jobs.ashbyhq.com/notion
+  sync_priority: 2
+  enabled: true
+
+- name: Asana
+  slug: asana
+  company_group: public
+  source_type: greenhouse
+  source_key: asana
+  career_url: https://boards.greenhouse.io/asana
+  sync_priority: 2
+  enabled: true
+
+- name: GitLab
+  slug: gitlab
+  company_group: public
+  source_type: greenhouse
+  source_key: gitlab
+  career_url: https://boards.greenhouse.io/gitlab
+  sync_priority: 2
+  enabled: true
+
+- name: HubSpot
+  slug: hubspot
+  company_group: public
+  source_type: greenhouse
+  source_key: hubspotjobs
+  career_url: https://boards.greenhouse.io/hubspotjobs
+  sync_priority: 2
+  enabled: true
+
+- name: Adobe
+  slug: adobe
+  company_group: public
+  source_type: workday
+  source_key: adobe/external_experienced
+  career_url: https://adobe.wd5.myworkdayjobs.com/external_experienced
+  sync_priority: 2
+  enabled: true
+
+- name: Oracle
+  slug: oracle
+  company_group: public
+  source_type: oracle_hcm
+  source_key: CX_45001
+  career_url: https://careers.oracle.com/jobs/
+  sync_priority: 2
+  enabled: true
+
+- name: Zoom
+  slug: zoom
+  company_group: public
+  source_type: zoom
+  source_key:
+  career_url: https://careers.zoom.us/jobs/search
+  sync_priority: 2
+  enabled: true
+
+- name: Rippling
+  slug: rippling
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.rippling.com/careers/open-roles
+  sync_priority: 3
+  enabled: false
+
+- name: Tesla
+  slug: tesla
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.tesla.com/careers/search
+  sync_priority: 3
+  enabled: false
+
+- name: ByteDance
+  slug: bytedance
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://joinbytedance.com/search
+  sync_priority: 3
+  enabled: false
+
 - name: Databricks
   slug: databricks
   company_group: public

@@ -36,6 +36,17 @@ def http_get_json(url: str, params: dict[str, Any] | None = None) -> Any:
     return response.json()
 
 
+def http_post_json(url: str, payload: dict[str, Any], headers: dict[str, str] | None = None) -> Any:
+    response = requests.post(
+        url,
+        json=payload,
+        headers={**DEFAULT_HEADERS, "Accept": "application/json,text/plain,*/*", **(headers or {})},
+        timeout=REQUEST_TIMEOUT_SECONDS,
+    )
+    response.raise_for_status()
+    return response.json()
+
+
 def http_get_text(url: str, params: dict[str, Any] | None = None) -> str:
     response = requests.get(
         url,

@@ -34,8 +34,12 @@ def test_leadership_titles_are_excluded_from_entry() -> None:
 def test_remote_and_hybrid_location_detection() -> None:
     assert parse_location("Virtual, USA").remote_type == "remote"
     assert parse_location("Remote, US").remote_type == "remote"
+    assert parse_location("Remote, US").is_us_based
+    assert parse_location("United States of America").is_us_based
     assert parse_location("United States").remote_type == "unknown"
     assert parse_location("Redmond, WA", "This role requires 3 days / week in-office.").remote_type == "hybrid"
+    assert not parse_location("DE-Berlin-Trion Building").is_us_based
+    assert not parse_location("DE-Munich-MSO").is_us_based
 
 
 def test_hyphenated_front_end_title_is_frontend() -> None:

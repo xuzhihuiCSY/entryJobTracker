@@ -142,6 +142,23 @@ NON_US_SIGNALS = [
     "australia",
 ]
 
+NON_US_COUNTRY_CODE_PREFIXES = {
+    "au",
+    "br",
+    "cn",
+    "de",
+    "fr",
+    "gb",
+    "ie",
+    "in",
+    "jp",
+    "kr",
+    "mx",
+    "nl",
+    "sg",
+    "uk",
+}
+
 
 def parse_location(location_raw: str, description: str = "") -> ParsedLocation:
     raw = location_raw or ""
@@ -169,15 +186,23 @@ def parse_location(location_raw: str, description: str = "") -> ParsedLocation:
     if any(signal in text for signal in NON_US_SIGNALS):
         return ParsedLocation(raw, "", "", "Unknown", False, remote_type)
 
+    if re.match(rf"^({'|'.join(sorted(NON_US_COUNTRY_CODE_PREFIXES))})[-_/,\s]", text):
+        return ParsedLocation(raw, "", "", "Unknown", False, remote_type)
+
     if "north america" in text:
         return ParsedLocation(raw, "", "", "Unknown", False, remote_type)
 
     if (
         "remote - us" in text
+        or "remote, us" in text
         or "remote us" in text
+        or "remote - usa" in text
+        or "remote, usa" in text
+        or "remote usa" in text
         or "united states remote" in text
         or "remote, united states" in text
         or "united states" in text
+        or "united states of america" in text
         or "usa" in text
         or "u.s." in text
     ):

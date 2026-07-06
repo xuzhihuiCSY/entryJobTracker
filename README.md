@@ -78,6 +78,9 @@ Supported `source_type` values:
 - `greenhouse`
 - `lever`
 - `ashby`
+- `workday`
+- `oracle_hcm`
+- `zoom`
 - `custom_google`
 - `custom_amazon`
 - `custom_microsoft`

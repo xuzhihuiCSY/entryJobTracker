@@ -4,8 +4,10 @@ import argparse
 import json
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qs, urlsplit
 
 TARGET_API = "/cua-api/apps/careers/state"
+STATE_URL = "https://www.tesla.com/cua-api/apps/careers/state"
 DEFAULT_PAGE_URL = "https://www.tesla.com/careers/search/?site=US&department=vehicle-software"
 DEFAULT_OUTPUT = Path(".cache") / "tesla_careers_state.json"
 DEFAULT_USER_AGENT = (
@@ -15,7 +17,7 @@ DEFAULT_USER_AGENT = (
 )
 
 
-def capture_state(page_url: str, output_path: Path, channel: str, timeout_ms: int, headless: bool) -> None:
+def capture_state(page_url: str, output_path: Path, channel: str, timeout_ms: int, wait_ms: int, headless: bool) -> None:
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as exc:
@@ -23,6 +25,14 @@ def capture_state(page_url: str, output_path: Path, channel: str, timeout_ms: in
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     found: dict[str, Any] = {"saved": False}
+
+    def save_payload(data: Any) -> bool:
+        if not isinstance(data, dict) or "listings" not in data or "lookup" not in data:
+            return False
+        output_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        found["saved"] = True
+        print(f"Saved {output_path}")
+        return True
 
     with sync_playwright() as playwright:
         launch_options: dict[str, Any] = {
@@ -66,18 +76,44 @@ def capture_state(page_url: str, output_path: Path, channel: str, timeout_ms: in
             except Exception as exc:
                 print(f"JSON parse failed: {exc}")
                 return
-            output_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            found["saved"] = True
-            print(f"Saved {output_path}")
+            save_payload(data)
 
         page.on("response", handle_response)
 
         try:
             page.goto(page_url, wait_until="domcontentloaded", timeout=timeout_ms)
+            page.wait_for_load_state("networkidle", timeout=min(timeout_ms, 30_000))
         except Exception as exc:
-            print(f"Goto error: {exc}")
+            print(f"Navigation wait warning: {exc}")
 
-        page.wait_for_timeout(15_000)
+        page.wait_for_timeout(wait_ms)
+
+        if not found["saved"]:
+            state_url = _state_url_for_page(page_url)
+            print(f"Trying browser-context fetch: {state_url}")
+            try:
+                result = page.evaluate(
+                    """async (url) => {
+                        const response = await fetch(url, {
+                          credentials: 'include',
+                          headers: {
+                            accept: 'application/json, text/plain, */*',
+                          },
+                        });
+                        return {status: response.status, text: await response.text()};
+                    }""",
+                    state_url,
+                )
+                print(f"Browser-context fetch status: {result.get('status')}")
+                try:
+                    data = json.loads(result.get("text") or "")
+                except json.JSONDecodeError:
+                    data = None
+                if data is not None:
+                    save_payload(data)
+            except Exception as exc:
+                print(f"Browser-context fetch failed: {exc}")
+
         if not found["saved"]:
             screenshot_path = output_path.with_suffix(".png")
             print("Did not capture Tesla state API. Saving screenshot for debugging.")
@@ -91,6 +127,12 @@ def capture_state(page_url: str, output_path: Path, channel: str, timeout_ms: in
         raise SystemExit(1)
 
 
+def _state_url_for_page(page_url: str) -> str:
+    query = parse_qs(urlsplit(page_url).query)
+    site = (query.get("site") or ["US"])[0]
+    return f"{STATE_URL}?site={site or 'US'}"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Capture Tesla careers state JSON from a real browser session.")
     parser.add_argument("--page-url", default=DEFAULT_PAGE_URL)
@@ -98,9 +140,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--channel", default="msedge", help="Playwright Chromium channel, e.g. msedge or chrome. Use an empty string for bundled Chromium.")
     parser.add_argument("--headless", action="store_true", help="Run the browser without a visible window.")
     parser.add_argument("--timeout-ms", type=int, default=90_000)
+    parser.add_argument("--wait-ms", type=int, default=30_000)
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    capture_state(args.page_url, args.output, args.channel, args.timeout_ms, args.headless)
+    capture_state(args.page_url, args.output, args.channel, args.timeout_ms, args.wait_ms, args.headless)

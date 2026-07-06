@@ -66,20 +66,28 @@ jobs:
           fi
           echo "capture_tesla=$capture_tesla" >> "$GITHUB_OUTPUT"
 
-      - name: Install Playwright Chromium
+      - name: Install Playwright Chrome
         if: steps.sync.outputs.capture_tesla == 'true'
-        run: python -m playwright install --with-deps chromium
+        run: python -m playwright install --with-deps chrome
 
       - name: Capture Tesla careers state
         if: steps.sync.outputs.capture_tesla == 'true'
         shell: bash
         run: |
           mkdir -p .cache
-          if python scripts/capture_tesla_state.py --channel "" --headless --timeout-ms 120000 --output .cache/tesla_careers_state.json; then
+          if xvfb-run -a python scripts/capture_tesla_state.py --channel chrome --timeout-ms 120000 --wait-ms 45000 --output .cache/tesla_careers_state.json; then
             echo "ENTRYJOBTRACKER_TESLA_STATE_PATH=.cache/tesla_careers_state.json" >> "$GITHUB_ENV"
           else
             echo "Tesla browser capture failed; fetch_jobs.py will fall back to direct request and preserve previous Tesla data if blocked."
           fi
+
+      - name: Upload Tesla capture screenshot
+        if: steps.sync.outputs.capture_tesla == 'true' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tesla-capture-debug
+          path: .cache/tesla_careers_state.png
+          if-no-files-found: ignore
 
       - name: Fetch jobs
         run: python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}

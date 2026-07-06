@@ -189,7 +189,7 @@
 
 - name: ByteDance
   slug: bytedance
-  company_group: private
+  company_group: big_tech
   source_type: bytedance
   source_key: US_R_AND_D
   career_url: https://joinbytedance.com/search

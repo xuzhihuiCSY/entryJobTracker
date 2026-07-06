@@ -27,6 +27,18 @@ def _contains_pattern(text: str, patterns: list[str]) -> bool:
 
 
 def classify_category(title: str, description: str = "") -> str:
+    title_text = _text(title)
+    if _contains_pattern(
+        title_text,
+        [
+            r"\bsupport specialist\b",
+            r"\bsales operations\b",
+            r"\bprocurement analyst\b",
+            r"\bprogram leader\b",
+        ],
+    ):
+        return "Other"
+
     checks: list[tuple[str, list[str]]] = [
         ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
         ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer"]),
@@ -34,7 +46,7 @@ def classify_category(title: str, description: str = "") -> str:
         ("DS", ["data scientist", "decision scientist", "product analyst", "data analyst"]),
         ("Frontend", ["frontend engineer", "front end engineer", "front-end engineer"]),
         ("Backend", ["backend engineer", "back end engineer", "back-end engineer"]),
-        ("Full Stack", ["full stack engineer", "full-stack engineer"]),
+        ("Full Stack", ["full stack engineer", "full-stack engineer", "fullstack engineer"]),
         ("Cloud", ["cloud engineer"]),
         ("DevOps", ["devops engineer", "site reliability engineer", "sre"]),
         ("Security", ["security engineer", "product security engineer", "application security engineer"]),
@@ -47,10 +59,10 @@ def classify_category(title: str, description: str = "") -> str:
                 "sde",
                 "platform engineer",
                 "infrastructure engineer",
+                "product engineer",
             ],
         ),
     ]
-    title_text = _text(title)
     for category, phrases in checks:
         if _contains(title_text, phrases):
             return category

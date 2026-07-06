@@ -56,6 +56,14 @@ def test_product_security_title_is_technical() -> None:
     assert classify_category("Senior Product Security Engineer") == "Security"
 
 
+def test_linear_engineering_titles_are_technical() -> None:
+    assert classify_category("Senior / Staff Fullstack Engineer") == "Full Stack"
+    assert classify_category("Product Engineer") == "SDE"
+    assert classify_category("Product Support Specialist, Pacific/Mountain Time", "Join our Product Engineering team.") == "Other"
+    assert classify_category("Principal Sales Operations & Strategy Manager", "Data science and analytics") == "Other"
+    assert classify_category("Hardware Procurement Analyst, Infrastructure Operation", "Infrastructure engineering") == "Other"
+
+
 if __name__ == "__main__":
     test_internals_is_not_intern()
     test_actual_intern_titles()
@@ -65,4 +73,5 @@ if __name__ == "__main__":
     test_remote_and_hybrid_location_detection()
     test_hyphenated_front_end_title_is_frontend()
     test_product_security_title_is_technical()
+    test_linear_engineering_titles_are_technical()
     print("classifier tests passed")

@@ -6,17 +6,24 @@ from utils import http_get_json
 
 
 def _location_from_job(job: dict[str, Any]) -> str:
-    location = str(job.get("locationName") or job.get("location") or "").strip()
-    if location:
-        return location
-
     postal_address = ((job.get("address") or {}).get("postalAddress") or {})
+    country = str(postal_address.get("addressCountry") or "").strip()
     parts = [
         postal_address.get("addressLocality"),
         postal_address.get("addressRegion"),
-        postal_address.get("addressCountry"),
+        country,
     ]
-    return ", ".join(str(part).strip() for part in parts if str(part or "").strip())
+    address_location = ", ".join(str(part).strip() for part in parts if str(part or "").strip())
+    location = str(job.get("locationName") or job.get("location") or "").strip()
+
+    if country.casefold() in {"united states", "usa", "us"}:
+        if address_location and address_location != country:
+            return address_location
+        if bool(job.get("isRemote")):
+            return "Remote, United States"
+        return "United States"
+
+    return location or address_location
 
 
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:

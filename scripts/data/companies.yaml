@@ -519,3 +519,12 @@
   career_url: https://careers.qualcomm.com/careers
   sync_priority: 2
   enabled: true
+
+- name: Tesla
+  slug: tesla
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.tesla.com/careers/search/
+  sync_priority: 2
+  enabled: false

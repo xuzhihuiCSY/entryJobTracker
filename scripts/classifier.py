@@ -42,7 +42,10 @@ def classify_category(title: str, description: str = "") -> str:
     checks: list[tuple[str, list[str]]] = [
         ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
         ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer"]),
-        ("Data Engineer", ["data engineer", "analytics engineer", "etl engineer", "data platform engineer"]),
+        (
+            "Data Engineer",
+            ["data engineer", "analytics engineer", "etl engineer", "data platform engineer", "database administrator"],
+        ),
         ("DS", ["data scientist", "decision scientist", "product analyst", "data analyst"]),
         ("Frontend", ["frontend engineer", "front end engineer", "front-end engineer"]),
         ("Backend", ["backend engineer", "back end engineer", "back-end engineer"]),
@@ -55,6 +58,7 @@ def classify_category(title: str, description: str = "") -> str:
             "SDE",
             [
                 "software engineer",
+                "software engineering",
                 "software development engineer",
                 "sde",
                 "platform engineer",

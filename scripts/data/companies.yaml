@@ -487,11 +487,11 @@
 - name: Valve
   slug: valve
   company_group: private
-  source_type: placeholder
+  source_type: custom_valve
   source_key:
   career_url: https://www.valvesoftware.com/en/jobs
   sync_priority: 2
-  enabled: false
+  enabled: true
 
 - name: AMD
   slug: amd

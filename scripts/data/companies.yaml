@@ -379,11 +379,11 @@
 - name: Uber
   slug: uber
   company_group: public
-  source_type: placeholder
+  source_type: custom_uber
   source_key:
   career_url: https://jobs.uber.com/
   sync_priority: 2
-  enabled: false
+  enabled: true
 
 - name: Lyft
   slug: lyft
@@ -514,8 +514,8 @@
 - name: Qualcomm
   slug: qualcomm
   company_group: public
-  source_type: placeholder
+  source_type: custom_qualcomm
   source_key:
   career_url: https://careers.qualcomm.com/careers
   sync_priority: 2
-  enabled: false
+  enabled: true

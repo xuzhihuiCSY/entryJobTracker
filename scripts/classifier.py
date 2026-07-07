@@ -59,7 +59,11 @@ def classify_category(title: str, description: str = "") -> str:
             [
                 "software engineer",
                 "software engineering",
+                "software developer",
+                "software architect",
                 "software development engineer",
+                "firmware engineer",
+                "embedded software",
                 "sde",
                 "platform engineer",
                 "infrastructure engineer",

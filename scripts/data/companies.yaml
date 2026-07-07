@@ -375,3 +375,147 @@
   career_url: https://jobs.ashbyhq.com/replit
   sync_priority: 2
   enabled: true
+
+- name: Uber
+  slug: uber
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.uber.com/
+  sync_priority: 2
+  enabled: false
+
+- name: Lyft
+  slug: lyft
+  company_group: public
+  source_type: greenhouse
+  source_key: lyft
+  career_url: https://www.lyft.com/careers
+  sync_priority: 2
+  enabled: true
+
+- name: DoorDash
+  slug: doordash
+  company_group: public
+  source_type: greenhouse
+  source_key: doordashusa
+  career_url: https://careersatdoordash.com/job-search/
+  sync_priority: 2
+  enabled: true
+
+- name: Instacart
+  slug: instacart
+  company_group: public
+  source_type: greenhouse
+  source_key: instacart
+  career_url: https://www.instacart.careers/current-openings
+  sync_priority: 2
+  enabled: true
+
+- name: Pinterest
+  slug: pinterest
+  company_group: public
+  source_type: greenhouse
+  source_key: pinterest
+  career_url: https://www.pinterestcareers.com/jobs/
+  sync_priority: 2
+  enabled: true
+
+- name: Reddit
+  slug: reddit
+  company_group: public
+  source_type: greenhouse
+  source_key: reddit
+  career_url: https://job-boards.greenhouse.io/reddit
+  sync_priority: 2
+  enabled: true
+
+- name: Discord
+  slug: discord
+  company_group: private
+  source_type: greenhouse
+  source_key: discord
+  career_url: https://discord.com/careers
+  sync_priority: 2
+  enabled: true
+
+- name: Snap
+  slug: snap
+  company_group: public
+  source_type: workday
+  source_key: snapchat.wd1/snap
+  career_url: https://snapchat.wd1.myworkdayjobs.com/snap
+  sync_priority: 2
+  enabled: true
+
+- name: Salesforce
+  slug: salesforce
+  company_group: public
+  source_type: workday
+  source_key: salesforce.wd12/External_Career_Site
+  career_url: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site
+  sync_priority: 2
+  enabled: true
+
+- name: Cisco
+  slug: cisco
+  company_group: public
+  source_type: workday
+  source_key: cisco.wd5/Cisco_Careers
+  career_url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers
+  sync_priority: 2
+  enabled: true
+
+- name: PayPal
+  slug: paypal
+  company_group: public
+  source_type: workday
+  source_key: paypal.wd1/jobs
+  career_url: https://paypal.wd1.myworkdayjobs.com/jobs
+  sync_priority: 2
+  enabled: true
+
+- name: Robinhood
+  slug: robinhood
+  company_group: public
+  source_type: greenhouse
+  source_key: robinhood
+  career_url: https://careers.robinhood.com/
+  sync_priority: 2
+  enabled: true
+
+- name: Valve
+  slug: valve
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.valvesoftware.com/en/jobs
+  sync_priority: 2
+  enabled: false
+
+- name: AMD
+  slug: amd
+  company_group: public
+  source_type: custom_amd
+  source_key:
+  career_url: https://careers.amd.com/
+  sync_priority: 2
+  enabled: true
+
+- name: Intel
+  slug: intel
+  company_group: public
+  source_type: workday
+  source_key: intel.wd1/External
+  career_url: https://intel.wd1.myworkdayjobs.com/External
+  sync_priority: 2
+  enabled: true
+
+- name: Qualcomm
+  slug: qualcomm
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.qualcomm.com/careers
+  sync_priority: 2
+  enabled: false

@@ -12,6 +12,8 @@ TECH_SEARCH_TERMS = [
     "frontend",
     "backend",
     "full stack",
+    "product engineer",
+    "security engineer",
     "site reliability",
     "cloud engineer",
     "devops",
@@ -21,13 +23,33 @@ TECH_SEARCH_TERMS = [
 ]
 
 
+def _parse_source_key(source_key: str) -> tuple[str, str, str] | None:
+    if "/" not in source_key:
+        return None
+
+    tenant_host, site = source_key.split("/", 1)
+    tenant_host = tenant_host.strip()
+    site = site.strip()
+    if not tenant_host or not site:
+        return None
+
+    if "." in tenant_host:
+        tenant, cluster = tenant_host.split(".", 1)
+        host = f"{tenant}.{cluster}.myworkdayjobs.com"
+    else:
+        tenant = tenant_host
+        host = f"{tenant}.wd5.myworkdayjobs.com"
+    return tenant, host, site
+
+
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
     source_key = str(company_config.get("source_key") or "").strip()
-    if "/" not in source_key:
+    parsed = _parse_source_key(source_key)
+    if not parsed:
         return []
 
-    tenant, site = source_key.split("/", 1)
-    url = f"https://{tenant}.wd5.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs"
+    tenant, host, site = parsed
+    url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
 
@@ -44,7 +66,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 url,
                 payload,
                 headers={
-                    "Referer": f"https://{tenant}.wd5.myworkdayjobs.com/{site}",
+                    "Referer": f"https://{host}/{site}",
                     "User-Agent": "Mozilla/5.0 EntryJobTracker source verification",
                 },
             )
@@ -62,7 +84,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 if not job_key or job_key in seen:
                     continue
                 seen.add(job_key)
-                apply_url = f"https://{tenant}.wd5.myworkdayjobs.com/{site}{external_path}"
+                apply_url = f"https://{host}/{site}{external_path}"
                 results.append(
                     {
                         "external_id": job_key,

@@ -58402,5 +58402,200 @@
   },
   "nvidia-jr2021486": {
     "first_seen": "2026-07-20T09:24:28Z"
+  },
+  "openai-0fae998b-5295-4567-b4b5-b20cf0346da3": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "anthropic-5305402008": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cloudflare-7635977": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "snowflake-dbd86262-4606-4fe0-a776-fdd2e7aa1b39": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "snowflake-da9101c0-c661-4238-b9df-426fb1998bb4": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "snowflake-917e7381-2a83-4822-9e0e-2e06d417848f": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "snowflake-0af84679-60fe-48d5-8075-c04513092fd4": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "gitlab-8626770002": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "hubspot-5913304": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170466": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170358": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170425": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170470": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170302": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "adobe-r170006": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "oracle-340033": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "oracle-339582": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "databricks-8640212002": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "stripe-8073880": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "stripe-8066310": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "figma-6117206004": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "roblox-8069995": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "datadog-7439145": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "mongodb-8074220": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "mongodb-8066559": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "mongodb-8074078": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "mongodb-8073907": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "mongodb-7795864": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "samsara-8066320": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "airbnb-7682735": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "pinterest-8016630": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "pinterest-8016632": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr350942": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr352311": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr352318": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr351176": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr350960": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr350958": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr348161": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr351126": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr351737": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr350790": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "salesforce-jr264377": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2014393": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2020154": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2017861": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2019412": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2017487": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2008384": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2007347": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2016836": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "cisco-2015927": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "amd-88437": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "amd-87968": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "amd-88425": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "amd-88039": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "amd-88493": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0285759": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0285773": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0283289": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0282619": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0282623": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0282621": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0282624": {
+    "first_seen": "2026-07-20T11:21:27Z"
+  },
+  "intel-jr0282618": {
+    "first_seen": "2026-07-20T11:21:27Z"
   }
 }

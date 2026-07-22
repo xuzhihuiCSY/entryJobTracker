@@ -6,6 +6,7 @@ type JobCardProps = {
   job: Job;
   isApplied?: boolean;
   onAppliedChange?: (jobId: string, isApplied: boolean) => void;
+  markOnApplyClick?: boolean;
 };
 
 function relativeTime(value: string): string {
@@ -47,7 +48,12 @@ function sourceLabel(value: string): string {
   return labels[value] ?? value.replaceAll("_", " ");
 }
 
-export function JobCard({ job, isApplied = false, onAppliedChange }: JobCardProps) {
+export function JobCard({
+  job,
+  isApplied = false,
+  onAppliedChange,
+  markOnApplyClick = false
+}: JobCardProps) {
   const hasMultipleLocations = Boolean(job.location_count && job.location_count > 1);
   const locationText = hasMultipleLocations
     ? `${job.location_count} locations`
@@ -130,6 +136,9 @@ export function JobCard({ job, isApplied = false, onAppliedChange }: JobCardProp
           href={job.apply_url}
           target="_blank"
           rel="noreferrer"
+          onClick={() => {
+            if (markOnApplyClick) onAppliedChange?.(job.id, true);
+          }}
           className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-800"
         >
           Apply

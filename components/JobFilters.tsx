@@ -15,6 +15,7 @@ type JobFiltersProps = {
 
 const PAGE_SIZE_OPTIONS = [25, 50, 100];
 const APPLIED_STORAGE_KEY = "entryJobTracker.appliedJobIds";
+const MARK_ON_CLICK_STORAGE_KEY = "entryJobTracker.markOnApplyClick";
 
 function SelectField({
   label,
@@ -141,6 +142,7 @@ export function JobFilters({
     ...initialFilters
   });
   const [entryOnly, setEntryOnly] = useState(defaultEntryOnly);
+  const [markOnApplyClick, setMarkOnApplyClick] = useState(false);
   const [hideApplied, setHideApplied] = useState(false);
   const [appliedJobIds, setAppliedJobIds] = useState<Set<string>>(new Set());
   const [appliedLoaded, setAppliedLoaded] = useState(false);
@@ -187,8 +189,10 @@ export function JobFilters({
       if (Array.isArray(parsedValue)) {
         setAppliedJobIds(new Set(parsedValue.filter((value) => typeof value === "string")));
       }
+      setMarkOnApplyClick(window.localStorage.getItem(MARK_ON_CLICK_STORAGE_KEY) === "true");
     } catch {
       setAppliedJobIds(new Set());
+      setMarkOnApplyClick(false);
     } finally {
       setAppliedLoaded(true);
     }
@@ -198,6 +202,11 @@ export function JobFilters({
     if (!appliedLoaded) return;
     window.localStorage.setItem(APPLIED_STORAGE_KEY, JSON.stringify(Array.from(appliedJobIds)));
   }, [appliedJobIds, appliedLoaded]);
+
+  useEffect(() => {
+    if (!appliedLoaded) return;
+    window.localStorage.setItem(MARK_ON_CLICK_STORAGE_KEY, String(markOnApplyClick));
+  }, [appliedLoaded, markOnApplyClick]);
 
   function handleAppliedChange(jobId: string, isApplied: boolean) {
     setAppliedJobIds((current) => {
@@ -249,20 +258,31 @@ export function JobFilters({
               Applied jobs are saved in this browser.
             </p>
           </div>
-          <label className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-line bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
-            <input
-              type="checkbox"
-              checked={hideApplied}
-              onChange={(event) => setHideApplied(event.target.checked)}
-              className="h-4 w-4 rounded border-slate-300 text-accent focus:ring-accent"
-            />
-            Hide already applied
-            {appliedJobIds.size > 0 ? (
-              <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600">
-                {appliedJobIds.size}
-              </span>
-            ) : null}
-          </label>
+          <div className="flex flex-wrap items-center gap-2">
+            <label className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-line bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+              <input
+                type="checkbox"
+                checked={markOnApplyClick}
+                onChange={(event) => setMarkOnApplyClick(event.target.checked)}
+                className="h-4 w-4 rounded border-slate-300 text-accent focus:ring-accent"
+              />
+              Mark on click
+            </label>
+            <label className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-md border border-line bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+              <input
+                type="checkbox"
+                checked={hideApplied}
+                onChange={(event) => setHideApplied(event.target.checked)}
+                className="h-4 w-4 rounded border-slate-300 text-accent focus:ring-accent"
+              />
+              Hide already applied
+              {appliedJobIds.size > 0 ? (
+                <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600">
+                  {appliedJobIds.size}
+                </span>
+              ) : null}
+            </label>
+          </div>
         </div>
         <div className="grid gap-3 lg:grid-cols-[minmax(18rem,1.4fr)_repeat(4,minmax(10rem,1fr))]">
           <label className="grid gap-1 text-sm font-medium text-slate-700">
@@ -364,6 +384,7 @@ export function JobFilters({
               job={job}
               isApplied={appliedJobIds.has(job.id)}
               onAppliedChange={handleAppliedChange}
+              markOnApplyClick={markOnApplyClick}
             />
           ))
         ) : (

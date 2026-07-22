@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, Clock3, ExternalLink, ShieldCheck } from "lucide-react";
+import { CheckCircle2, Clock3, Coffee, ExternalLink, ShieldCheck } from "lucide-react";
 import { LocalDateTime } from "@/components/LocalDateTime";
 import { getLastUpdated } from "@/lib/jobs";
+
+const TIP_URL = "https://buy.stripe.com/dRm4gAdXX5bB5rJcb33VC01";
 
 export const metadata: Metadata = {
   title: "Trust",
@@ -95,6 +97,28 @@ export default function TrustPage() {
             <dd className="mt-1 text-sm text-slate-700">{stats.sources_synced}</dd>
           </div>
         </dl>
+      </section>
+
+      <section className="flex flex-col gap-4 rounded-lg border border-teal-200 bg-teal-50 p-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="max-w-2xl">
+          <div className="flex items-center gap-2">
+            <Coffee aria-hidden="true" className="h-5 w-5 text-accent" />
+            <h2 className="text-lg font-semibold text-ink">Support this project</h2>
+          </div>
+          <p className="mt-2 text-sm leading-6 text-slate-600">
+            This tracker is free to use. If it saved you time, you can leave an optional tip to
+            help support its ongoing maintenance. Tips never affect access to job listings.
+          </p>
+        </div>
+        <a
+          href={TIP_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-800"
+        >
+          Leave a tip
+          <ExternalLink aria-hidden="true" className="h-4 w-4" />
+        </a>
       </section>
 
       <section className="rounded-lg border border-line bg-white p-4 text-sm leading-6 text-muted shadow-subtle">

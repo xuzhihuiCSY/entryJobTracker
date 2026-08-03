@@ -528,3 +528,318 @@
   career_url: https://www.tesla.com/careers/search/
   sync_priority: 2
   enabled: false
+
+- name: Netflix
+  slug: netflix
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.netflix.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Goldman Sachs
+  slug: goldman-sachs
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.goldmansachs.com/careers/
+  sync_priority: 3
+  enabled: false
+
+- name: Morgan Stanley
+  slug: morgan-stanley
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.morganstanley.com/careers/career-opportunities-search/
+  sync_priority: 3
+  enabled: false
+
+- name: JPMorgan Chase
+  slug: jpmorgan-chase
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.jpmorgan.com/
+  sync_priority: 3
+  enabled: false
+
+- name: BlackRock
+  slug: blackrock
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.blackrock.com/
+  sync_priority: 3
+  enabled: false
+
+- name: McKinsey & Company
+  slug: mckinsey
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.mckinsey.com/careers/search-jobs
+  sync_priority: 3
+  enabled: false
+
+- name: Bain & Company
+  slug: bain
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.bain.com/careers/find-a-role/
+  sync_priority: 3
+  enabled: false
+
+- name: Boston Consulting Group
+  slug: bcg
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.bcg.com/global/en/search-results
+  sync_priority: 3
+  enabled: false
+
+- name: Bank of America
+  slug: bank-of-america
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.bankofamerica.com/en-us/job-search
+  sync_priority: 3
+  enabled: false
+
+- name: Citi
+  slug: citi
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.citi.com/
+  sync_priority: 3
+  enabled: false
+
+- name: UBS
+  slug: ubs
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.ubs.com/global/en/careers/search-jobs.html
+  sync_priority: 3
+  enabled: false
+
+- name: Barclays
+  slug: barclays
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://search.jobs.barclays/
+  sync_priority: 3
+  enabled: false
+
+- name: Wells Fargo
+  slug: wells-fargo
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.wellsfargojobs.com/en/jobs/
+  sync_priority: 3
+  enabled: false
+
+- name: Apollo Global Management
+  slug: apollo-global-management
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.apollo.com/careers
+  sync_priority: 3
+  enabled: false
+
+- name: Oliver Wyman
+  slug: oliver-wyman
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.marshmclennan.com/global/en/oliver-wyman
+  sync_priority: 3
+  enabled: false
+
+- name: Roland Berger
+  slug: roland-berger
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.rolandberger.com/en/Join/All-Jobs/
+  sync_priority: 3
+  enabled: false
+
+- name: Deloitte
+  slug: deloitte
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www2.deloitte.com/us/en/careers/careers.html
+  sync_priority: 3
+  enabled: false
+
+- name: PwC
+  slug: pwc
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.us.pwc.com/
+  sync_priority: 3
+  enabled: false
+
+- name: EY
+  slug: ey
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.ey.com/en_us/careers
+  sync_priority: 3
+  enabled: false
+
+- name: KPMG
+  slug: kpmg
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.kpmguscareers.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Johnson & Johnson
+  slug: johnson-and-johnson
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.careers.jnj.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Roche
+  slug: roche
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.roche.com/global/en
+  sync_priority: 3
+  enabled: false
+
+- name: IBM
+  slug: ibm
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.ibm.com/careers/search
+  sync_priority: 3
+  enabled: false
+
+- name: Dell Technologies
+  slug: dell
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.dell.com/
+  sync_priority: 3
+  enabled: false
+
+- name: HP
+  slug: hp
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://jobs.hp.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Texas Instruments
+  slug: texas-instruments
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.ti.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Visa
+  slug: visa
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://corporate.visa.com/en/careers.html
+  sync_priority: 3
+  enabled: false
+
+- name: Mastercard
+  slug: mastercard
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.mastercard.com/us/en
+  sync_priority: 3
+  enabled: false
+
+- name: Procter & Gamble
+  slug: procter-and-gamble
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.pgcareers.com/global/en
+  sync_priority: 3
+  enabled: false
+
+- name: Unilever
+  slug: unilever
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.unilever.com/
+  sync_priority: 3
+  enabled: false
+
+- name: The Coca-Cola Company
+  slug: coca-cola
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.coca-colacompany.com/
+  sync_priority: 3
+  enabled: false
+
+- name: PepsiCo
+  slug: pepsico
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.pepsicojobs.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Mars
+  slug: mars
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.mars.com/global/en
+  sync_priority: 3
+  enabled: false
+
+- name: L'Oreal
+  slug: loreal
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://careers.loreal.com/
+  sync_priority: 3
+  enabled: false
+
+- name: Ford
+  slug: ford
+  company_group: public
+  source_type: placeholder
+  source_key:
+  career_url: https://www.careers.ford.com/
+  sync_priority: 3
+  enabled: false

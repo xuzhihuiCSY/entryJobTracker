@@ -108,6 +108,15 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Apollo Global Management",
+    "slug": "apollo-global-management",
+    "company_group": "public",
+    "career_url": "https://www.apollo.com/careers",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Asana",
     "slug": "asana",
     "company_group": "public",
@@ -117,6 +126,51 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Bain & Company",
+    "slug": "bain",
+    "company_group": "private",
+    "career_url": "https://www.bain.com/careers/find-a-role/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Bank of America",
+    "slug": "bank-of-america",
+    "company_group": "public",
+    "career_url": "https://careers.bankofamerica.com/en-us/job-search",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Barclays",
+    "slug": "barclays",
+    "company_group": "public",
+    "career_url": "https://search.jobs.barclays/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "BlackRock",
+    "slug": "blackrock",
+    "company_group": "public",
+    "career_url": "https://careers.blackrock.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Boston Consulting Group",
+    "slug": "bcg",
+    "company_group": "private",
+    "career_url": "https://careers.bcg.com/global/en/search-results",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Cisco",
     "slug": "cisco",
     "company_group": "public",
@@ -124,6 +178,15 @@
     "source_type": "workday",
     "active_job_count": 11,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Citi",
+    "slug": "citi",
+    "company_group": "public",
+    "career_url": "https://jobs.citi.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Cloudflare",
@@ -180,6 +243,24 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Dell Technologies",
+    "slug": "dell",
+    "company_group": "public",
+    "career_url": "https://jobs.dell.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Deloitte",
+    "slug": "deloitte",
+    "company_group": "private",
+    "career_url": "https://www2.deloitte.com/us/en/careers/careers.html",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Discord",
     "slug": "discord",
     "company_group": "private",
@@ -207,6 +288,15 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "EY",
+    "slug": "ey",
+    "company_group": "private",
+    "career_url": "https://www.ey.com/en_us/careers",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Figma",
     "slug": "figma",
     "company_group": "public",
@@ -214,6 +304,15 @@
     "source_type": "greenhouse",
     "active_job_count": 41,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Ford",
+    "slug": "ford",
+    "company_group": "public",
+    "career_url": "https://www.careers.ford.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "GitLab",
@@ -225,6 +324,24 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Goldman Sachs",
+    "slug": "goldman-sachs",
+    "company_group": "public",
+    "career_url": "https://www.goldmansachs.com/careers/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "HP",
+    "slug": "hp",
+    "company_group": "public",
+    "career_url": "https://jobs.hp.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "HubSpot",
     "slug": "hubspot",
     "company_group": "public",
@@ -232,6 +349,15 @@
     "source_type": "greenhouse",
     "active_job_count": 10,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "IBM",
+    "slug": "ibm",
+    "company_group": "public",
+    "career_url": "https://www.ibm.com/careers/search",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Instacart",
@@ -252,6 +378,42 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Johnson & Johnson",
+    "slug": "johnson-and-johnson",
+    "company_group": "public",
+    "career_url": "https://www.careers.jnj.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "JPMorgan Chase",
+    "slug": "jpmorgan-chase",
+    "company_group": "public",
+    "career_url": "https://careers.jpmorgan.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "KPMG",
+    "slug": "kpmg",
+    "company_group": "private",
+    "career_url": "https://www.kpmguscareers.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "L'Oreal",
+    "slug": "loreal",
+    "company_group": "public",
+    "career_url": "https://careers.loreal.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Linear",
     "slug": "linear",
     "company_group": "startup",
@@ -268,6 +430,33 @@
     "source_type": "greenhouse",
     "active_job_count": 33,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Mars",
+    "slug": "mars",
+    "company_group": "private",
+    "career_url": "https://careers.mars.com/global/en",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Mastercard",
+    "slug": "mastercard",
+    "company_group": "public",
+    "career_url": "https://careers.mastercard.com/us/en",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "McKinsey & Company",
+    "slug": "mckinsey",
+    "company_group": "private",
+    "career_url": "https://www.mckinsey.com/careers/search-jobs",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Modal",
@@ -288,6 +477,24 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Morgan Stanley",
+    "slug": "morgan-stanley",
+    "company_group": "public",
+    "career_url": "https://www.morganstanley.com/careers/career-opportunities-search/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Netflix",
+    "slug": "netflix",
+    "company_group": "public",
+    "career_url": "https://jobs.netflix.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Notion",
     "slug": "notion",
     "company_group": "private",
@@ -295,6 +502,15 @@
     "source_type": "ashby",
     "active_job_count": 18,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Oliver Wyman",
+    "slug": "oliver-wyman",
+    "company_group": "private",
+    "career_url": "https://careers.marshmclennan.com/global/en/oliver-wyman",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "OpenAI",
@@ -324,6 +540,15 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "PepsiCo",
+    "slug": "pepsico",
+    "company_group": "public",
+    "career_url": "https://www.pepsicojobs.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Perplexity",
     "slug": "perplexity",
     "company_group": "startup",
@@ -349,6 +574,24 @@
     "source_type": "ashby",
     "active_job_count": 35,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Procter & Gamble",
+    "slug": "procter-and-gamble",
+    "company_group": "public",
+    "career_url": "https://www.pgcareers.com/global/en",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "PwC",
+    "slug": "pwc",
+    "company_group": "private",
+    "career_url": "https://jobs.us.pwc.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Qualcomm",
@@ -414,6 +657,24 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Roche",
+    "slug": "roche",
+    "company_group": "public",
+    "career_url": "https://careers.roche.com/global/en",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Roland Berger",
+    "slug": "roland-berger",
+    "company_group": "private",
+    "career_url": "https://www.rolandberger.com/en/Join/All-Jobs/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Salesforce",
     "slug": "salesforce",
     "company_group": "public",
@@ -477,6 +738,24 @@
     "last_synced": ""
   },
   {
+    "name": "Texas Instruments",
+    "slug": "texas-instruments",
+    "company_group": "public",
+    "career_url": "https://careers.ti.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "The Coca-Cola Company",
+    "slug": "coca-cola",
+    "company_group": "public",
+    "career_url": "https://careers.coca-colacompany.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Uber",
     "slug": "uber",
     "company_group": "public",
@@ -484,6 +763,24 @@
     "source_type": "custom_uber",
     "active_job_count": 76,
     "last_synced": "2026-07-26T10:17:38Z"
+  },
+  {
+    "name": "UBS",
+    "slug": "ubs",
+    "company_group": "public",
+    "career_url": "https://www.ubs.com/global/en/careers/search-jobs.html",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
+    "name": "Unilever",
+    "slug": "unilever",
+    "company_group": "public",
+    "career_url": "https://careers.unilever.com/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Valve",
@@ -504,6 +801,15 @@
     "last_synced": "2026-08-03T11:55:44Z"
   },
   {
+    "name": "Visa",
+    "slug": "visa",
+    "company_group": "public",
+    "career_url": "https://corporate.visa.com/en/careers.html",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
+  },
+  {
     "name": "Waymo",
     "slug": "waymo",
     "company_group": "private",
@@ -511,6 +817,15 @@
     "source_type": "greenhouse",
     "active_job_count": 183,
     "last_synced": "2026-08-03T11:55:44Z"
+  },
+  {
+    "name": "Wells Fargo",
+    "slug": "wells-fargo",
+    "company_group": "public",
+    "career_url": "https://www.wellsfargojobs.com/en/jobs/",
+    "source_type": "placeholder",
+    "active_job_count": 0,
+    "last_synced": ""
   },
   {
     "name": "Writer",

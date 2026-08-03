@@ -550,11 +550,11 @@
 - name: Morgan Stanley
   slug: morgan-stanley
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.morganstanley.com/careers/career-opportunities-search/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: ms.wd5/External
+  career_url: https://ms.wd5.myworkdayjobs.com/External
+  sync_priority: 2
+  enabled: true
 
 - name: JPMorgan Chase
   slug: jpmorgan-chase
@@ -568,11 +568,11 @@
 - name: BlackRock
   slug: blackrock
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.blackrock.com/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: blackrock.wd1/BlackRock_Professional
+  career_url: https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional
+  sync_priority: 2
+  enabled: true
 
 - name: McKinsey & Company
   slug: mckinsey
@@ -640,20 +640,20 @@
 - name: Wells Fargo
   slug: wells-fargo
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.wellsfargojobs.com/en/jobs/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: wf.wd1/WellsFargoJobs
+  career_url: https://wf.wd1.myworkdayjobs.com/WellsFargoJobs
+  sync_priority: 2
+  enabled: true
 
 - name: Apollo Global Management
   slug: apollo-global-management
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.apollo.com/careers
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: athene.wd5/Apollo_Careers
+  career_url: https://athene.wd5.myworkdayjobs.com/Apollo_Careers
+  sync_priority: 2
+  enabled: true
 
 - name: Oliver Wyman
   slug: oliver-wyman
@@ -712,20 +712,20 @@
 - name: Johnson & Johnson
   slug: johnson-and-johnson
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.careers.jnj.com/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: jj.wd5/JJ
+  career_url: https://jj.wd5.myworkdayjobs.com/JJ
+  sync_priority: 2
+  enabled: true
 
 - name: Roche
   slug: roche
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.roche.com/global/en
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: roche.wd3/roche-ext
+  career_url: https://roche.wd3.myworkdayjobs.com/roche-ext
+  sync_priority: 2
+  enabled: true
 
 - name: IBM
   slug: ibm
@@ -748,11 +748,11 @@
 - name: HP
   slug: hp
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://jobs.hp.com/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: hp.wd5/ExternalCareerSite
+  career_url: https://hp.wd5.myworkdayjobs.com/ExternalCareerSite
+  sync_priority: 2
+  enabled: true
 
 - name: Texas Instruments
   slug: texas-instruments
@@ -766,47 +766,47 @@
 - name: Visa
   slug: visa
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://corporate.visa.com/en/careers.html
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: visa.wd5/Visa
+  career_url: https://visa.wd5.myworkdayjobs.com/Visa
+  sync_priority: 2
+  enabled: true
 
 - name: Mastercard
   slug: mastercard
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.mastercard.com/us/en
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: mastercard.wd1/CorporateCareers
+  career_url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
+  sync_priority: 2
+  enabled: true
 
 - name: Procter & Gamble
   slug: procter-and-gamble
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.pgcareers.com/global/en
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: pg.wd5/1000
+  career_url: https://pg.wd5.myworkdayjobs.com/1000
+  sync_priority: 2
+  enabled: true
 
 - name: Unilever
   slug: unilever
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.unilever.com/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: unilever.wd3/Unilever_Experienced_Professionals
+  career_url: https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals
+  sync_priority: 2
+  enabled: true
 
 - name: The Coca-Cola Company
   slug: coca-cola
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.coca-colacompany.com/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: coke.wd1/coca-cola-careers
+  career_url: https://coke.wd1.myworkdayjobs.com/coca-cola-careers
+  sync_priority: 2
+  enabled: true
 
 - name: PepsiCo
   slug: pepsico

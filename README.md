@@ -75,13 +75,27 @@ Company sources live in `scripts/data/companies.yaml`.
 
 Supported `source_type` values:
 
+- `avature`
+- `bank_of_america`
+- `bain`
+- `goldman_sachs`
+- `ibm`
+- `kpmg`
+- `mckinsey`
+- `successfactors`
 - `greenhouse`
 - `lever`
 - `ashby`
+- `eightfold`
 - `bytedance`
 - `rippling`
+- `smartrecruiters`
+- `talentbrew`
+- `ubs`
 - `workday`
 - `oracle_hcm`
+- `phenom`
+- `radancy`
 - `zoom`
 - `custom_google`
 - `custom_amazon`

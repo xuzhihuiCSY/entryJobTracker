@@ -528,3 +528,350 @@
   career_url: https://www.tesla.com/careers/search/
   sync_priority: 2
   enabled: false
+
+- name: Netflix
+  slug: netflix
+  company_group: public
+  source_type: eightfold
+  source_key:
+  career_url: https://explore.jobs.netflix.net/careers
+  sync_priority: 2
+  enabled: true
+
+- name: Goldman Sachs
+  slug: goldman-sachs
+  company_group: public
+  source_type: goldman_sachs
+  source_key:
+  source_base_url: https://api-higher.gs.com/gateway/api/v1/graphql
+  career_url: https://higher.gs.com
+  sync_priority: 3
+  enabled: true
+
+- name: Morgan Stanley
+  slug: morgan-stanley
+  company_group: public
+  source_type: workday
+  source_key: ms.wd5/External
+  career_url: https://ms.wd5.myworkdayjobs.com/External
+  sync_priority: 2
+  enabled: true
+
+- name: JPMorgan Chase
+  slug: jpmorgan-chase
+  company_group: public
+  source_type: oracle_hcm
+  source_key: CX
+  source_base_url: https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/{job_id}
+  career_url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs
+  sync_priority: 3
+  enabled: true
+
+- name: BlackRock
+  slug: blackrock
+  company_group: public
+  source_type: workday
+  source_key: blackrock.wd1/BlackRock_Professional
+  career_url: https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional
+  sync_priority: 2
+  enabled: true
+
+- name: McKinsey & Company
+  slug: mckinsey
+  company_group: private
+  source_type: mckinsey
+  source_key:
+  source_base_url: https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search
+  source_country: United States
+  source_interests: [Tech & AI, Technology & Digital]
+  career_url: https://www.mckinsey.com/careers/search-jobs
+  sync_priority: 3
+  enabled: true
+
+- name: Bain & Company
+  slug: bain
+  company_group: private
+  source_type: bain
+  source_key:
+  source_base_url: https://www.bain.com/en/api/jobsearch/keyword/get
+  career_url: https://www.bain.com/careers/find-a-role/
+  sync_priority: 3
+  enabled: true
+
+- name: Boston Consulting Group
+  slug: bcg
+  company_group: private
+  source_type: phenom
+  source_key:
+  career_url: https://careers.bcg.com/global/en/search-results
+  sync_priority: 2
+  enabled: true
+
+- name: Bank of America
+  slug: bank-of-america
+  company_group: public
+  source_type: bank_of_america
+  source_key:
+  source_base_url: https://careers.bankofamerica.com/services/jobssearchservlet
+  career_url: https://careers.bankofamerica.com/en-us/job-search
+  sync_priority: 3
+  enabled: true
+
+- name: Citi
+  slug: citi
+  company_group: public
+  source_type: talentbrew
+  source_key: 287
+  career_url: https://jobs.citi.com/
+  sync_priority: 3
+  enabled: true
+
+- name: UBS
+  slug: ubs
+  company_group: public
+  source_type: ubs
+  source_key:
+  source_base_url: https://jobs.ubs.com
+  source_partner_id: 25008
+  source_site_ids: [5012, 5131]
+  source_link_ids: [15231, 15232]
+  career_url: https://www.ubs.com/global/en/careers/search-jobs.html
+  sync_priority: 3
+  enabled: true
+
+- name: Barclays
+  slug: barclays
+  company_group: public
+  source_type: workday
+  source_key: barclays.wd3/External_Career_Site_Barclays
+  career_url: https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays
+  sync_priority: 2
+  enabled: true
+
+- name: Wells Fargo
+  slug: wells-fargo
+  company_group: public
+  source_type: workday
+  source_key: wf.wd1/WellsFargoJobs
+  career_url: https://wf.wd1.myworkdayjobs.com/WellsFargoJobs
+  sync_priority: 2
+  enabled: true
+
+- name: Apollo Global Management
+  slug: apollo-global-management
+  company_group: public
+  source_type: workday
+  source_key: athene.wd5/Apollo_Careers
+  career_url: https://athene.wd5.myworkdayjobs.com/Apollo_Careers
+  sync_priority: 2
+  enabled: true
+
+- name: Oliver Wyman
+  slug: oliver-wyman
+  company_group: private
+  source_type: workday
+  source_key: mmc.wd1/MMC
+  source_title_contains: Oliver Wyman
+  career_url: https://careers.marsh.com/global/en/oliver-wyman
+  sync_priority: 3
+  enabled: true
+
+- name: Roland Berger
+  slug: roland-berger
+  company_group: private
+  source_type: smartrecruiters
+  source_key: RolandBerger
+  career_url: https://jobs.smartrecruiters.com/RolandBerger
+  sync_priority: 2
+  enabled: true
+
+- name: Deloitte
+  slug: deloitte
+  company_group: private
+  source_type: avature
+  source_key:
+  source_base_url: https://apply.deloitte.com/en_US/careers/SearchJobs
+  source_page_size: 10
+  source_max_results_per_term: 50
+  source_location_index: 2
+  career_url: https://apply.deloitte.com/en_US/careers/SearchJobs
+  sync_priority: 3
+  enabled: true
+
+- name: PwC
+  slug: pwc
+  company_group: private
+  source_type: talentbrew
+  source_key: 932
+  source_country: United States
+  career_url: https://jobs.us.pwc.com/
+  sync_priority: 3
+  enabled: true
+
+- name: EY
+  slug: ey
+  company_group: private
+  source_type: successfactors
+  source_key:
+  source_base_url: https://careers.ey.com/ey/search/
+  career_url: https://careers.ey.com/careers?locale=en_US
+  sync_priority: 3
+  enabled: true
+
+- name: KPMG
+  slug: kpmg
+  company_group: private
+  source_type: kpmg
+  source_key:
+  source_base_url: https://www.kpmguscareers.com/wp-content/themes/understrap-child-main/page-templates/google/get-jobs.php
+  career_url: https://www.kpmguscareers.com/job-search/
+  sync_priority: 3
+  enabled: true
+
+- name: Johnson & Johnson
+  slug: johnson-and-johnson
+  company_group: public
+  source_type: workday
+  source_key: jj.wd5/JJ
+  career_url: https://jj.wd5.myworkdayjobs.com/JJ
+  sync_priority: 2
+  enabled: true
+
+- name: Roche
+  slug: roche
+  company_group: public
+  source_type: workday
+  source_key: roche.wd3/roche-ext
+  career_url: https://roche.wd3.myworkdayjobs.com/roche-ext
+  sync_priority: 2
+  enabled: true
+
+- name: IBM
+  slug: ibm
+  company_group: public
+  source_type: ibm
+  source_key:
+  source_base_url: https://www-api.ibm.com/search/api/v1/ibmcom/appid/careers/responseFormat/json
+  career_url: https://www.ibm.com/careers/search
+  sync_priority: 3
+  enabled: true
+
+- name: Dell Technologies
+  slug: dell
+  company_group: public
+  source_type: oracle_hcm
+  source_key: careers
+  source_base_url: https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/job/{job_id}
+  career_url: https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs
+  sync_priority: 2
+  enabled: true
+
+- name: HP
+  slug: hp
+  company_group: public
+  source_type: workday
+  source_key: hp.wd5/ExternalCareerSite
+  career_url: https://hp.wd5.myworkdayjobs.com/ExternalCareerSite
+  sync_priority: 2
+  enabled: true
+
+- name: Texas Instruments
+  slug: texas-instruments
+  company_group: public
+  source_type: oracle_hcm
+  source_key: CX
+  source_base_url: https://edbz.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://careers.ti.com/en/sites/CX/job/{job_id}
+  career_url: https://careers.ti.com/en/sites/CX/jobs
+  sync_priority: 3
+  enabled: true
+
+- name: Visa
+  slug: visa
+  company_group: public
+  source_type: workday
+  source_key: visa.wd5/Visa
+  career_url: https://visa.wd5.myworkdayjobs.com/Visa
+  sync_priority: 2
+  enabled: true
+
+- name: Mastercard
+  slug: mastercard
+  company_group: public
+  source_type: workday
+  source_key: mastercard.wd1/CorporateCareers
+  career_url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
+  sync_priority: 2
+  enabled: true
+
+- name: Procter & Gamble
+  slug: procter-and-gamble
+  company_group: public
+  source_type: workday
+  source_key: pg.wd5/1000
+  career_url: https://pg.wd5.myworkdayjobs.com/1000
+  sync_priority: 2
+  enabled: true
+
+- name: Unilever
+  slug: unilever
+  company_group: public
+  source_type: workday
+  source_key: unilever.wd3/Unilever_Experienced_Professionals
+  career_url: https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals
+  sync_priority: 2
+  enabled: true
+
+- name: The Coca-Cola Company
+  slug: coca-cola
+  company_group: public
+  source_type: workday
+  source_key: coke.wd1/coca-cola-careers
+  career_url: https://coke.wd1.myworkdayjobs.com/coca-cola-careers
+  sync_priority: 2
+  enabled: true
+
+- name: PepsiCo
+  slug: pepsico
+  company_group: public
+  source_type: radancy
+  source_key: /api/jobs
+  career_url: https://www.pepsicojobs.com/
+  sync_priority: 2
+  enabled: true
+
+- name: Mars
+  slug: mars
+  company_group: private
+  source_type: workday
+  source_key: mars.wd3/External
+  career_url: https://mars.wd3.myworkdayjobs.com/External
+  sync_priority: 2
+  enabled: true
+
+- name: L'Oreal
+  slug: loreal
+  company_group: public
+  source_type: avature
+  source_key:
+  source_base_url: https://careers.loreal.com/en_US/jobs/SearchJobsAJAX
+  career_url: https://careers.loreal.com/en_US/jobs/SearchJobs
+  sync_priority: 3
+  enabled: true
+
+- name: Ford
+  slug: ford
+  company_group: public
+  source_type: oracle_hcm
+  source_key: CX_1
+  source_base_url: https://efds.fa.em5.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/{job_id}
+  career_url: https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs
+  sync_priority: 2
+  enabled: true

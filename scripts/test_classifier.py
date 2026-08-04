@@ -54,6 +54,8 @@ def test_hyphenated_front_end_title_is_frontend() -> None:
 
 def test_product_security_title_is_technical() -> None:
     assert classify_category("Senior Product Security Engineer") == "Security"
+    assert classify_category("Cyber Incident Responder") == "Security"
+    assert classify_category("Cybersecurity Analyst") == "Security"
 
 
 def test_linear_engineering_titles_are_technical() -> None:

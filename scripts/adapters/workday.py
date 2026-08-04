@@ -50,6 +50,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
 
     tenant, host, site = parsed
     url = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    title_contains = str(company_config.get("source_title_contains") or "").strip().casefold()
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
 
@@ -75,6 +76,9 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 break
 
             for posting in postings:
+                title = str(posting.get("title") or "").strip()
+                if title_contains and title_contains not in title.casefold():
+                    continue
                 external_path = str(posting.get("externalPath") or "").strip()
                 req_id = ""
                 bullet_fields = posting.get("bulletFields")
@@ -88,7 +92,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 results.append(
                     {
                         "external_id": job_key,
-                        "title": posting.get("title") or "",
+                        "title": title,
                         "location_raw": posting.get("locationsText") or "",
                         "description": "",
                         "apply_url": apply_url,

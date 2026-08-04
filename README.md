@@ -78,8 +78,10 @@ Supported `source_type` values:
 - `greenhouse`
 - `lever`
 - `ashby`
+- `eightfold`
 - `bytedance`
 - `rippling`
+- `smartrecruiters`
 - `workday`
 - `oracle_hcm`
 - `zoom`

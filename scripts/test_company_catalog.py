@@ -58,6 +58,7 @@ IMAGE_COMPANY_SLUGS = {
 
 VERIFIED_WORKDAY_SOURCES = {
     "apollo-global-management": "athene.wd5/Apollo_Careers",
+    "barclays": "barclays.wd3/External_Career_Site_Barclays",
     "blackrock": "blackrock.wd1/BlackRock_Professional",
     "coca-cola": "coke.wd1/coca-cola-careers",
     "hp": "hp.wd5/ExternalCareerSite",
@@ -69,6 +70,19 @@ VERIFIED_WORKDAY_SOURCES = {
     "unilever": "unilever.wd3/Unilever_Experienced_Professionals",
     "visa": "visa.wd5/Visa",
     "wells-fargo": "wf.wd1/WellsFargoJobs",
+}
+
+VERIFIED_OTHER_SOURCES = {
+    "dell": (
+        "oracle_hcm",
+        "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs",
+    ),
+    "ford": (
+        "oracle_hcm",
+        "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    ),
+    "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
+    "roland-berger": ("smartrecruiters", "https://jobs.smartrecruiters.com/RolandBerger"),
 }
 
 
@@ -100,8 +114,19 @@ def test_verified_workday_sources_are_enabled() -> None:
         assert company["career_url"] == f"https://{host}/{site}"
 
 
+def test_other_verified_sources_are_enabled() -> None:
+    companies = {company["slug"]: company for company in load_companies()}
+
+    for slug, (source_type, career_url) in VERIFIED_OTHER_SOURCES.items():
+        company = companies[slug]
+        assert company["source_type"] == source_type
+        assert company["career_url"] == career_url
+        assert company["enabled"] is True
+
+
 if __name__ == "__main__":
     test_image_companies_are_in_catalog()
     test_company_slugs_are_unique()
     test_verified_workday_sources_are_enabled()
+    test_other_verified_sources_are_enabled()
     print("company catalog tests passed")

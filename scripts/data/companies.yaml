@@ -532,11 +532,11 @@
 - name: Netflix
   slug: netflix
   company_group: public
-  source_type: placeholder
+  source_type: eightfold
   source_key:
-  career_url: https://jobs.netflix.com/
-  sync_priority: 3
-  enabled: false
+  career_url: https://explore.jobs.netflix.net/careers
+  sync_priority: 2
+  enabled: true
 
 - name: Goldman Sachs
   slug: goldman-sachs
@@ -631,11 +631,11 @@
 - name: Barclays
   slug: barclays
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://search.jobs.barclays/
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: barclays.wd3/External_Career_Site_Barclays
+  career_url: https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays
+  sync_priority: 2
+  enabled: true
 
 - name: Wells Fargo
   slug: wells-fargo
@@ -667,11 +667,11 @@
 - name: Roland Berger
   slug: roland-berger
   company_group: private
-  source_type: placeholder
-  source_key:
-  career_url: https://www.rolandberger.com/en/Join/All-Jobs/
-  sync_priority: 3
-  enabled: false
+  source_type: smartrecruiters
+  source_key: RolandBerger
+  career_url: https://jobs.smartrecruiters.com/RolandBerger
+  sync_priority: 2
+  enabled: true
 
 - name: Deloitte
   slug: deloitte
@@ -739,11 +739,14 @@
 - name: Dell Technologies
   slug: dell
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://jobs.dell.com/
-  sync_priority: 3
-  enabled: false
+  source_type: oracle_hcm
+  source_key: careers
+  source_base_url: https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/job/{job_id}
+  career_url: https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs
+  sync_priority: 2
+  enabled: true
 
 - name: HP
   slug: hp
@@ -838,8 +841,11 @@
 - name: Ford
   slug: ford
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://www.careers.ford.com/
-  sync_priority: 3
-  enabled: false
+  source_type: oracle_hcm
+  source_key: CX_1
+  source_base_url: https://efds.fa.em5.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/{job_id}
+  career_url: https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs
+  sync_priority: 2
+  enabled: true

@@ -19,6 +19,7 @@ TECH_SEARCH_TERMS = [
 ]
 
 BASE_URL = "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+DEFAULT_APPLY_URL = "https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{job_id}"
 EXPAND = (
     "requisitionList.workLocation,"
     "requisitionList.otherWorkLocations,"
@@ -27,6 +28,18 @@ EXPAND = (
     "requisitionList.requisitionFlexFields"
 )
 US_LOCATION_ID = "300000000149325"
+
+
+def _source_settings(company_config: dict[str, Any]) -> tuple[str, str, str, str]:
+    base_url = str(company_config.get("source_base_url") or BASE_URL).strip()
+    site_number = str(company_config.get("source_key") or "").strip()
+    configured_location_id = company_config.get("source_location_id")
+    if configured_location_id is None:
+        location_id = US_LOCATION_ID if base_url == BASE_URL else ""
+    else:
+        location_id = str(configured_location_id).strip()
+    apply_url_template = str(company_config.get("source_apply_url") or DEFAULT_APPLY_URL).strip()
+    return base_url, site_number, location_id, apply_url_template
 
 
 def _job_locations(job: dict[str, Any]) -> str:
@@ -48,7 +61,7 @@ def _job_locations(job: dict[str, Any]) -> str:
 
 
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
-    site_number = str(company_config.get("source_key") or "").strip()
+    base_url, site_number, location_id, apply_url_template = _source_settings(company_config)
     if not site_number:
         return []
 
@@ -57,13 +70,15 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
     for term in TECH_SEARCH_TERMS:
         offset = 0
         while offset < 500:
-            finder = (
-                f"findReqs;siteNumber={site_number},keyword={term},"
-                f"locationId={US_LOCATION_ID},facetsList=LOCATIONS,"
-                f"sortBy=POSTING_DATES_DESC,limit=100,offset={offset}"
+            finder_parts = [f"siteNumber={site_number}", f"keyword={term}"]
+            if location_id:
+                finder_parts.append(f"locationId={location_id}")
+            finder_parts.extend(
+                ["facetsList=LOCATIONS", "sortBy=POSTING_DATES_DESC", "limit=100", f"offset={offset}"]
             )
+            finder = f"findReqs;{','.join(finder_parts)}"
             data = http_get_json(
-                BASE_URL,
+                base_url,
                 params={
                     "onlyData": "true",
                     "expand": EXPAND,
@@ -81,7 +96,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 if not external_id or external_id in seen:
                     continue
                 seen.add(external_id)
-                apply_url = f"https://careers.oracle.com/jobs/#en/sites/jobsearch/job/{external_id}"
+                apply_url = apply_url_template.format(job_id=external_id)
                 results.append(
                     {
                         "external_id": external_id,

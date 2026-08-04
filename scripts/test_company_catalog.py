@@ -74,6 +74,7 @@ VERIFIED_WORKDAY_SOURCES = {
 }
 
 VERIFIED_OTHER_SOURCES = {
+    "bank-of-america": ("bank_of_america", "https://careers.bankofamerica.com/en-us/job-search"),
     "citi": ("talentbrew", "https://jobs.citi.com/"),
     "bcg": ("phenom", "https://careers.bcg.com/global/en/search-results"),
     "dell": (
@@ -88,11 +89,16 @@ VERIFIED_OTHER_SOURCES = {
         "oracle_hcm",
         "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
     ),
+    "loreal": ("avature", "https://careers.loreal.com/en_US/jobs/SearchJobs"),
     "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
     "oliver-wyman": ("workday", "https://careers.marsh.com/global/en/oliver-wyman"),
     "pepsico": ("radancy", "https://www.pepsicojobs.com/"),
     "pwc": ("talentbrew", "https://jobs.us.pwc.com/"),
     "roland-berger": ("smartrecruiters", "https://jobs.smartrecruiters.com/RolandBerger"),
+    "texas-instruments": (
+        "oracle_hcm",
+        "https://careers.ti.com/en/sites/CX/jobs",
+    ),
 }
 
 

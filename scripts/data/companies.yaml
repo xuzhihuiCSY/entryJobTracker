@@ -607,11 +607,12 @@
 - name: Bank of America
   slug: bank-of-america
   company_group: public
-  source_type: placeholder
+  source_type: bank_of_america
   source_key:
+  source_base_url: https://careers.bankofamerica.com/services/jobssearchservlet
   career_url: https://careers.bankofamerica.com/en-us/job-search
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Citi
   slug: citi
@@ -765,11 +766,14 @@
 - name: Texas Instruments
   slug: texas-instruments
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.ti.com/
+  source_type: oracle_hcm
+  source_key: CX
+  source_base_url: https://edbz.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://careers.ti.com/en/sites/CX/job/{job_id}
+  career_url: https://careers.ti.com/en/sites/CX/jobs
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Visa
   slug: visa
@@ -837,11 +841,12 @@
 - name: L'Oreal
   slug: loreal
   company_group: public
-  source_type: placeholder
+  source_type: avature
   source_key:
-  career_url: https://careers.loreal.com/
+  source_base_url: https://careers.loreal.com/en_US/jobs/SearchJobsAJAX
+  career_url: https://careers.loreal.com/en_US/jobs/SearchJobs
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Ford
   slug: ford

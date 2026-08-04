@@ -75,6 +75,8 @@ Company sources live in `scripts/data/companies.yaml`.
 
 Supported `source_type` values:
 
+- `avature`
+- `bank_of_america`
 - `greenhouse`
 - `lever`
 - `ashby`

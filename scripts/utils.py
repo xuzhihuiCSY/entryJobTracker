@@ -47,11 +47,15 @@ def http_post_json(url: str, payload: dict[str, Any], headers: dict[str, str] | 
     return response.json()
 
 
-def http_get_text(url: str, params: dict[str, Any] | None = None) -> str:
+def http_get_text(
+    url: str,
+    params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
+) -> str:
     response = requests.get(
         url,
         params=params,
-        headers={**DEFAULT_HEADERS, "Accept": "text/html,text/plain,*/*"},
+        headers={**DEFAULT_HEADERS, "Accept": "text/html,text/plain,*/*", **(headers or {})},
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     response.raise_for_status()

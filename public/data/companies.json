@@ -139,7 +139,7 @@
     "slug": "bank-of-america",
     "company_group": "public",
     "career_url": "https://careers.bankofamerica.com/en-us/job-search",
-    "source_type": "placeholder",
+    "source_type": "bank_of_america",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -408,8 +408,8 @@
     "name": "L'Oreal",
     "slug": "loreal",
     "company_group": "public",
-    "career_url": "https://careers.loreal.com/",
-    "source_type": "placeholder",
+    "career_url": "https://careers.loreal.com/en_US/jobs/SearchJobs",
+    "source_type": "avature",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -741,8 +741,8 @@
     "name": "Texas Instruments",
     "slug": "texas-instruments",
     "company_group": "public",
-    "career_url": "https://careers.ti.com/",
-    "source_type": "placeholder",
+    "career_url": "https://careers.ti.com/en/sites/CX/jobs",
+    "source_type": "oracle_hcm",
     "active_job_count": 0,
     "last_synced": ""
   },

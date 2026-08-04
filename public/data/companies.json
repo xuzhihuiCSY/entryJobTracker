@@ -255,8 +255,8 @@
     "name": "Deloitte",
     "slug": "deloitte",
     "company_group": "private",
-    "career_url": "https://www2.deloitte.com/us/en/careers/careers.html",
-    "source_type": "placeholder",
+    "career_url": "https://apply.deloitte.com/en_US/careers/SearchJobs",
+    "source_type": "avature",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -291,8 +291,8 @@
     "name": "EY",
     "slug": "ey",
     "company_group": "private",
-    "career_url": "https://www.ey.com/en_us/careers",
-    "source_type": "placeholder",
+    "career_url": "https://careers.ey.com/careers?locale=en_US",
+    "source_type": "successfactors",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -399,8 +399,8 @@
     "name": "KPMG",
     "slug": "kpmg",
     "company_group": "private",
-    "career_url": "https://www.kpmguscareers.com/",
-    "source_type": "placeholder",
+    "career_url": "https://www.kpmguscareers.com/job-search/",
+    "source_type": "kpmg",
     "active_job_count": 0,
     "last_synced": ""
   },

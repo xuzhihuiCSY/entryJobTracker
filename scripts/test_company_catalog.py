@@ -76,6 +76,7 @@ VERIFIED_WORKDAY_SOURCES = {
 VERIFIED_OTHER_SOURCES = {
     "bank-of-america": ("bank_of_america", "https://careers.bankofamerica.com/en-us/job-search"),
     "citi": ("talentbrew", "https://jobs.citi.com/"),
+    "deloitte": ("avature", "https://apply.deloitte.com/en_US/careers/SearchJobs"),
     "bcg": ("phenom", "https://careers.bcg.com/global/en/search-results"),
     "dell": (
         "oracle_hcm",
@@ -89,6 +90,8 @@ VERIFIED_OTHER_SOURCES = {
         "oracle_hcm",
         "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
     ),
+    "ey": ("successfactors", "https://careers.ey.com/careers?locale=en_US"),
+    "kpmg": ("kpmg", "https://www.kpmguscareers.com/job-search/"),
     "loreal": ("avature", "https://careers.loreal.com/en_US/jobs/SearchJobs"),
     "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
     "oliver-wyman": ("workday", "https://careers.marsh.com/global/en/oliver-wyman"),

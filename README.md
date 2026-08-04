@@ -77,6 +77,8 @@ Supported `source_type` values:
 
 - `avature`
 - `bank_of_america`
+- `kpmg`
+- `successfactors`
 - `greenhouse`
 - `lever`
 - `ashby`

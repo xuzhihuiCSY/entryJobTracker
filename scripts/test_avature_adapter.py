@@ -22,6 +22,17 @@ def test_avature_parses_search_results() -> None:
     assert jobs[0]["description"] == "Build beauty technology."
 
 
+def test_avature_supports_configured_location_column() -> None:
+    page = PAGE.replace(
+        "<span>New York</span><span>Posted today</span>",
+        "<span>Deloitte US</span><span>Deloitte Consulting LLP</span><span>New York</span>",
+    )
+
+    jobs = avature._parse_jobs(page, "https://example.com/jobs/SearchJobs", location_index=2)
+
+    assert jobs[0]["location_raw"] == "New York"
+
+
 def test_avature_deduplicates_search_terms() -> None:
     original_get = avature.http_get_text
     original_terms = avature.TECH_SEARCH_TERMS
@@ -43,5 +54,6 @@ def test_avature_deduplicates_search_terms() -> None:
 
 if __name__ == "__main__":
     test_avature_parses_search_results()
+    test_avature_supports_configured_location_column()
     test_avature_deduplicates_search_terms()
     print("Avature adapter tests passed")

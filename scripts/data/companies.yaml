@@ -681,11 +681,15 @@
 - name: Deloitte
   slug: deloitte
   company_group: private
-  source_type: placeholder
+  source_type: avature
   source_key:
-  career_url: https://www2.deloitte.com/us/en/careers/careers.html
+  source_base_url: https://apply.deloitte.com/en_US/careers/SearchJobs
+  source_page_size: 10
+  source_max_results_per_term: 50
+  source_location_index: 2
+  career_url: https://apply.deloitte.com/en_US/careers/SearchJobs
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: PwC
   slug: pwc
@@ -700,20 +704,22 @@
 - name: EY
   slug: ey
   company_group: private
-  source_type: placeholder
+  source_type: successfactors
   source_key:
-  career_url: https://www.ey.com/en_us/careers
+  source_base_url: https://careers.ey.com/ey/search/
+  career_url: https://careers.ey.com/careers?locale=en_US
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: KPMG
   slug: kpmg
   company_group: private
-  source_type: placeholder
+  source_type: kpmg
   source_key:
-  career_url: https://www.kpmguscareers.com/
+  source_base_url: https://www.kpmguscareers.com/wp-content/themes/understrap-child-main/page-templates/google/get-jobs.php
+  career_url: https://www.kpmguscareers.com/job-search/
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Johnson & Johnson
   slug: johnson-and-johnson

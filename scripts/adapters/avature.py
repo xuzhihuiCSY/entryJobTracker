@@ -19,7 +19,7 @@ TECH_SEARCH_TERMS = [
 ]
 
 
-def _parse_jobs(page: str, career_url: str) -> list[dict[str, Any]]:
+def _parse_jobs(page: str, career_url: str, location_index: int = 0) -> list[dict[str, Any]]:
     soup = BeautifulSoup(page, "html.parser")
     jobs: list[dict[str, Any]] = []
     for article in soup.select("article.article--result"):
@@ -41,7 +41,9 @@ def _parse_jobs(page: str, career_url: str) -> list[dict[str, Any]]:
             {
                 "external_id": external_id,
                 "title": title_link.get_text(" ", strip=True),
-                "location_raw": subtitle_values[0] if subtitle_values else "",
+                "location_raw": (
+                    subtitle_values[location_index] if len(subtitle_values) > location_index else ""
+                ),
                 "description": description.get_text(" ", strip=True) if description else "",
                 "apply_url": apply_url,
                 "source_url": apply_url,
@@ -54,6 +56,9 @@ def _parse_jobs(page: str, career_url: str) -> list[dict[str, Any]]:
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
     career_url = str(company_config.get("career_url") or "").strip()
     base_url = str(company_config.get("source_base_url") or "").strip()
+    page_size = int(company_config.get("source_page_size") or 20)
+    max_results_per_term = int(company_config.get("source_max_results_per_term") or 120)
+    location_index = int(company_config.get("source_location_index") or 0)
     if not career_url or not base_url:
         return []
 
@@ -61,7 +66,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
     results: list[dict[str, Any]] = []
     for term in TECH_SEARCH_TERMS:
         offset = 0
-        while offset < 120:
+        while offset < max_results_per_term:
             page = http_get_text(
                 f"{base_url.rstrip('/')}/{quote(term, safe='')}",
                 params={"jobOffset": offset},
@@ -70,7 +75,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                     "User-Agent": "Mozilla/5.0",
                 },
             )
-            jobs = _parse_jobs(page, career_url)
+            jobs = _parse_jobs(page, career_url, location_index)
             if not jobs:
                 break
             for job in jobs:
@@ -80,6 +85,6 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 seen.add(external_id)
                 results.append(job)
             offset += len(jobs)
-            if len(jobs) < 20:
+            if len(jobs) < page_size:
                 break
     return results

@@ -75,6 +75,7 @@ VERIFIED_WORKDAY_SOURCES = {
 
 VERIFIED_OTHER_SOURCES = {
     "citi": ("talentbrew", "https://jobs.citi.com/"),
+    "bcg": ("phenom", "https://careers.bcg.com/global/en/search-results"),
     "dell": (
         "oracle_hcm",
         "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs",
@@ -83,7 +84,12 @@ VERIFIED_OTHER_SOURCES = {
         "oracle_hcm",
         "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     ),
+    "jpmorgan-chase": (
+        "oracle_hcm",
+        "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
+    ),
     "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
+    "oliver-wyman": ("workday", "https://careers.marsh.com/global/en/oliver-wyman"),
     "pepsico": ("radancy", "https://www.pepsicojobs.com/"),
     "pwc": ("talentbrew", "https://jobs.us.pwc.com/"),
     "roland-berger": ("smartrecruiters", "https://jobs.smartrecruiters.com/RolandBerger"),
@@ -126,6 +132,10 @@ def test_other_verified_sources_are_enabled() -> None:
         assert company["source_type"] == source_type
         assert company["career_url"] == career_url
         assert company["enabled"] is True
+
+    oliver_wyman = companies["oliver-wyman"]
+    assert oliver_wyman["source_key"] == "mmc.wd1/MMC"
+    assert oliver_wyman["source_title_contains"] == "Oliver Wyman"
 
 
 if __name__ == "__main__":

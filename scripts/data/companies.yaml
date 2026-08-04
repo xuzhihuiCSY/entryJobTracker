@@ -559,11 +559,14 @@
 - name: JPMorgan Chase
   slug: jpmorgan-chase
   company_group: public
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.jpmorgan.com/
+  source_type: oracle_hcm
+  source_key: CX
+  source_base_url: https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions
+  source_location_id:
+  source_apply_url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/{job_id}
+  career_url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: BlackRock
   slug: blackrock
@@ -595,11 +598,11 @@
 - name: Boston Consulting Group
   slug: bcg
   company_group: private
-  source_type: placeholder
+  source_type: phenom
   source_key:
   career_url: https://careers.bcg.com/global/en/search-results
-  sync_priority: 3
-  enabled: false
+  sync_priority: 2
+  enabled: true
 
 - name: Bank of America
   slug: bank-of-america
@@ -658,11 +661,12 @@
 - name: Oliver Wyman
   slug: oliver-wyman
   company_group: private
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.marshmclennan.com/global/en/oliver-wyman
+  source_type: workday
+  source_key: mmc.wd1/MMC
+  source_title_contains: Oliver Wyman
+  career_url: https://careers.marsh.com/global/en/oliver-wyman
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Roland Berger
   slug: roland-berger

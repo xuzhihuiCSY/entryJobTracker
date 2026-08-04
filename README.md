@@ -85,6 +85,7 @@ Supported `source_type` values:
 - `talentbrew`
 - `workday`
 - `oracle_hcm`
+- `phenom`
 - `radancy`
 - `zoom`
 - `custom_google`

@@ -166,7 +166,7 @@
     "slug": "bcg",
     "company_group": "private",
     "career_url": "https://careers.bcg.com/global/en/search-results",
-    "source_type": "placeholder",
+    "source_type": "phenom",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -390,8 +390,8 @@
     "name": "JPMorgan Chase",
     "slug": "jpmorgan-chase",
     "company_group": "public",
-    "career_url": "https://careers.jpmorgan.com/",
-    "source_type": "placeholder",
+    "career_url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
+    "source_type": "oracle_hcm",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -507,8 +507,8 @@
     "name": "Oliver Wyman",
     "slug": "oliver-wyman",
     "company_group": "private",
-    "career_url": "https://careers.marshmclennan.com/global/en/oliver-wyman",
-    "source_type": "placeholder",
+    "career_url": "https://careers.marsh.com/global/en/oliver-wyman",
+    "source_type": "workday",
     "active_job_count": 0,
     "last_synced": ""
   },

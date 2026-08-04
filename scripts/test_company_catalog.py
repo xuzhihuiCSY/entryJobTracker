@@ -88,6 +88,7 @@ VERIFIED_OTHER_SOURCES = {
         "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     ),
     "goldman-sachs": ("goldman_sachs", "https://higher.gs.com"),
+    "ibm": ("ibm", "https://www.ibm.com/careers/search"),
     "jpmorgan-chase": (
         "oracle_hcm",
         "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
@@ -104,6 +105,7 @@ VERIFIED_OTHER_SOURCES = {
         "oracle_hcm",
         "https://careers.ti.com/en/sites/CX/jobs",
     ),
+    "ubs": ("ubs", "https://www.ubs.com/global/en/careers/search-jobs.html"),
 }
 
 

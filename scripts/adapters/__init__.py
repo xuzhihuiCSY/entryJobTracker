@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
-from . import amd, amazon, apple, ashby, avature, bain, bank_of_america, bytedance, eightfold, goldman_sachs, google, greenhouse, kpmg, lever, meta, microsoft, nvidia, oracle_hcm, phenom, placeholder, qualcomm, radancy, rippling, smartrecruiters, successfactors, talentbrew, uber, valve, workday, zoom
+from . import amd, amazon, apple, ashby, avature, bain, bank_of_america, bytedance, eightfold, goldman_sachs, google, greenhouse, ibm, kpmg, lever, meta, microsoft, nvidia, oracle_hcm, phenom, placeholder, qualcomm, radancy, rippling, smartrecruiters, successfactors, talentbrew, uber, ubs, valve, workday, zoom
 
 Adapter = Callable[[dict[str, Any]], list[dict[str, Any]]]
 
@@ -14,6 +14,7 @@ ADAPTERS: dict[str, Adapter] = {
     "bain": bain.fetch_company_jobs,
     "bank_of_america": bank_of_america.fetch_company_jobs,
     "goldman_sachs": goldman_sachs.fetch_company_jobs,
+    "ibm": ibm.fetch_company_jobs,
     "kpmg": kpmg.fetch_company_jobs,
     "successfactors": successfactors.fetch_company_jobs,
     "eightfold": eightfold.fetch_company_jobs,
@@ -30,6 +31,7 @@ ADAPTERS: dict[str, Adapter] = {
     "custom_amd": amd.fetch_company_jobs,
     "custom_valve": valve.fetch_company_jobs,
     "custom_uber": uber.fetch_company_jobs,
+    "ubs": ubs.fetch_company_jobs,
     "custom_qualcomm": qualcomm.fetch_company_jobs,
     "oracle_hcm": oracle_hcm.fetch_company_jobs,
     "phenom": phenom.fetch_company_jobs,

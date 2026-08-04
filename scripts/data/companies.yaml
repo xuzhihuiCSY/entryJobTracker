@@ -628,11 +628,15 @@
 - name: UBS
   slug: ubs
   company_group: public
-  source_type: placeholder
+  source_type: ubs
   source_key:
+  source_base_url: https://jobs.ubs.com
+  source_partner_id: 25008
+  source_site_ids: [5012, 5131]
+  source_link_ids: [15231, 15232]
   career_url: https://www.ubs.com/global/en/careers/search-jobs.html
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Barclays
   slug: barclays
@@ -744,11 +748,12 @@
 - name: IBM
   slug: ibm
   company_group: public
-  source_type: placeholder
+  source_type: ibm
   source_key:
+  source_base_url: https://www-api.ibm.com/search/api/v1/ibmcom/appid/careers/responseFormat/json
   career_url: https://www.ibm.com/careers/search
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Dell Technologies
   slug: dell

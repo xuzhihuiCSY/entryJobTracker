@@ -79,6 +79,7 @@ Supported `source_type` values:
 - `bank_of_america`
 - `bain`
 - `goldman_sachs`
+- `ibm`
 - `kpmg`
 - `successfactors`
 - `greenhouse`
@@ -89,6 +90,7 @@ Supported `source_type` values:
 - `rippling`
 - `smartrecruiters`
 - `talentbrew`
+- `ubs`
 - `workday`
 - `oracle_hcm`
 - `phenom`

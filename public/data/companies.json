@@ -355,7 +355,7 @@
     "slug": "ibm",
     "company_group": "public",
     "career_url": "https://www.ibm.com/careers/search",
-    "source_type": "placeholder",
+    "source_type": "ibm",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -769,7 +769,7 @@
     "slug": "ubs",
     "company_group": "public",
     "career_url": "https://www.ubs.com/global/en/careers/search-jobs.html",
-    "source_type": "placeholder",
+    "source_type": "ubs",
     "active_job_count": 0,
     "last_synced": ""
   },

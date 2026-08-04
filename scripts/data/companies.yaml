@@ -581,11 +581,14 @@
 - name: McKinsey & Company
   slug: mckinsey
   company_group: private
-  source_type: placeholder
+  source_type: mckinsey
   source_key:
+  source_base_url: https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search
+  source_country: United States
+  source_interests: [Tech & AI, Technology & Digital]
   career_url: https://www.mckinsey.com/careers/search-jobs
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Bain & Company
   slug: bain

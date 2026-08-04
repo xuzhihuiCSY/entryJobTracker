@@ -81,6 +81,7 @@ Supported `source_type` values:
 - `goldman_sachs`
 - `ibm`
 - `kpmg`
+- `mckinsey`
 - `successfactors`
 - `greenhouse`
 - `lever`

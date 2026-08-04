@@ -89,6 +89,7 @@ VERIFIED_OTHER_SOURCES = {
     ),
     "goldman-sachs": ("goldman_sachs", "https://higher.gs.com"),
     "ibm": ("ibm", "https://www.ibm.com/careers/search"),
+    "mckinsey": ("mckinsey", "https://www.mckinsey.com/careers/search-jobs"),
     "jpmorgan-chase": (
         "oracle_hcm",
         "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",

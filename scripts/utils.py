@@ -25,11 +25,19 @@ def setup_logging() -> None:
     )
 
 
-def http_get_json(url: str, params: dict[str, Any] | None = None) -> Any:
+def http_get_json(
+    url: str,
+    params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
+) -> Any:
     response = requests.get(
         url,
         params=params,
-        headers={**DEFAULT_HEADERS, "Accept": "application/json,text/plain,*/*"},
+        headers={
+            **DEFAULT_HEADERS,
+            "Accept": "application/json,text/plain,*/*",
+            **(headers or {}),
+        },
         timeout=REQUEST_TIMEOUT_SECONDS,
     )
     response.raise_for_status()

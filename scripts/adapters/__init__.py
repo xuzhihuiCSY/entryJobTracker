@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
-from . import amd, amazon, apple, ashby, avature, bank_of_america, bytedance, eightfold, google, greenhouse, kpmg, lever, meta, microsoft, nvidia, oracle_hcm, phenom, placeholder, qualcomm, radancy, rippling, smartrecruiters, successfactors, talentbrew, uber, valve, workday, zoom
+from . import amd, amazon, apple, ashby, avature, bain, bank_of_america, bytedance, eightfold, goldman_sachs, google, greenhouse, kpmg, lever, meta, microsoft, nvidia, oracle_hcm, phenom, placeholder, qualcomm, radancy, rippling, smartrecruiters, successfactors, talentbrew, uber, valve, workday, zoom
 
 Adapter = Callable[[dict[str, Any]], list[dict[str, Any]]]
 
@@ -11,7 +11,9 @@ ADAPTERS: dict[str, Adapter] = {
     "lever": lever.fetch_company_jobs,
     "ashby": ashby.fetch_company_jobs,
     "avature": avature.fetch_company_jobs,
+    "bain": bain.fetch_company_jobs,
     "bank_of_america": bank_of_america.fetch_company_jobs,
+    "goldman_sachs": goldman_sachs.fetch_company_jobs,
     "kpmg": kpmg.fetch_company_jobs,
     "successfactors": successfactors.fetch_company_jobs,
     "eightfold": eightfold.fetch_company_jobs,

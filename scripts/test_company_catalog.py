@@ -74,6 +74,7 @@ VERIFIED_WORKDAY_SOURCES = {
 }
 
 VERIFIED_OTHER_SOURCES = {
+    "bain": ("bain", "https://www.bain.com/careers/find-a-role/"),
     "bank-of-america": ("bank_of_america", "https://careers.bankofamerica.com/en-us/job-search"),
     "citi": ("talentbrew", "https://jobs.citi.com/"),
     "deloitte": ("avature", "https://apply.deloitte.com/en_US/careers/SearchJobs"),
@@ -86,6 +87,7 @@ VERIFIED_OTHER_SOURCES = {
         "oracle_hcm",
         "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     ),
+    "goldman-sachs": ("goldman_sachs", "https://higher.gs.com"),
     "jpmorgan-chase": (
         "oracle_hcm",
         "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",

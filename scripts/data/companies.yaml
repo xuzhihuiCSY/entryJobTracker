@@ -541,11 +541,12 @@
 - name: Goldman Sachs
   slug: goldman-sachs
   company_group: public
-  source_type: placeholder
+  source_type: goldman_sachs
   source_key:
-  career_url: https://www.goldmansachs.com/careers/
+  source_base_url: https://api-higher.gs.com/gateway/api/v1/graphql
+  career_url: https://higher.gs.com
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Morgan Stanley
   slug: morgan-stanley
@@ -589,11 +590,12 @@
 - name: Bain & Company
   slug: bain
   company_group: private
-  source_type: placeholder
+  source_type: bain
   source_key:
+  source_base_url: https://www.bain.com/en/api/jobsearch/keyword/get
   career_url: https://www.bain.com/careers/find-a-role/
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: Boston Consulting Group
   slug: bcg

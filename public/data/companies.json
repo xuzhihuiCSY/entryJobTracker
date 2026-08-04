@@ -130,7 +130,7 @@
     "slug": "bain",
     "company_group": "private",
     "career_url": "https://www.bain.com/careers/find-a-role/",
-    "source_type": "placeholder",
+    "source_type": "bain",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -327,8 +327,8 @@
     "name": "Goldman Sachs",
     "slug": "goldman-sachs",
     "company_group": "public",
-    "career_url": "https://www.goldmansachs.com/careers/",
-    "source_type": "placeholder",
+    "career_url": "https://higher.gs.com",
+    "source_type": "goldman_sachs",
     "active_job_count": 0,
     "last_synced": ""
   },

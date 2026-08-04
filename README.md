@@ -77,6 +77,8 @@ Supported `source_type` values:
 
 - `avature`
 - `bank_of_america`
+- `bain`
+- `goldman_sachs`
 - `kpmg`
 - `successfactors`
 - `greenhouse`

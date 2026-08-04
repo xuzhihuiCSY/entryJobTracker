@@ -64,6 +64,7 @@ VERIFIED_WORKDAY_SOURCES = {
     "hp": "hp.wd5/ExternalCareerSite",
     "johnson-and-johnson": "jj.wd5/JJ",
     "mastercard": "mastercard.wd1/CorporateCareers",
+    "mars": "mars.wd3/External",
     "morgan-stanley": "ms.wd5/External",
     "procter-and-gamble": "pg.wd5/1000",
     "roche": "roche.wd3/roche-ext",
@@ -73,6 +74,7 @@ VERIFIED_WORKDAY_SOURCES = {
 }
 
 VERIFIED_OTHER_SOURCES = {
+    "citi": ("talentbrew", "https://jobs.citi.com/"),
     "dell": (
         "oracle_hcm",
         "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs",
@@ -82,6 +84,8 @@ VERIFIED_OTHER_SOURCES = {
         "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     ),
     "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
+    "pepsico": ("radancy", "https://www.pepsicojobs.com/"),
+    "pwc": ("talentbrew", "https://jobs.us.pwc.com/"),
     "roland-berger": ("smartrecruiters", "https://jobs.smartrecruiters.com/RolandBerger"),
 }
 

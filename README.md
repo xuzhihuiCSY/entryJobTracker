@@ -82,8 +82,10 @@ Supported `source_type` values:
 - `bytedance`
 - `rippling`
 - `smartrecruiters`
+- `talentbrew`
 - `workday`
 - `oracle_hcm`
+- `radancy`
 - `zoom`
 - `custom_google`
 - `custom_amazon`

@@ -184,7 +184,7 @@
     "slug": "citi",
     "company_group": "public",
     "career_url": "https://jobs.citi.com/",
-    "source_type": "placeholder",
+    "source_type": "talentbrew",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -435,8 +435,8 @@
     "name": "Mars",
     "slug": "mars",
     "company_group": "private",
-    "career_url": "https://careers.mars.com/global/en",
-    "source_type": "placeholder",
+    "career_url": "https://mars.wd3.myworkdayjobs.com/External",
+    "source_type": "workday",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -544,7 +544,7 @@
     "slug": "pepsico",
     "company_group": "public",
     "career_url": "https://www.pepsicojobs.com/",
-    "source_type": "placeholder",
+    "source_type": "radancy",
     "active_job_count": 0,
     "last_synced": ""
   },
@@ -589,7 +589,7 @@
     "slug": "pwc",
     "company_group": "private",
     "career_url": "https://jobs.us.pwc.com/",
-    "source_type": "placeholder",
+    "source_type": "talentbrew",
     "active_job_count": 0,
     "last_synced": ""
   },

@@ -613,11 +613,11 @@
 - name: Citi
   slug: citi
   company_group: public
-  source_type: placeholder
-  source_key:
+  source_type: talentbrew
+  source_key: 287
   career_url: https://jobs.citi.com/
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: UBS
   slug: ubs
@@ -685,11 +685,12 @@
 - name: PwC
   slug: pwc
   company_group: private
-  source_type: placeholder
-  source_key:
+  source_type: talentbrew
+  source_key: 932
+  source_country: United States
   career_url: https://jobs.us.pwc.com/
   sync_priority: 3
-  enabled: false
+  enabled: true
 
 - name: EY
   slug: ey
@@ -814,20 +815,20 @@
 - name: PepsiCo
   slug: pepsico
   company_group: public
-  source_type: placeholder
-  source_key:
+  source_type: radancy
+  source_key: /api/jobs
   career_url: https://www.pepsicojobs.com/
-  sync_priority: 3
-  enabled: false
+  sync_priority: 2
+  enabled: true
 
 - name: Mars
   slug: mars
   company_group: private
-  source_type: placeholder
-  source_key:
-  career_url: https://careers.mars.com/global/en
-  sync_priority: 3
-  enabled: false
+  source_type: workday
+  source_key: mars.wd3/External
+  career_url: https://mars.wd3.myworkdayjobs.com/External
+  sync_priority: 2
+  enabled: true
 
 - name: L'Oreal
   slug: loreal

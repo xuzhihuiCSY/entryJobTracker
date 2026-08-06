@@ -193,7 +193,7 @@
   source_type: bytedance
   source_key: US_R_AND_D
   career_url: https://joinbytedance.com/search
-  sync_priority: 3
+  sync_priority: 2
   enabled: true
 
 - name: Databricks
@@ -755,7 +755,7 @@
   source_key:
   source_base_url: https://www-api.ibm.com/search/api/v1/ibmcom/appid/careers/responseFormat/json
   career_url: https://www.ibm.com/careers/search
-  sync_priority: 3
+  sync_priority: 2
   enabled: true
 
 - name: Dell Technologies

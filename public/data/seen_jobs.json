@@ -119524,5 +119524,248 @@
   },
   "apple-200676717-3543": {
     "first_seen": "2026-08-09T02:04:43Z"
+  },
+  "openai-61171d99-747f-441e-985d-20c010112ad8": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "openai-86c04f38-1938-4e95-a43c-502fc79ff60c": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "openai-6e20368e-d51e-4562-8b94-0166317d52c7": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "openai-f9da623f-b16e-496d-ae06-056132b01ff7": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-342108": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-341953": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-341615": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-341843": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-342168": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "oracle-342227": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "zoom-r19524": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "databricks-8688812002": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "databricks-8210383002": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "databricks-7647369002": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "databricks-7619810002": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "databricks-8037500002": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "stripe-8102337": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "waymo-8116209": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "pinterest-8112792": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr355457": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr355123": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr354990": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr355327": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr353405": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "salesforce-jr355505": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2019851": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2019266": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2019676": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2018730": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2020842": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2018781": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "cisco-2021545": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "amd-89601": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "intel-jr0285709": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "morgan-stanley-pt-jr042096": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000105558": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000088527": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000099453": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000118738": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000122065": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000092013": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000107185": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000122031": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000092855": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000119396": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000119744": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000119802": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000114097": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000118082": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000082273": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000122779": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000116317": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000115981": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000126195": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000109538": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000115823": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000120140": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000118569": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000111309": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000050637": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000123847": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000126511": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000121281": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000117661": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000105254": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000109517": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000117765": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000124513": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000108745": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000120013": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000117242": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "barclays-jr-0000123845": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "wells-fargo-r-560606": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "wells-fargo-r-563801": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "johnson-and-johnson-r-092783": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "roche-202607-117253": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "roche-202608-120284": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "mastercard-r-275738": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "unilever-r-1185840": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "coca-cola-r-129270": {
+    "first_seen": "2026-08-09T09:10:56Z"
+  },
+  "ford-67311": {
+    "first_seen": "2026-08-09T09:10:56Z"
   }
 }

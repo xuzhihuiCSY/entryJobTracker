@@ -23,8 +23,8 @@
     "company_group": "big_tech",
     "career_url": "https://joinbytedance.com/search",
     "source_type": "bytedance",
-    "active_job_count": 236,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 264,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Google",
@@ -68,8 +68,8 @@
     "company_group": "public",
     "career_url": "https://adobe.wd5.myworkdayjobs.com/external_experienced",
     "source_type": "workday",
-    "active_job_count": 71,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 68,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Affirm",
@@ -77,8 +77,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/affirm",
     "source_type": "greenhouse",
-    "active_job_count": 38,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 39,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Airbnb",
@@ -86,8 +86,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/airbnb",
     "source_type": "greenhouse",
-    "active_job_count": 43,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 42,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "AMD",
@@ -95,8 +95,8 @@
     "company_group": "public",
     "career_url": "https://careers.amd.com/",
     "source_type": "custom_amd",
-    "active_job_count": 184,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 185,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Anthropic",
@@ -104,8 +104,8 @@
     "company_group": "private",
     "career_url": "https://boards.greenhouse.io/anthropic",
     "source_type": "greenhouse",
-    "active_job_count": 154,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 155,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Apollo Global Management",
@@ -114,7 +114,7 @@
     "career_url": "https://athene.wd5.myworkdayjobs.com/Apollo_Careers",
     "source_type": "workday",
     "active_job_count": 1,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Asana",
@@ -122,8 +122,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/asana",
     "source_type": "greenhouse",
-    "active_job_count": 23,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 24,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Bain & Company",
@@ -149,8 +149,8 @@
     "company_group": "public",
     "career_url": "https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays",
     "source_type": "workday",
-    "active_job_count": 3,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 2,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "BlackRock",
@@ -158,8 +158,8 @@
     "company_group": "public",
     "career_url": "https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional",
     "source_type": "workday",
-    "active_job_count": 12,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 13,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Boston Consulting Group",
@@ -168,7 +168,7 @@
     "career_url": "https://careers.bcg.com/global/en/search-results",
     "source_type": "phenom",
     "active_job_count": 9,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Cisco",
@@ -176,8 +176,8 @@
     "company_group": "public",
     "career_url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
     "source_type": "workday",
-    "active_job_count": 10,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 8,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Citi",
@@ -194,8 +194,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/cloudflare",
     "source_type": "greenhouse",
-    "active_job_count": 83,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 84,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Cohere",
@@ -204,7 +204,7 @@
     "career_url": "https://jobs.ashbyhq.com/cohere",
     "source_type": "ashby",
     "active_job_count": 13,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Coinbase",
@@ -213,7 +213,7 @@
     "career_url": "https://boards.greenhouse.io/coinbase",
     "source_type": "greenhouse",
     "active_job_count": 46,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Cursor",
@@ -222,7 +222,7 @@
     "career_url": "https://jobs.ashbyhq.com/cursor",
     "source_type": "ashby",
     "active_job_count": 44,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Databricks",
@@ -230,8 +230,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/databricks",
     "source_type": "greenhouse",
-    "active_job_count": 166,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 165,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Datadog",
@@ -240,7 +240,7 @@
     "career_url": "https://boards.greenhouse.io/datadog",
     "source_type": "greenhouse",
     "active_job_count": 63,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Dell Technologies",
@@ -249,7 +249,7 @@
     "career_url": "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/careers/jobs",
     "source_type": "oracle_hcm",
     "active_job_count": 10,
-    "last_synced": "2026-08-09T09:10:56Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Deloitte",
@@ -266,8 +266,8 @@
     "company_group": "private",
     "career_url": "https://discord.com/careers",
     "source_type": "greenhouse",
-    "active_job_count": 31,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 32,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "DoorDash",
@@ -275,8 +275,8 @@
     "company_group": "public",
     "career_url": "https://careersatdoordash.com/job-search/",
     "source_type": "greenhouse",
-    "active_job_count": 76,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 73,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Dropbox",
@@ -285,7 +285,7 @@
     "career_url": "https://boards.greenhouse.io/dropbox",
     "source_type": "greenhouse",
     "active_job_count": 10,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "EY",
@@ -303,7 +303,7 @@
     "career_url": "https://boards.greenhouse.io/figma",
     "source_type": "greenhouse",
     "active_job_count": 41,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Ford",
@@ -311,8 +311,8 @@
     "company_group": "public",
     "career_url": "https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
     "source_type": "oracle_hcm",
-    "active_job_count": 81,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 84,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "GitLab",
@@ -321,7 +321,7 @@
     "career_url": "https://boards.greenhouse.io/gitlab",
     "source_type": "greenhouse",
     "active_job_count": 12,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Goldman Sachs",
@@ -338,8 +338,8 @@
     "company_group": "public",
     "career_url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite",
     "source_type": "workday",
-    "active_job_count": 6,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 7,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "HubSpot",
@@ -347,8 +347,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/hubspotjobs",
     "source_type": "greenhouse",
-    "active_job_count": 11,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 12,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "IBM",
@@ -356,8 +356,8 @@
     "company_group": "public",
     "career_url": "https://www.ibm.com/careers/search",
     "source_type": "ibm",
-    "active_job_count": 48,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 49,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Instacart",
@@ -365,8 +365,8 @@
     "company_group": "public",
     "career_url": "https://www.instacart.careers/current-openings",
     "source_type": "greenhouse",
-    "active_job_count": 33,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 35,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Intel",
@@ -375,7 +375,7 @@
     "career_url": "https://intel.wd1.myworkdayjobs.com/External",
     "source_type": "workday",
     "active_job_count": 5,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Johnson & Johnson",
@@ -383,8 +383,8 @@
     "company_group": "public",
     "career_url": "https://jj.wd5.myworkdayjobs.com/JJ",
     "source_type": "workday",
-    "active_job_count": 13,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 14,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "JPMorgan Chase",
@@ -419,8 +419,8 @@
     "company_group": "startup",
     "career_url": "https://jobs.ashbyhq.com/linear",
     "source_type": "ashby",
-    "active_job_count": 4,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 5,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Lyft",
@@ -428,8 +428,8 @@
     "company_group": "public",
     "career_url": "https://www.lyft.com/careers",
     "source_type": "greenhouse",
-    "active_job_count": 34,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 35,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Mars",
@@ -438,7 +438,7 @@
     "career_url": "https://mars.wd3.myworkdayjobs.com/External",
     "source_type": "workday",
     "active_job_count": 0,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Mastercard",
@@ -447,7 +447,7 @@
     "career_url": "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers",
     "source_type": "workday",
     "active_job_count": 4,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "McKinsey & Company",
@@ -465,7 +465,7 @@
     "career_url": "https://jobs.ashbyhq.com/modal",
     "source_type": "ashby",
     "active_job_count": 11,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "MongoDB",
@@ -473,8 +473,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/mongodb",
     "source_type": "greenhouse",
-    "active_job_count": 50,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 47,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Morgan Stanley",
@@ -482,8 +482,8 @@
     "company_group": "public",
     "career_url": "https://ms.wd5.myworkdayjobs.com/External",
     "source_type": "workday",
-    "active_job_count": 34,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 33,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Netflix",
@@ -491,8 +491,8 @@
     "company_group": "public",
     "career_url": "https://explore.jobs.netflix.net/careers",
     "source_type": "eightfold",
-    "active_job_count": 29,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 31,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Notion",
@@ -500,8 +500,8 @@
     "company_group": "private",
     "career_url": "https://jobs.ashbyhq.com/notion",
     "source_type": "ashby",
-    "active_job_count": 21,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 22,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Oliver Wyman",
@@ -518,8 +518,8 @@
     "company_group": "private",
     "career_url": "https://jobs.ashbyhq.com/openai",
     "source_type": "ashby",
-    "active_job_count": 312,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 315,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Oracle",
@@ -527,8 +527,8 @@
     "company_group": "public",
     "career_url": "https://careers.oracle.com/jobs/",
     "source_type": "oracle_hcm",
-    "active_job_count": 396,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 409,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "PayPal",
@@ -536,8 +536,8 @@
     "company_group": "public",
     "career_url": "https://paypal.wd1.myworkdayjobs.com/jobs",
     "source_type": "workday",
-    "active_job_count": 36,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 39,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "PepsiCo",
@@ -546,7 +546,7 @@
     "career_url": "https://www.pepsicojobs.com/",
     "source_type": "radancy",
     "active_job_count": 11,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Perplexity",
@@ -555,7 +555,7 @@
     "career_url": "https://jobs.ashbyhq.com/perplexity",
     "source_type": "ashby",
     "active_job_count": 37,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Pinterest",
@@ -563,8 +563,8 @@
     "company_group": "public",
     "career_url": "https://www.pinterestcareers.com/jobs/",
     "source_type": "greenhouse",
-    "active_job_count": 175,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 171,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Plaid",
@@ -572,8 +572,8 @@
     "company_group": "private",
     "career_url": "https://jobs.ashbyhq.com/plaid",
     "source_type": "ashby",
-    "active_job_count": 35,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 34,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Procter & Gamble",
@@ -582,7 +582,7 @@
     "career_url": "https://pg.wd5.myworkdayjobs.com/1000",
     "source_type": "workday",
     "active_job_count": 0,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "PwC",
@@ -599,8 +599,8 @@
     "company_group": "public",
     "career_url": "https://careers.qualcomm.com/careers",
     "source_type": "custom_qualcomm",
-    "active_job_count": 202,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 207,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Ramp",
@@ -609,7 +609,7 @@
     "career_url": "https://jobs.ashbyhq.com/ramp",
     "source_type": "ashby",
     "active_job_count": 30,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Reddit",
@@ -617,8 +617,8 @@
     "company_group": "public",
     "career_url": "https://job-boards.greenhouse.io/reddit",
     "source_type": "greenhouse",
-    "active_job_count": 81,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 82,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Replit",
@@ -626,8 +626,8 @@
     "company_group": "startup",
     "career_url": "https://jobs.ashbyhq.com/replit",
     "source_type": "ashby",
-    "active_job_count": 46,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 45,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Rippling",
@@ -644,8 +644,8 @@
     "company_group": "public",
     "career_url": "https://careers.robinhood.com/",
     "source_type": "greenhouse",
-    "active_job_count": 51,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 53,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Roblox",
@@ -654,7 +654,7 @@
     "career_url": "https://boards.greenhouse.io/roblox",
     "source_type": "greenhouse",
     "active_job_count": 141,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Roche",
@@ -662,8 +662,8 @@
     "company_group": "public",
     "career_url": "https://roche.wd3.myworkdayjobs.com/roche-ext",
     "source_type": "workday",
-    "active_job_count": 7,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 8,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Roland Berger",
@@ -672,7 +672,7 @@
     "career_url": "https://jobs.smartrecruiters.com/RolandBerger",
     "source_type": "smartrecruiters",
     "active_job_count": 0,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Salesforce",
@@ -680,8 +680,8 @@
     "company_group": "public",
     "career_url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site",
     "source_type": "workday",
-    "active_job_count": 24,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 23,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Samsara",
@@ -689,8 +689,8 @@
     "company_group": "public",
     "career_url": "https://boards.greenhouse.io/samsara",
     "source_type": "greenhouse",
-    "active_job_count": 48,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 45,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Scale AI",
@@ -699,7 +699,7 @@
     "career_url": "https://boards.greenhouse.io/scaleai",
     "source_type": "greenhouse",
     "active_job_count": 77,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Snap",
@@ -707,8 +707,8 @@
     "company_group": "public",
     "career_url": "https://snapchat.wd1.myworkdayjobs.com/snap",
     "source_type": "workday",
-    "active_job_count": 6,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 5,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Snowflake",
@@ -716,8 +716,8 @@
     "company_group": "public",
     "career_url": "https://jobs.ashbyhq.com/snowflake",
     "source_type": "ashby",
-    "active_job_count": 129,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 128,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Stripe",
@@ -726,7 +726,7 @@
     "career_url": "https://boards.greenhouse.io/stripe",
     "source_type": "greenhouse",
     "active_job_count": 42,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Tesla",
@@ -753,7 +753,7 @@
     "career_url": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
     "source_type": "workday",
     "active_job_count": 13,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Uber",
@@ -761,8 +761,8 @@
     "company_group": "public",
     "career_url": "https://jobs.uber.com/",
     "source_type": "custom_uber",
-    "active_job_count": 88,
-    "last_synced": "2026-08-06T10:59:55Z"
+    "active_job_count": 87,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "UBS",
@@ -780,7 +780,7 @@
     "career_url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals",
     "source_type": "workday",
     "active_job_count": 0,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Valve",
@@ -789,7 +789,7 @@
     "career_url": "https://www.valvesoftware.com/en/jobs",
     "source_type": "custom_valve",
     "active_job_count": 7,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Vercel",
@@ -798,7 +798,7 @@
     "career_url": "https://boards.greenhouse.io/vercel",
     "source_type": "greenhouse",
     "active_job_count": 20,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Visa",
@@ -806,8 +806,8 @@
     "company_group": "public",
     "career_url": "https://visa.wd5.myworkdayjobs.com/Visa",
     "source_type": "workday",
-    "active_job_count": 40,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 39,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Waymo",
@@ -815,8 +815,8 @@
     "company_group": "private",
     "career_url": "https://boards.greenhouse.io/waymo",
     "source_type": "greenhouse",
-    "active_job_count": 191,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 190,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Wells Fargo",
@@ -824,8 +824,8 @@
     "company_group": "public",
     "career_url": "https://wf.wd1.myworkdayjobs.com/WellsFargoJobs",
     "source_type": "workday",
-    "active_job_count": 11,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 13,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Writer",
@@ -833,8 +833,8 @@
     "company_group": "startup",
     "career_url": "https://jobs.ashbyhq.com/writer",
     "source_type": "ashby",
-    "active_job_count": 11,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 10,
+    "last_synced": "2026-08-11T09:30:24Z"
   },
   {
     "name": "Zoom",
@@ -842,7 +842,7 @@
     "company_group": "public",
     "career_url": "https://careers.zoom.us/jobs/search",
     "source_type": "zoom",
-    "active_job_count": 34,
-    "last_synced": "2026-08-10T09:56:32Z"
+    "active_job_count": 35,
+    "last_synced": "2026-08-11T09:30:24Z"
   }
 ]

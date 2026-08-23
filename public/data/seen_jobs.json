@@ -158977,5 +158977,89 @@
   },
   "apple-200678571-3337": {
     "first_seen": "2026-08-23T06:49:18Z"
+  },
+  "openai-5f3a6397-47ac-4ef0-9ca9-cd358851a6b9": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "anthropic-5199633008": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "adobe-r171183": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "oracle-343753": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "oracle-343748": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "databricks-8740680002": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "databricks-8661524002": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "waymo-8148444": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2022000": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2023812": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2021232": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2014912": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2022350": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2017155": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "cisco-2018455": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "amd-90583": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "amd-90259": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "intel-jr0286591": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "bcg-57856": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "wells-fargo-r-550741": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "johnson-and-johnson-r-095015": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "johnson-and-johnson-r-088467": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "johnson-and-johnson-r-089751": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "johnson-and-johnson-r-087332": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "dell-296953": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "ford-65669": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "ford-68992": {
+    "first_seen": "2026-08-23T08:56:47Z"
+  },
+  "ford-69177": {
+    "first_seen": "2026-08-23T08:56:47Z"
   }
 }

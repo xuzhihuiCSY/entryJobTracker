@@ -6,7 +6,7 @@
     "career_url": "https://www.amazon.jobs/en/job_categories/software-development",
     "source_type": "custom_amazon",
     "active_job_count": 73,
-    "last_synced": "2026-09-05T20:09:10Z"
+    "last_synced": "2026-09-06T03:55:12Z"
   },
   {
     "name": "Apple",
@@ -33,7 +33,7 @@
     "career_url": "https://www.google.com/about/careers/applications/jobs/results/",
     "source_type": "custom_google",
     "active_job_count": 178,
-    "last_synced": "2026-09-05T20:09:10Z"
+    "last_synced": "2026-09-06T03:55:12Z"
   },
   {
     "name": "Meta",
@@ -41,8 +41,8 @@
     "company_group": "big_tech",
     "career_url": "https://www.metacareers.com/jobs/",
     "source_type": "custom_meta",
-    "active_job_count": 9,
-    "last_synced": "2026-09-05T20:09:10Z"
+    "active_job_count": 11,
+    "last_synced": "2026-09-06T03:55:12Z"
   },
   {
     "name": "Microsoft",
@@ -51,7 +51,7 @@
     "career_url": "https://jobs.careers.microsoft.com/",
     "source_type": "custom_microsoft",
     "active_job_count": 6,
-    "last_synced": "2026-09-05T20:09:10Z"
+    "last_synced": "2026-09-06T03:55:12Z"
   },
   {
     "name": "NVIDIA",
@@ -60,7 +60,7 @@
     "career_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
     "source_type": "custom_nvidia",
     "active_job_count": 63,
-    "last_synced": "2026-09-05T20:09:10Z"
+    "last_synced": "2026-09-06T03:55:12Z"
   },
   {
     "name": "Adobe",

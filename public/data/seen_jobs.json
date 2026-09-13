@@ -216232,5 +216232,95 @@
   },
   "apple-200683390-0157": {
     "first_seen": "2026-09-12T20:23:36Z"
+  },
+  "openai-abc4b2b4-c251-482e-8f71-f02dda1e3b65": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "anthropic-5417758008": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "oracle-344732": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "oracle-345266": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "oracle-342815": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "databricks-8320183002": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "waymo-8197721": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "salesforce-jr360026": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2021200": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2022332": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2025596": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2025605": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2025594": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2023303": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2024907": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "cisco-2023381": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "qualcomm-3096301": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "qualcomm-3096502": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "wells-fargo-r-544124": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "wells-fargo-r-573189": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "wells-fargo-r-575031": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "wells-fargo-r-571961": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "johnson-and-johnson-r-099166": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "johnson-and-johnson-r-097904": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "johnson-and-johnson-r-094031": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "johnson-and-johnson-r-094174": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "visa-ref088357w": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "mastercard-r-290246": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "coca-cola-r-145115": {
+    "first_seen": "2026-09-13T13:23:57Z"
+  },
+  "coca-cola-r-139831": {
+    "first_seen": "2026-09-13T13:23:57Z"
   }
 }

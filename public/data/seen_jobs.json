@@ -240475,5 +240475,68 @@
   },
   "nvidia-jr2025619": {
     "first_seen": "2026-09-22T04:13:31Z"
+  },
+  "amazon-d6e44e13-53db-459b-8933-939d893f2f74": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "amazon-e75aeda9-f0c1-40dc-893e-b7baa0dd0c2f": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "amazon-76c8e48f-76cc-4bac-8903-fc382df9058b": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "google-78507472645432006": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "google-110583662801494726": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "google-116683203556582086": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557004797": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557002678": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557002711": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557002609": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557002478": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557001942": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557001381": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393556999363": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "microsoft-1970393557001769": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "meta-a1kie0000000fpzuaq": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "meta-a1kie0000001yr3uam": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "meta-a1kie00000011mruaa": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "meta-a1kie0000001fd7uam": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "meta-a1kie00000018rzuaq": {
+    "first_seen": "2026-09-22T11:17:02Z"
+  },
+  "nvidia-jr2024872": {
+    "first_seen": "2026-09-22T11:17:02Z"
   }
 }

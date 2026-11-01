@@ -337624,5 +337624,152 @@
   },
   "apple-200691770-3749": {
     "first_seen": "2026-11-01T05:23:12Z"
+  },
+  "ramp-318e7138-151e-4ed2-8b85-a017d234ef12": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-349270": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-349111": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-347282": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-349143": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-349316": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-349321": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-348786": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "oracle-348309": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "databricks-8880398002": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "databricks-8916466002": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "databricks-8922941002": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "databricks-8910854002": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "databricks-8910842002": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "stripe-8336062": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "coinbase-8334761": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "coinbase-8334752": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "coinbase-8334767": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "coinbase-8334764": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "salesforce-jr348996": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "salesforce-jr363986": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "salesforce-jr366292": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "salesforce-jr366697": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "salesforce-jr366188": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2029678": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2027847": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2026854": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2028517": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2030048": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2028435": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2025450": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2028264": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "cisco-2028287": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "paypal-r0138265": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "amd-96054": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "intel-jr0288616": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "intel-jr0288650": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "intel-jr0288200": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "wells-fargo-r-578189": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "wells-fargo-r-584215": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "johnson-and-johnson-r-103416": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "roche-202611-128043": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "dell-302114": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "hp-3162972": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "hp-uni4588": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "hp-uni4589": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "hp-uni4031": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "coca-cola-r-147808": {
+    "first_seen": "2026-11-01T15:22:25Z"
+  },
+  "ford-73287": {
+    "first_seen": "2026-11-01T15:22:25Z"
   }
 }

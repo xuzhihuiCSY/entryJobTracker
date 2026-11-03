@@ -344182,5 +344182,1757 @@
   },
   "nvidia-jr2029220": {
     "first_seen": "2026-11-03T13:54:36Z"
+  },
+  "openai-d0da9c00-a65b-49be-9ebf-a55c32642540": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-bc58f2d0-9b24-4205-a799-5a5d18bf64ee": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-bc019c9d-6305-4700-9175-8035636177b3": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-4f2d9849-ad00-48d5-a22f-0cb943723999": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-45a0886d-a60d-4d5a-9afa-785a75042044": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-50053f7b-c154-45af-b497-3298c826a15f": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-b3c1b5a9-a8fe-49df-849b-d4a06a47562c": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-ed37f572-0310-43fb-99b8-0600d9123638": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-e74c8ec3-3317-4fea-bb66-703dc2d55a51": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "openai-bfecbfa0-6573-4c00-8215-50e271f411bc": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "anthropic-5468875008": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "anthropic-5470905008": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "anthropic-5470906008": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "anthropic-5467561008": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cloudflare-8227832": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cloudflare-8328820": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cloudflare-8335624": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-2ca11f48-cd2f-4fb6-ba1c-e67ff35b89ce": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-c5753f2c-e417-47b2-86b9-45f4f9df125a": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-ed2af114-3dd7-4f9d-8c26-24dd4b26a754": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-5a4332ce-2131-4d7b-b251-956d382fd3da": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-60509859-77b4-4b35-b464-4c7a5590ca59": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-cc9171ca-56b9-4478-a11b-58405beaf97d": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-808d3b05-081d-4eb6-a5dc-74448c3429e9": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-b31da4db-b3a4-4c95-96f3-f82523f9073a": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snowflake-eb7a8f73-6b3d-4020-a9dd-c565109f5342": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ramp-d8925f84-562f-470c-a5bd-4f6c20009361": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "plaid-43e5792e-272d-4f6f-8f88-7ae1c30c4bcf": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "plaid-f762a8df-ff50-4d3e-9221-7feb92d73fa7": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "notion-2e095dde-06cb-4fd2-a273-9144624400c1": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "asana-8349347": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "asana-8326299": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "gitlab-8923757002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "gitlab-8905402002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "gitlab-8926435002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "gitlab-8919537002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hubspot-5986409": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hubspot-5986408": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hubspot-5986963": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hubspot-5986965": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "adobe-r173280": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349458": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349142": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349461": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349414": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-342743": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349454": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349381": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349386": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349439": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349266": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349322": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349319": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349112": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348939": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348926": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348953": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348929": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348886": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348928": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348580": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348597": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348596": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348547": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348558": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348548": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348561": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349100": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348555": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348554": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348551": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349397": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349363": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349452": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349243": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349460": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349450": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349364": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349368": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349377": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349379": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349388": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349376": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349324": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349326": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349327": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349323": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349215": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349245": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348946": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348892": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348549": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-346874": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349455": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348604": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-348600": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349162": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "oracle-349164": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "bytedance-7702507094604712245": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8925472002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8925467002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8824175002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8927390002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8693190002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8927749002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "databricks-8883463002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8287920": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8332880": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8346831": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8346778": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8346417": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8315954": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8328323": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8335426": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "stripe-8261010": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "figma-6231582004": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "figma-6239153004": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "figma-6134770004": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "figma-6236341004": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "figma-6239628004": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roblox-8327882": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roblox-7729109": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roblox-8275414": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coinbase-8304052": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "datadog-8346246": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mongodb-8187896": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mongodb-8328316": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mongodb-8323296": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mongodb-8337727": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mongodb-8328355": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "samsara-8300535": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "affirm-7749753003": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "affirm-8040273003": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "affirm-8040271003": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8327789": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8327439": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8335541": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8346184": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8349121": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8347087": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8348197": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "airbnb-8334372": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cohere-1a765f7b-ba66-43b1-8b17-86467a897ac4": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "lyft-8927265002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "lyft-8927736002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "lyft-8927263002": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8348911": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8346800": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8348385": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8346926": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8348372": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8346813": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-8347940": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "doordash-6277386": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "instacart-8347897": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "instacart-8347895": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pinterest-8268316": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pinterest-8268318": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pinterest-8346364": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pinterest-8279563": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "reddit-8282748": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "reddit-8337444": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snap-r0047426": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snap-r0047431": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snap-r0047434": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snap-r0047422": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "snap-r0047425": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366368": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366552": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366884": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366726": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366882": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr363917": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366875": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr355013": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366873": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366870": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366868": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366864": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr365868": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366421": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366672": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366664": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366054": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366553": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366483": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366461": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr365751": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366247": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366800": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr364942": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366524": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr363794": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366422": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366869": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366093": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366703": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366705": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366532": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366805": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366808": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366140": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr364286": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366866": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366022": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "salesforce-jr366023": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028546": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2027318": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030311": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030148": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029416": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028554": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028556": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029808": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030312": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028006": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029789": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028878": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2026265": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2027682": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2028502": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029397": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2024462": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029847": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2027016": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029594": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029226": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029573": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029430": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030368": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2027010": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030310": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030073": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029092": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030307": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2030305": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "cisco-2029057": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "paypal-r0138520": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "paypal-r0138418": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8348035": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8231449": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8202183": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8348038": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8207701": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "robinhood-8346031": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-92605": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-93579": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-71190": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-96300": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-96121": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-91922": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-96120": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-96122": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-95843": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-93834": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-93896": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-94181": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-94328": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-94265": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-89528": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "amd-89739": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288701": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288252": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288783": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288782": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288784": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288788": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288721": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288535": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288552": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "intel-jr0288555": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3098260": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3098818": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3097435": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3098599": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3098595": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "qualcomm-3095119": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "netflix-jr43355": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "netflix-jr43266": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046209": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046068": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr045826": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046035": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr045730": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046094": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046121": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr041379": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr046137": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr046229": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr045015": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr046104": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr046162": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-pt-jr040434": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr045482": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "morgan-stanley-jr046108": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "blackrock-r267107": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "blackrock-r266523": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000124561": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000137198": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000103290": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000137196": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000124238": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000108583": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000124576": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000111392": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000124322": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000122783": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000125946": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000120572": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000137831": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000134810": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000136153": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000134813": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000135298": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000096965": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000136798": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "barclays-jr-0000136150": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-585309": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-583768": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584717": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584380": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584043": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-580755": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584427": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-582517": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-583215": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584415": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-583537": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-583611": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-585024": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-584121": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "wells-fargo-r-583772": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108718": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107516": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107197": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106736": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108156": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106118": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-104989": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-105701": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108403": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107239": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107238": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106410": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107293": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106722": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108106": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108528": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107661": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106093": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107526": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107743": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108518": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108438": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108431": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108445": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108141": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108185": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108133": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106479": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107865": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106941": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108519": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108507": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108511": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108510": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108509": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108508": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107816": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107624": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108075": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108269": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-089558": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-089554": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107926": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108693": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108694": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108692": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108610": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108608": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107637": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108117": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108271": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108072": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107867": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-083430": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108388": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107952": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107947": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-105890": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108252": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108184": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106560": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107886": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-104253": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106944": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108603": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108602": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108336": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108601": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106747": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108139": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108413": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108266": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108256": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107252": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-088812": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107987": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108412": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106872": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106876": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106870": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106874": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106868": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106871": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-106863": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107873": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107883": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108257": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108267": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108492": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108411": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108414": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108255": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108258": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108265": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108268": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108448": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107823": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108375": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107729": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108385": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108681": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-107842": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "johnson-and-johnson-r-108396": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202604-110976": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127699": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127551": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127766": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128175": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127128": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127950": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127580": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127949": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128208": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128084": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127448": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128182": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128188": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128116": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-126953": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128124": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128195": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128225": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127705": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128205": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127987": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128186": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128187": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128180": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128057": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127937": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127313": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127920": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-127496": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202611-128183": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "roche-202610-126011": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-140023": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-139643": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-132721": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-139814": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-138780": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-139279": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-139834": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-140088": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-138645": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ibm-139842": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "dell-299260": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "dell-300257": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "dell-296618": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "dell-301849": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "dell-294594": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3169949": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170414": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170408": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170446": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170101": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3169627": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170444": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170468": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3165593": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170466": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3168076": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3169178": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3166484": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3169173": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-jet0010": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-uni5070": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3168287": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3168285": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-uni4896": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170249": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "hp-3170537": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089598w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref090081w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089562w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089888w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089838w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089340w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089726w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089635w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref090055w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref089869w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "visa-ref088830w": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293051": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-294449": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-294531": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293370": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293061": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293062": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293896": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-290530": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293172": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-293950": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-294553": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-295180": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-292775": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mastercard-r-294466": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162199": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162084": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162206": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162202": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162205": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000161898": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "procter-and-gamble-r000162072": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "unilever-r-1189112": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "unilever-r-1190082": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "unilever-r-1189106": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "unilever-r-1189117": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148296": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148389": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148439": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148432": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148441": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148518": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "coca-cola-r-148240": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-468706": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-480970": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-480920": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-474807": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-480562": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-481207": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-482241": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-481484": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-481163": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "pepsico-481416": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r170632": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r165896": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r171462": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r171600": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r168741": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r170935": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "mars-r170937": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-72515": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73245": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73057": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73865": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73560": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73461": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73559": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73859": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73866": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73164": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-72787": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73523": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73567": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-64341": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-72487": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73394": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73708": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73372": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73857": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73576": {
+    "first_seen": "2026-11-03T16:24:27Z"
+  },
+  "ford-73346": {
+    "first_seen": "2026-11-03T16:24:27Z"
   }
 }

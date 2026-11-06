@@ -32,6 +32,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # A queued run starts from the current branch, including any data
+          # commit produced by the preceding run in this concurrency group.
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -73,8 +77,9 @@ jobs:
       - name: Commit data changes
         shell: bash
         run: |
+          source_head="$(git rev-parse HEAD)"
           git fetch origin "$GITHUB_REF_NAME"
-          if [[ "$(git rev-parse FETCH_HEAD)" != "$GITHUB_SHA" ]]; then
+          if [[ "$(git rev-parse FETCH_HEAD)" != "$source_head" ]]; then
             echo "::warning::The branch advanced during this sync; keeping the newer snapshot. The next run will refresh the new branch head."
             echo "Branch advanced during sync; stale generated data was not published." >> "$GITHUB_STEP_SUMMARY"
             exit 0

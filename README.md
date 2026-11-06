@@ -272,6 +272,8 @@ After the crawler runs, the workflow validates and commits changes under
 to prevent overlapping scheduled jobs from overwriting each other's snapshots.
 If the branch advances while a crawler is running, that run does not publish its
 older generated snapshot; the next scheduled run picks up the new branch head.
+Queued runs check out the current branch when they start, so a preceding data
+commit does not make an otherwise valid queued sync stale.
 
 `.github/workflows/ci.yml` runs Python regressions, snapshot validation, filter
 tests, TypeScript checks, and the production build on application pushes and pull

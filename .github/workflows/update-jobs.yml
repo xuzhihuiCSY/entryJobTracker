@@ -1,114 +1,17 @@
 name: Update jobs
-
 on:
   workflow_dispatch:
-    inputs:
-      priority:
-        description: "Priority to sync"
-        required: true
-        default: "all"
-        type: choice
-        options:
-          - all
-          - "1"
-          - "2"
-          - "3"
-      companies:
-        description: "Optional company slugs, separated by spaces (overrides priority)"
-        required: false
-        default: ""
-        type: string
-  schedule:
-    - cron: "0 */6 * * *"
-    - cron: "30 8 * * *"
-    - cron: "0 9 * * 1"
-
 permissions:
-  contents: write
-
-concurrency:
-  group: job-data-sync
-  cancel-in-progress: false
-
+  contents: read
 jobs:
-  update:
+  diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 5
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # A queued run starts from the current branch, including any data
-          # commit produced by the preceding run in this concurrency group.
-          ref: ${{ github.ref_name }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Resolve sync args
-        id: sync
-        shell: bash
-        run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            case "${{ inputs.priority }}" in
-              all) echo "args=--all" >> "$GITHUB_OUTPUT" ;;
-              1|2|3) echo "args=--priority=${{ inputs.priority }}" >> "$GITHUB_OUTPUT" ;;
-            esac
-          elif [[ "${{ github.event.schedule }}" == "0 */6 * * *" ]]; then
-            echo "args=--priority=1" >> "$GITHUB_OUTPUT"
-          elif [[ "${{ github.event.schedule }}" == "30 8 * * *" ]]; then
-            echo "args=--priority=2" >> "$GITHUB_OUTPUT"
-          else
-            echo "args=--priority=3" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Fetch jobs
-        id: fetch
-        continue-on-error: true
-        env:
-          REQUESTED_COMPANIES: ${{ inputs.companies }}
-        shell: bash
-        run: |
-          if [[ -n "$REQUESTED_COMPANIES" ]]; then
-            # Pass input as arguments, never interpolate it into shell code.
-            read -r -a company_slugs <<< "$REQUESTED_COMPANIES"
-            python scripts/fetch_jobs.py --companies "${company_slugs[@]}"
-          else
-            python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}
-          fi
-
-      - name: Validate job data
-        if: ${{ !cancelled() }}
-        run: |
-          python scripts/reclassify_jobs.py
-          python scripts/validate_data.py
-
-      - name: Commit data changes
-        shell: bash
-        run: |
-          source_head="$(git rev-parse HEAD)"
-          git fetch origin "$GITHUB_REF_NAME"
-          if [[ "$(git rev-parse FETCH_HEAD)" != "$source_head" ]]; then
-            echo "::warning::The branch advanced during this sync; keeping the newer snapshot. The next run will refresh the new branch head."
-            echo "Branch advanced during sync; stale generated data was not published." >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-          git add -A -- public/data
-          if git diff --cached --quiet; then
-            echo "No public data changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update job data"
-          git push
-
-      - name: Report total source failure
-        if: steps.fetch.outcome == 'failure'
-        run: exit 1
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/probe_uber.py

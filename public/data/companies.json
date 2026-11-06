@@ -339,10 +339,10 @@
     "sync_priority": 2,
     "active_job_count": 26,
     "full_description_count": 26,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Cisco",
@@ -639,10 +639,10 @@
     "sync_priority": 2,
     "active_job_count": 36,
     "full_description_count": 36,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Goldman Sachs",
@@ -1329,10 +1329,10 @@
     "sync_priority": 2,
     "active_job_count": 144,
     "full_description_count": 144,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Sigma Computing",
@@ -1344,10 +1344,10 @@
     "sync_priority": 2,
     "active_job_count": 35,
     "full_description_count": 35,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Snap",
@@ -1464,10 +1464,10 @@
     "sync_priority": 2,
     "active_job_count": 33,
     "full_description_count": 33,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Uber",
@@ -1554,10 +1554,10 @@
     "sync_priority": 2,
     "active_job_count": 93,
     "full_description_count": 93,
-    "last_attempted": "2026-11-06T05:57:02Z",
+    "last_attempted": "2026-11-06T06:01:28Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-06T05:57:02Z"
+    "last_synced": "2026-11-06T06:01:28Z"
   },
   {
     "name": "Visa",

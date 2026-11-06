@@ -32,7 +32,9 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    # Uber challenges Azure-hosted Ubuntu runners. The official public API
+    # accepts standard HTTP requests from GitHub's macOS runner network.
+    runs-on: macos-15
     timeout-minutes: 60
     steps:
       - name: Checkout

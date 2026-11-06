@@ -107,6 +107,14 @@ def test_normalizer_uses_complete_description_not_snippet() -> None:
         assert "PhD" not in job["description_snippet"]
 
 
+def test_servicenow_degree_alternatives_are_not_reclassified_as_phd_only() -> None:
+    description = "Qualifications\nPhD in computer science, machine learning, or a related field, or equivalent research experience\n2 or more years of research experience post-PhD, a significant portion of it in an industrial setting."
+    assert classify_phd_requirement("Staff Research Scientist", description).phd_requirement == "optional"
+    assert classify_phd_requirement("Research Engineer", "A PhD or other advanced degree is required.").phd_requirement == "optional"
+    assert classify_phd_requirement("Research Scientist", "Qualifications\nPhD required.\nTwo years of post-PhD research experience.").phd_requirement == "required"
+    assert classify_phd_requirement("Research Scientist", "Qualifications\nPhD or equivalent research experience.\nMust have a PhD in computer science.").phd_requirement == "required"
+
+
 if __name__ == "__main__":
     for name, value in list(globals().items()):
         if name.startswith("test_"):

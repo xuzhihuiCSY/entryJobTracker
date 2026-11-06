@@ -19,3 +19,4 @@ with curl_requests.Session(impersonate="chrome120") as session:
     session.headers.update({"Accept": "application/json,text/plain,*/*", "Referer": "https://jobs.uber.com/en/jobs/"})
     report("existing_adapter", session.get(URL, params=PARAMS, timeout=30))
 report("public_careers_page", requests.get("https://jobs.uber.com/en/jobs/", timeout=30))
+report("official_client_route", requests.get(URL + "/", params=PARAMS, timeout=30))

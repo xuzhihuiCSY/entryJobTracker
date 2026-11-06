@@ -1402,12 +1402,12 @@
     "source_type": "custom_uber",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 145,
-    "full_description_count": 145,
-    "last_attempted": "2026-11-06T01:51:58Z",
-    "sync_status": "failed",
-    "last_error": "HTTPError (HTTP 403)",
-    "last_synced": "2026-11-06T00:43:50Z"
+    "active_job_count": 148,
+    "full_description_count": 148,
+    "last_attempted": "2026-11-06T02:26:39Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T02:26:39Z"
   },
   {
     "name": "UBS",

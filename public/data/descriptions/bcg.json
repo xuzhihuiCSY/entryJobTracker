@@ -4,6 +4,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318493227?post_onboarding_pid=790318493227&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -13,6 +14,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -22,6 +24,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790313693151?post_onboarding_pid=790313693151&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -31,7 +34,18 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790314312010?post_onboarding_pid=790314312010&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-57013": {
+    "text": "We are currently hiring a Lead AI Tech Architect - AI Platforms to design and guide the implementation of intelligent, agentic AI platforms. You will collaborate with cross-functional teams to deliver scalable AI architectures, leveraging your expertise in AI systems and technical leadership. Ideal candidates bring significant experience in software or AI engineering and a strong foundation in distributed systems.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790314311785?post_onboarding_pid=790314311785&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-06T01:39:30Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
@@ -40,6 +54,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790315958551?post_onboarding_pid=790315958551&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -49,6 +64,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318582812?post_onboarding_pid=790318582812&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -58,6 +74,7 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318934215?post_onboarding_pid=790318934215&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
@@ -67,7 +84,28 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790316247101?post_onboarding_pid=790316247101&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-60260": {
+    "text": "We are expanding our team: The Information Security Senior Director leads enterprise cybersecurity strategy and federal compliance for BCG Federal, overseeing a dedicated cyber team and ensuring robust security controls. Ideal candidates bring extensive IT security experience and proven leadership in defense or national security environments.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318980388?post_onboarding_pid=790318980388&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-06T01:39:30Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-61435": {
+    "text": "We are expanding our team: As a Delivery AI Product Analyst, you will play a pivotal role in delivering and supporting BCG’s client-facing reorganization solutions, focusing on OrgBuilderTM. You will work closely with case teams, manage client delivery, and support strategic business initiatives. Ideal candidates bring client service experience and a passion for technology.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790319261858?post_onboarding_pid=790319261858&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-06T01:39:30Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   }

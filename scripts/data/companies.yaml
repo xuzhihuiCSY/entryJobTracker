@@ -968,3 +968,58 @@
   career_url: https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs
   sync_priority: 2
   enabled: true
+
+- name: Verkada
+  slug: verkada
+  company_group: private
+  source_type: greenhouse
+  source_key: verkada
+  career_url: https://job-boards.greenhouse.io/verkada
+  sync_priority: 2
+  enabled: true
+
+- name: CarGurus
+  slug: cargurus
+  company_group: public
+  source_type: greenhouse
+  source_key: cargurus
+  additional_source_keys: [ecjobb]
+  career_url: https://careers.cargurus.com/us/en
+  sync_priority: 2
+  enabled: true
+
+- name: Sigma Computing
+  slug: sigma-computing
+  company_group: private
+  source_type: greenhouse
+  source_key: sigmacomputing
+  career_url: https://job-boards.greenhouse.io/sigmacomputing
+  sync_priority: 2
+  enabled: true
+
+- name: Glean
+  slug: glean
+  company_group: private
+  source_type: greenhouse
+  source_key: gleanwork
+  career_url: https://job-boards.greenhouse.io/gleanwork
+  sync_priority: 2
+  enabled: true
+
+- name: ServiceNow
+  slug: servicenow
+  company_group: public
+  source_type: smartrecruiters
+  source_key: ServiceNow
+  career_url: https://careers.servicenow.com/
+  sync_priority: 2
+  enabled: true
+
+- name: Two Sigma
+  slug: two-sigma
+  company_group: private
+  source_type: two_sigma
+  source_key:
+  career_url: https://careers.twosigma.com/careers/OpenRoles
+  sync_priority: 2
+  enabled: true

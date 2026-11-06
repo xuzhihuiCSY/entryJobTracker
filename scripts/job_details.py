@@ -18,7 +18,7 @@ PARSER_VERSION = 1
 SUMMARY_SOURCES = {
     "workday", "custom_nvidia", "oracle_hcm", "talentbrew", "successfactors",
     "avature", "eightfold", "kpmg", "bank_of_america", "smartrecruiters", "phenom",
-    "rippling_algolia", "zoom", "custom_microsoft", "custom_google", "custom_apple", "qualcomm", "goldman_sachs",
+    "rippling_algolia", "zoom", "custom_microsoft", "custom_google", "custom_apple", "qualcomm", "goldman_sachs", "two_sigma",
 }
 
 
@@ -36,6 +36,9 @@ def _job_postings(value: Any):
 
 def description_from_page(page: str, url: str) -> str:
     soup = BeautifulSoup(page, "html.parser")
+    if urlparse(url).hostname == "careers.twosigma.com":
+        description = soup.select_one(".grid__item--main article.article--details .article__content")
+        return str(description) if description and len(description.get_text(" ", strip=True)) >= 100 else ""
     for script in soup.select('script[type="application/ld+json"]'):
         try:
             payload = json.loads(script.string or script.get_text())
@@ -100,7 +103,8 @@ def fetch_description(raw_job: dict[str, Any], company: dict[str, Any]) -> str:
     if source == "smartrecruiters":
         data = http_get_json(f"https://api.smartrecruiters.com/v1/companies/{company['source_key']}/postings/{raw_job['external_id']}")
         sections = (data.get("jobAd") or {}).get("sections") or {}
-        return "\n".join(str((sections.get(key) or {}).get("text") or "") for key in ("companyDescription", "jobDescription", "qualifications", "additionalInformation"))
+        headings = {"companyDescription": "About us", "jobDescription": "Responsibilities", "qualifications": "Qualifications", "additionalInformation": "Additional information"}
+        return "\n".join(f"<h3>{heading}</h3>\n{(sections.get(key) or {}).get('text') or ''}" for key, heading in headings.items() if (sections.get(key) or {}).get("text"))
     return description_from_page(http_get_text(url), url)
 
 

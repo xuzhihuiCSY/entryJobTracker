@@ -153,9 +153,24 @@ def test_other_verified_sources_are_enabled() -> None:
     assert oliver_wyman["source_title_contains"] == "Oliver Wyman"
 
 
+def test_six_new_employers_have_verified_enabled_sources() -> None:
+    from adapters import ADAPTERS
+    configs = {c["slug"]: c for c in load_companies()}
+    sources = {"verkada": ("greenhouse", "verkada"), "cargurus": ("greenhouse", "cargurus"),
+               "sigma-computing": ("greenhouse", "sigmacomputing"), "glean": ("greenhouse", "gleanwork"),
+               "servicenow": ("smartrecruiters", "ServiceNow"), "two-sigma": ("two_sigma", None)}
+    for slug, (source, key) in sources.items():
+        company = configs[slug]
+        assert company["enabled"] and company["sync_priority"] == 2
+        assert company["source_type"] == source and source in ADAPTERS
+        assert company.get("source_key") == key
+    assert configs["cargurus"]["additional_source_keys"] == ["ecjobb"]
+
+
 if __name__ == "__main__":
     test_image_companies_are_in_catalog()
     test_company_slugs_are_unique()
     test_verified_workday_sources_are_enabled()
     test_other_verified_sources_are_enabled()
+    test_six_new_employers_have_verified_enabled_sources()
     print("company catalog tests passed")

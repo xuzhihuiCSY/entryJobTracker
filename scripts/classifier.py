@@ -40,7 +40,7 @@ def classify_category(title: str, description: str = "") -> str:
         return "Other"
 
     checks: list[tuple[str, list[str]]] = [
-        ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
+        ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer", "ai solutions developer"]),
         ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer", "research scientist", "machine learning intern", "machine learning research", "ai researcher"]),
         (
             "Data Engineer",

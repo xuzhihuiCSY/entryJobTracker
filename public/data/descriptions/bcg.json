@@ -9,16 +9,6 @@
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
-  "bcg-59702": {
-    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-06T00:43:50Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
   "bcg-56622": {
     "text": "We are recruiting a Senior AI Tech Architect to lead the development of innovative IT solutions for the US Public Sector. Collaborate with interdisciplinary teams to design and optimize technology architectures, applying deep expertise in IT architecture and solution design. Ideal for experienced professionals with a strong background in software engineering and architecture.",
     "status": "summary",
@@ -99,13 +89,13 @@
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
-  "bcg-61435": {
-    "text": "We are expanding our team: As a Delivery AI Product Analyst, you will play a pivotal role in delivering and supporting BCG’s client-facing reorganization solutions, focusing on OrgBuilderTM. You will work closely with case teams, manage client delivery, and support strategic business initiatives. Ideal candidates bring client service experience and a passion for technology.",
+  "bcg-59702": {
+    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
     "status": "summary",
     "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790319261858?post_onboarding_pid=790319261858&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
-    "last_attempted": "2026-11-06T01:39:30Z",
+    "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   }

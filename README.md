@@ -232,6 +232,22 @@ Do not invent `source_key` values. If a company source is uncertain, leave `sour
 
 ## GitHub Actions automatic updates
 
+The homepage chart uses `public/data/history.json`, with the latest successful
+or partially successful snapshot per UTC day. Each sync records the active-job
+total, companies with active postings, and known failed sources; a total source
+failure does not create a new observation. Both crawling and cached-JD
+reclassification update the day's final count before validation and commit.
+Missing days remain gaps. Net change compares recorded snapshots, and percentage
+change uses the first count in the selected window (undefined for a zero baseline).
+Counts cover all tracked job levels and can change when source coverage or
+classification rules change, as well as when postings open or close.
+
+The initial history was recovered from committed snapshots, without deriving
+counts from `first_seen` or fabricating missing dates. To repeat this one-time
+recovery from a full Git checkout, run `python scripts/backfill_history.py`.
+Scheduled Actions and Vercel builds use the committed history directly and do
+not need full Git history. `npm run test:trends` checks chart calculations.
+
 The crawler runs on GitHub's `macos-15` hosted runner. Cloud tests found that
 Uber's public careers domain challenges the Azure-hosted Ubuntu runner, while
 standard HTTP requests from the macOS runner succeed. The Uber adapter uses the

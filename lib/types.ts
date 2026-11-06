@@ -97,6 +97,14 @@ export type LastUpdated = {
   sync_status?: "success" | "partial" | "failed";
 };
 
+export type JobHistoryPoint = {
+  date: string;
+  recorded_at: string;
+  total_jobs: number;
+  companies_with_jobs: number;
+  failed_sources?: number;
+};
+
 export type JobSort = "first_seen_desc" | "entry_first" | "company_asc" | "title_asc";
 
 export type JobFilterState = {

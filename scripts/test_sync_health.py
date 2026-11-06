@@ -25,6 +25,9 @@ def test_partial_sync_removes_closed_jobs_and_preserves_failed_and_unscheduled_s
         assert not rows["unscheduled"]["last_attempted"]
         assert summary["sync_status"] == "partial" and summary["sources_failed"] == 1
         assert sum(c["active_job_count"] for c in rows.values()) == len(jobs)
+        history = json.loads((root / "history.json").read_text())
+        assert len(history) == 1 and history[0]["total_jobs"] == len(jobs)
+        assert history[0]["failed_sources"] == 1
 
 
 def test_total_failure_does_not_claim_new_success() -> None:
@@ -37,6 +40,7 @@ def test_total_failure_does_not_claim_new_success() -> None:
         summary = json.loads((root / "last_updated.json").read_text())
         assert summary["last_updated"] == "2026-01-01T00:00:00Z"
         assert summary["sync_status"] == "failed" and summary["sources_synced"] == 0
+        assert not (root / "history.json").exists()
 
 
 def test_malformed_source_is_isolated_without_discarding_its_cache() -> None:

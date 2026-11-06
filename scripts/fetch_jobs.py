@@ -15,6 +15,7 @@ from adapters import get_adapter
 from normalizer import dedupe_jobs, is_relevant_technical_job, make_job_id, normalize_job
 from utils import read_json, setup_logging, write_json
 from job_details import enrich_description
+from job_history import record_history
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPANIES_YAML = ROOT / "scripts" / "data" / "companies.yaml"
@@ -249,6 +250,7 @@ def run(priority: int | None, include_all: bool, slugs: list[str] | None = None)
         PUBLIC_DATA / "last_updated.json",
         summary,
     )
+    record_history(PUBLIC_DATA, summary, companies_json)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as report:
             report.write(f"Jobs: {len(active_jobs)}; sources: {len(synced_slugs)}/{len(attempted_slugs)}; full JDs: {summary['full_description_jobs']}.\n\n")

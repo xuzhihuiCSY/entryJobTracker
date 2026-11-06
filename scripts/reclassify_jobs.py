@@ -6,6 +6,7 @@ from classifier import classify_level
 from education import classify_phd_requirement
 from fetch_jobs import PUBLIC_DATA, build_company_rows, load_companies, utc_now
 from utils import read_json, write_json
+from job_history import record_history
 
 
 def reclassify_job(job: dict, detail: dict) -> dict:
@@ -43,6 +44,7 @@ def run() -> None:
     summary = read_json(PUBLIC_DATA / "last_updated.json", {})
     summary.update(total_jobs=len(updated), full_description_jobs=sum(job.get("description_status") == "full" for job in updated))
     write_json(PUBLIC_DATA / "last_updated.json", summary)
+    record_history(PUBLIC_DATA, summary, read_json(PUBLIC_DATA / "companies.json", []))
     print(f"Reclassified {len(updated)} jobs from cached complete descriptions; source timestamps preserved")
 
 

@@ -53,5 +53,6 @@ jobs:
       - name: Test filters and build production site
         run: |
           npm run test:filters
+          npm run test:trends
           npm run typecheck
           npm run build

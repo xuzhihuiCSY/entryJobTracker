@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, Building2, Clock3, Landmark, ListChecks } from "lucide-react";
 import { JobStats } from "@/components/JobStats";
-import { getLastUpdated } from "@/lib/jobs";
+import { JobGrowthChart } from "@/components/JobGrowthChart";
+import { getJobHistory, getLastUpdated } from "@/lib/jobs";
 
 const actions = [
   { href: "/jobs", label: "Browse Jobs", icon: ListChecks },
@@ -12,6 +13,7 @@ const actions = [
 
 export default function HomePage() {
   const stats = getLastUpdated();
+  const history = getJobHistory();
 
   return (
     <div className="grid gap-8">
@@ -44,25 +46,7 @@ export default function HomePage() {
             })}
           </div>
         </div>
-        <div className="rounded-lg border border-line bg-white p-5 shadow-subtle">
-          <div className="h-56 rounded-md border border-slate-200 bg-[linear-gradient(90deg,#e2e8f0_1px,transparent_1px),linear-gradient(#e2e8f0_1px,transparent_1px)] bg-[size:28px_28px] p-4">
-            <div className="grid h-full content-between">
-              <div className="flex items-center justify-between">
-                <span className="rounded-md bg-teal-700 px-3 py-1 text-xs font-semibold text-white">
-                  Active links
-                </span>
-                <span className="rounded-md bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-subtle">
-                  JSON powered
-                </span>
-              </div>
-              <div className="grid gap-2">
-                <div className="h-3 w-10/12 rounded bg-slate-300" />
-                <div className="h-3 w-8/12 rounded bg-slate-200" />
-                <div className="h-3 w-9/12 rounded bg-slate-200" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <JobGrowthChart history={history} />
       </section>
 
       <JobStats stats={stats} />

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "test:filters": "node scripts/test_filters.cjs"
+    "test:filters": "node scripts/test_filters.cjs",
+    "test:trends": "node scripts/test_job_trends.cjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

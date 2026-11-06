@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { isEntryLevel, isFresh, sortJobs } from "@/lib/filters";
-import type { Company, Job, LastUpdated } from "@/lib/types";
+import type { Company, Job, JobHistoryPoint, LastUpdated } from "@/lib/types";
 
 const dataDir = path.join(process.cwd(), "public", "data");
 
@@ -16,6 +16,10 @@ function readJsonFile<T>(fileName: string, fallback: T): T {
 
 export function getJobs(): Job[] {
   return readJsonFile<Job[]>("jobs.json", []);
+}
+
+export function getJobHistory(): JobHistoryPoint[] {
+  return readJsonFile<JobHistoryPoint[]>("history.json", []);
 }
 
 export function getCompanies(): Company[] {

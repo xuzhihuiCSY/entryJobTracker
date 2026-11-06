@@ -232,6 +232,12 @@ Do not invent `source_key` values. If a company source is uncertain, leave `sour
 
 ## GitHub Actions automatic updates
 
+The crawler runs on GitHub's `macos-15` hosted runner. Cloud tests found that
+Uber's public careers domain challenges the Azure-hosted Ubuntu runner, while
+standard HTTP requests from the macOS runner succeed. The Uber adapter uses the
+official client's `/api/jobs/search/` route and the shared HTTP helper; it does
+not attempt to solve challenge pages. Application CI remains on Ubuntu.
+
 The manual **Update jobs** workflow accepts an optional `companies` input, such
 as `uber` or `uber zoom`, to refresh specific sources instead of an entire
 priority group. Leave it blank to use the selected priority. Scheduled runs

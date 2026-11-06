@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import Any
 from urllib.parse import urljoin
 
-from curl_cffi import requests as curl_requests
+from utils import http_get_json
 
 BASE_URL = "https://jobs.uber.com"
-SEARCH_URL = f"{BASE_URL}/api/jobs/search"
+SEARCH_URL = f"{BASE_URL}/api/jobs/search/"
 SEARCH_TERMS = [
     "software",
     "machine learning",
@@ -22,17 +22,6 @@ SEARCH_TERMS = [
     "intern",
     "new grad",
 ]
-
-
-def _new_session() -> curl_requests.Session:
-    session = curl_requests.Session(impersonate="chrome120")
-    session.headers.update(
-        {
-            "Accept": "application/json,text/plain,*/*",
-            "Referer": f"{BASE_URL}/en/jobs/",
-        }
-    )
-    return session
 
 
 def _location_text(location: dict[str, Any]) -> str:
@@ -84,14 +73,13 @@ def _raw_job(job: dict[str, Any]) -> dict[str, Any]:
 
 
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
-    session = _new_session()
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
 
     for term in SEARCH_TERMS:
         page = 1
-        while page <= 20:
-            response = session.get(
+        while page <= 200:
+            payload = http_get_json(
                 SEARCH_URL,
                 params={
                     "locale": "en",
@@ -99,11 +87,14 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                     "countries": "United States",
                     "page": page,
                 },
-                timeout=30,
+                headers={"Referer": f"{BASE_URL}/en/jobs/"},
             )
-            response.raise_for_status()
-            payload = response.json()
-            jobs = payload.get("jobs", []) if isinstance(payload, dict) else []
+            if not isinstance(payload, dict) or not isinstance(payload.get("jobs"), list):
+                raise ValueError("Uber search response is missing its jobs list")
+            jobs = payload["jobs"]
+            total_pages = int(payload.get("totalPages") or 1)
+            if total_pages > 200:
+                raise ValueError("Uber search exceeds the pagination limit; refusing a partial snapshot")
             if not jobs:
                 break
 
@@ -116,7 +107,6 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                 seen.add(external_id)
                 results.append(_raw_job(job))
 
-            total_pages = int(payload.get("totalPages") or 1)
             if page >= total_pages:
                 break
             page += 1

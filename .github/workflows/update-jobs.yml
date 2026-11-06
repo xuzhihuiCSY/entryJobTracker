@@ -13,6 +13,11 @@ on:
           - "1"
           - "2"
           - "3"
+      companies:
+        description: "Optional company slugs, separated by spaces (overrides priority)"
+        required: false
+        default: ""
+        type: string
   schedule:
     - cron: "0 */6 * * *"
     - cron: "30 8 * * *"
@@ -66,7 +71,17 @@ jobs:
       - name: Fetch jobs
         id: fetch
         continue-on-error: true
-        run: python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}
+        env:
+          REQUESTED_COMPANIES: ${{ inputs.companies }}
+        shell: bash
+        run: |
+          if [[ -n "$REQUESTED_COMPANIES" ]]; then
+            # Pass input as arguments, never interpolate it into shell code.
+            read -r -a company_slugs <<< "$REQUESTED_COMPANIES"
+            python scripts/fetch_jobs.py --companies "${company_slugs[@]}"
+          else
+            python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}
+          fi
 
       - name: Validate job data
         if: ${{ !cancelled() }}

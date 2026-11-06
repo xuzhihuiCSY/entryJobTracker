@@ -232,6 +232,11 @@ Do not invent `source_key` values. If a company source is uncertain, leave `sour
 
 ## GitHub Actions automatic updates
 
+The manual **Update jobs** workflow accepts an optional `companies` input, such
+as `uber` or `uber zoom`, to refresh specific sources instead of an entire
+priority group. Leave it blank to use the selected priority. Scheduled runs
+continue to use their configured priorities.
+
 Each company records `last_attempted`, `last_synced`, `sync_status`, active job
 count and full-JD count. The Companies page distinguishes a failed fetch with
 retained postings from a successful sync with zero jobs. It marks data stale

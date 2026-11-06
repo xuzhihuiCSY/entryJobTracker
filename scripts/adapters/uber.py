@@ -86,6 +86,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
                     "search": term,
                     "countries": "United States",
                     "page": page,
+                    "pagesize": 100,
                 },
                 headers={"Referer": f"{BASE_URL}/en/jobs/"},
             )

@@ -47,6 +47,7 @@ def test_fetches_all_pages_and_deduplicates_search_terms() -> None:
     assert all(call.args[0] == SEARCH_URL for call in get.call_args_list)
     assert SEARCH_URL.endswith("/api/jobs/search/")
     assert all(call.kwargs["params"]["countries"] == "United States" for call in get.call_args_list)
+    assert all(call.kwargs["params"]["pagesize"] == 100 for call in get.call_args_list)
 
 
 def test_failed_or_invalid_responses_never_become_empty_successes() -> None:

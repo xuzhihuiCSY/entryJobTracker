@@ -41,12 +41,12 @@ def classify_category(title: str, description: str = "") -> str:
 
     checks: list[tuple[str, list[str]]] = [
         ("AI Engineer", ["ai engineer", "llm engineer", "generative ai engineer", "prompt engineer"]),
-        ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer"]),
+        ("ML", ["machine learning engineer", "applied scientist", "research engineer", "ml engineer", "research scientist", "machine learning intern", "machine learning research", "ai researcher"]),
         (
             "Data Engineer",
-            ["data engineer", "analytics engineer", "etl engineer", "data platform engineer", "database administrator"],
+            ["data engineer", "data engineering intern", "analytics engineer", "etl engineer", "data platform engineer", "database administrator"],
         ),
-        ("DS", ["data scientist", "decision scientist", "product analyst", "data analyst"]),
+        ("DS", ["data scientist", "data science intern", "decision scientist", "product analyst", "data analyst"]),
         ("Frontend", ["frontend engineer", "front end engineer", "front-end engineer"]),
         ("Backend", ["backend engineer", "back end engineer", "back-end engineer"]),
         ("Full Stack", ["full stack engineer", "full-stack engineer", "fullstack engineer"]),
@@ -64,7 +64,7 @@ def classify_category(title: str, description: str = "") -> str:
                 "security analyst",
             ],
         ),
-        ("Quant", ["quant developer", "quantitative developer", "quantitative researcher", "trading engineer"]),
+        ("Quant", ["quant developer", "quantitative developer", "quantitative researcher", "trading engineer", "algorithm developer"]),
         (
             "SDE",
             [
@@ -79,6 +79,8 @@ def classify_category(title: str, description: str = "") -> str:
                 "platform engineer",
                 "infrastructure engineer",
                 "product engineer",
+                "technology development program",
+                "technology internship program",
             ],
         ),
     ]
@@ -108,35 +110,45 @@ def classify_level(title: str, description: str = "") -> str:
         ],
     ):
         return "Intern"
-    if _contains(title_text, ["new grad", "university grad", "university graduate", "new college grad", "recent graduate"]):
-        return "New Grad"
-    if _contains(title_text, ["early career"]):
-        return "Early Career"
-    if _contains(title_text, ["entry level", "associate software engineer"]):
-        return "Entry"
-
     if _contains_pattern(title_text, [r"\bstaff\b", r"\bprincipal\b"]):
         return "Staff"
     if _contains_pattern(title_text, [r"\bsenior\b", r"\bsr\.?\b"]):
         return "Senior"
+    if _contains(title_text, ["new grad", "university grad", "university graduate", "new college grad", "recent graduate"]):
+        return "New Grad"
+    if _contains_pattern(title_text, [r"\bgraduates?\b", r"\bgrads\b", r"\btechnology development program\b", r"\bsoftware engineer(?:ing)? program\b.*\bfull[ -]time\b"]):
+        return "New Grad"
+    if _contains_pattern(title_text, [r"[-–—,|]\s*campus\s*$", r"\b(?:campus|university) (?:hire|hiring|recruiting)\b"]):
+        return "New Grad"
+    if _contains_pattern(title_text, [r"\bearly[- ](?:in[- ])?career\b"]):
+        return "Early Career"
+    if _contains_pattern(title_text, [r"\bentry[- ]level\b", r"\bassociate software engineer\b", r"\bjunior\b", r"\bjr\.?\b"]):
+        return "Entry"
+
+    if _contains_pattern(description.lower(), [
+        r"\bthis (?:role|position|opportunity) is (?:designed |intended )?for (?:new|recent|university|college) grad(?:uate)?s\b",
+        r"\b(?:as an?|this is an?)\s+(?:software engineering |research |summer )?intern\b",
+    ]):
+        return "Intern" if re.search(r"\bintern\b", description, re.I) else "New Grad"
     mid_title_patterns = [
-        r"\b(?:software(?: development)? engineer|sde|data scientist|data engineer|machine learning engineer|research engineer|applied scientist|engineer|scientist|developer|analyst)\s+(?:ii|2)\b",
+        r"\b(?:software(?: development)? engineer|sde|data scientist|data engineer|machine learning engineer|research engineer|applied scientist|engineer|scientist|developer|analyst)\s+(?:ii|iii|2|3)\b",
         r"\b(?:ii|2)\s*[,/-]\s*(?:software|data|machine learning|research|applied|backend|frontend|full stack)",
     ]
     if any(re.search(pattern, title_text) for pattern in mid_title_patterns):
         return "Mid"
-    entry_patterns = [
+    entry_title = [
         r"\b(?:software(?: development)? engineer|sde|data scientist|data engineer|machine learning engineer|research engineer|applied scientist|engineer|scientist|developer|analyst)\s+(?:i|1)\b",
-        r"\b0\s*-\s*2 years\b",
-        r"\b1\+ years\b",
-        r"\b2\+ years\b",
     ]
-    if any(re.search(pattern, all_text) for pattern in entry_patterns):
+    if any(re.search(pattern, title_text) for pattern in entry_title):
         return "Entry"
+    experience = re.findall(r"\b(\d+)\s*(?:\+|[-–]\s*\d+|to\s+\d+)?\s*(?:years?|yrs?)\s+(?:of\s+)?(?:(?:professional|industry|relevant|related|hands-on|software|engineering|programming|development|work|technical)\s+){0,4}experience\b", all_text)
+    if experience:
+        # A short preferred skill requirement must not erase a longer overall
+        # experience requirement elsewhere in the JD.
+        years = max(int(value) for value in experience)
+        return "Mid" if years >= 3 else "Entry"
     if _contains(all_text, ["graduate software engineer"]):
         return "New Grad"
-    if re.search(r"\biii\b|\b3\b", title_text):
-        return "Mid"
     return "Unknown"
 
 
@@ -254,29 +266,15 @@ def parse_location(location_raw: str, description: str = "") -> ParsedLocation:
 
 
 def detect_requires_citizenship(description: str) -> bool:
-    text = _text(description)
-    phrases = [
-        "u.s. citizenship required",
-        "us citizenship required",
-        "must be a u.s. citizen",
-        "u.s. citizen only",
-        "united states citizenship",
-    ]
-    return _contains(text, phrases)
+    from authorization import classify_authorization
+    return classify_authorization(description).requires_citizenship
 
 
 def detect_requires_clearance(description: str) -> bool:
-    text = _text(description)
-    phrases = ["security clearance", "active clearance", "ts/sci", "top secret", "secret clearance"]
-    return _contains(text, phrases)
+    from authorization import classify_authorization
+    return classify_authorization(description).requires_clearance
 
 
 def detect_visa_signal(description: str) -> str:
-    text = _text(description)
-    positive = ["visa sponsorship available", "will sponsor", "sponsorship is available"]
-    negative = ["no visa sponsorship", "unable to sponsor", "cannot sponsor"]
-    if _contains(text, negative):
-        return "not_likely"
-    if _contains(text, positive):
-        return "strong"
-    return "unknown"
+    from authorization import classify_authorization
+    return classify_authorization(description).visa_signal

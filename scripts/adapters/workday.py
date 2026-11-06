@@ -43,6 +43,16 @@ def _parse_source_key(source_key: str) -> tuple[str, str, str] | None:
 
 
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
+    additional_keys = company_config.get("additional_source_keys") or []
+    if additional_keys:
+        results: list[dict[str, Any]] = []
+        seen_ids: set[str] = set()
+        for source_key in dict.fromkeys([company_config.get("source_key"), *additional_keys]):
+            for job in fetch_company_jobs({**company_config, "source_key": source_key, "additional_source_keys": []}):
+                if job["external_id"] not in seen_ids:
+                    seen_ids.add(job["external_id"])
+                    results.append(job)
+        return results
     source_key = str(company_config.get("source_key") or "").strip()
     parsed = _parse_source_key(source_key)
     if not parsed:

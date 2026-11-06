@@ -1,5 +1,6 @@
 import { AlertTriangle, ExternalLink, MapPin } from "lucide-react";
 import { CompanyBadge } from "@/components/CompanyBadge";
+import { JobDescription } from "@/components/JobDescription";
 import type { Job } from "@/lib/types";
 
 type JobCardProps = {
@@ -28,9 +29,10 @@ function relativeTime(value: string): string {
 }
 
 function visaLabel(value: string): string {
-  if (value === "strong") return "Visa signal: strong";
-  if (value === "not_likely") return "Visa: not likely";
-  return "Visa: unknown";
+  if (value === "strong") return "Sponsorship stated";
+  if (value === "not_likely") return "No sponsorship stated";
+  if (value === "conditional") return "Sponsorship: conditional";
+  return "Sponsorship: unknown";
 }
 
 function sourceLabel(value: string): string {
@@ -102,7 +104,23 @@ export function JobCard({
             </p>
           ) : null}
           <div className="mt-3 flex flex-wrap gap-2 text-xs">
-            <span className="rounded-md bg-slate-100 px-2 py-1 text-slate-700">
+            {job.phd_requirement && job.phd_requirement !== "unknown" ? (
+              <span
+                title={job.phd_evidence}
+                className={`rounded-md px-2 py-1 ${
+                  job.phd_requirement === "required"
+                    ? "bg-amber-50 text-amber-800"
+                    : "bg-slate-100 text-slate-700"
+                }`}
+              >
+                {job.phd_requirement === "required"
+                  ? "PhD required"
+                  : job.phd_requirement === "preferred"
+                    ? "PhD preferred"
+                    : "PhD optional / alternative accepted"}
+              </span>
+            ) : null}
+            <span title={job.visa_evidence} className="rounded-md bg-slate-100 px-2 py-1 text-slate-700">
               {visaLabel(job.visa_signal)}
             </span>
             <label
@@ -131,6 +149,19 @@ export function JobCard({
               </span>
             ) : null}
           </div>
+          {job.phd_evidence ? (
+            <details className="mt-2 text-xs leading-5 text-muted">
+              <summary className="cursor-pointer text-accent hover:text-teal-800">Education requirement evidence</summary>
+              <p className="mt-1 max-w-3xl">{job.phd_evidence}</p>
+            </details>
+          ) : null}
+          {job.visa_evidence || job.citizenship_evidence || job.clearance_evidence ? (
+            <details className="mt-2 text-xs leading-5 text-muted">
+              <summary className="cursor-pointer text-accent hover:text-teal-800">Work authorization evidence</summary>
+              {[job.visa_evidence, job.citizenship_evidence, job.clearance_evidence].filter(Boolean).map((evidence, index) => <p key={index} className="mt-1 max-w-3xl">{evidence}</p>)}
+            </details>
+          ) : null}
+          <JobDescription job={job} />
         </div>
         <a
           href={job.apply_url}

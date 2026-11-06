@@ -124,7 +124,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
     source_country = str(company_config.get("source_country") or "").strip()
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
-    for term in TECH_SEARCH_TERMS:
+    for term in company_config.get("source_search_terms") or TECH_SEARCH_TERMS:
         page = 1
         while page <= MAX_PAGES_PER_TERM:
             payload = http_post_json(endpoint, _search_payload(company_config, term, page))

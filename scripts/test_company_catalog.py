@@ -57,6 +57,8 @@ IMAGE_COMPANY_SLUGS = {
 }
 
 VERIFIED_WORKDAY_SOURCES = {
+    "zoom": "zoom.wd5/Zoom",
+    "pwc": "pwc.wd3/US_Experienced_Careers",
     "apollo-global-management": "athene.wd5/Apollo_Careers",
     "barclays": "barclays.wd3/External_Career_Site_Barclays",
     "blackrock": "blackrock.wd1/BlackRock_Professional",
@@ -100,7 +102,6 @@ VERIFIED_OTHER_SOURCES = {
     "netflix": ("eightfold", "https://explore.jobs.netflix.net/careers"),
     "oliver-wyman": ("workday", "https://careers.marsh.com/global/en/oliver-wyman"),
     "pepsico": ("radancy", "https://www.pepsicojobs.com/"),
-    "pwc": ("talentbrew", "https://jobs.us.pwc.com/"),
     "roland-berger": ("smartrecruiters", "https://jobs.smartrecruiters.com/RolandBerger"),
     "texas-instruments": (
         "oracle_hcm",

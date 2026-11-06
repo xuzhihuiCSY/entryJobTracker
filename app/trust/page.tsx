@@ -75,6 +75,8 @@ export default function TrustPage() {
 
       <section className="rounded-lg border border-line bg-white p-4 shadow-subtle">
         <h2 className="text-lg font-semibold text-ink">Current sync status</h2>
+        {stats.sources_failed ? <p className="mt-2 text-sm text-amber-800">Latest run: {stats.sources_failed} source(s) failed; previous postings were retained. See Companies for each source.</p> : null}
+        <p className="mt-2 text-sm text-muted">Full descriptions available for {stats.full_description_jobs ?? 0} of {stats.total_jobs} postings. Missing text and unrecognized work authorization terms remain unknown.</p>
         <dl className="mt-4 grid gap-3 sm:grid-cols-3">
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
@@ -92,7 +94,7 @@ export default function TrustPage() {
           </div>
           <div>
             <dt className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Sources synced
+              Sources synced in latest run
             </dt>
             <dd className="mt-1 text-sm text-slate-700">{stats.sources_synced}</dd>
           </div>

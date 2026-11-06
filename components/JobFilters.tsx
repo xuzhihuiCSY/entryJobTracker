@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 import { DEFAULT_FILTERS, filterJobs, isEntryLevel, uniqueValues } from "@/lib/filters";
-import type { Job, JobFilterState, JobSort } from "@/lib/types";
+import type { Job, JobFilterState, JobSort, PhDFilter, VisaFilter } from "@/lib/types";
 import { JobCard } from "@/components/JobCard";
 
 type JobFiltersProps = {
@@ -284,7 +284,56 @@ export function JobFilters({
             </label>
           </div>
         </div>
-        <div className="grid gap-3 lg:grid-cols-[minmax(18rem,1.4fr)_repeat(4,minmax(10rem,1fr))]">
+        <div className="mb-4 grid gap-3 border-b border-line pb-4 md:grid-cols-2">
+          <label className="grid gap-1 text-sm font-medium text-slate-700">
+            PhD requirement
+            <select
+              value={filters.phd}
+              onChange={(event) =>
+                setFilters((current) => ({ ...current, phd: event.target.value as PhDFilter }))
+              }
+              className="h-10 rounded-md border border-line bg-white px-3 text-sm text-ink outline-none focus:border-accent focus:ring-2 focus:ring-teal-100"
+            >
+              <option value="exclude_required">Hide PhD-required jobs</option>
+              <option value="all">Show all education requirements</option>
+              <option value="required">PhD-required jobs only</option>
+            </select>
+          </label>
+          <label className="grid gap-1 text-sm font-medium text-slate-700">
+            Visa sponsorship
+            <select
+              value={filters.visa}
+              onChange={(event) => setFilters((current) => ({ ...current, visa: event.target.value as VisaFilter }))}
+              className="h-10 rounded-md border border-line bg-white px-3 text-sm text-ink outline-none focus:border-accent focus:ring-2 focus:ring-teal-100"
+            >
+              <option value="all">All sponsorship signals</option>
+              <option value="exclude_no_sponsorship">Hide explicit no-sponsorship jobs</option>
+              <option value="strong">Sponsorship stated</option>
+              <option value="conditional">Conditional / case by case</option>
+              <option value="not_likely">No sponsorship stated</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </label>
+          <p className="text-xs leading-5 text-muted">
+            Hidden by default only when a PhD is required. Master’s or PhD, equivalent experience,
+            PhD preferred, and unknown requirements remain visible.
+          </p>
+          <p className="text-xs leading-5 text-muted">
+            Signals come from job text. Unknown includes missing or incomplete descriptions;
+            it does not confirm sponsorship. Application-form questions are not employer commitments.
+          </p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-700 md:col-span-2">
+            <label className="inline-flex cursor-pointer items-center gap-2">
+              <input type="checkbox" checked={filters.hideCitizenshipRequired} onChange={(event) => setFilters((current) => ({ ...current, hideCitizenshipRequired: event.target.checked }))} />
+              Hide U.S. citizenship required
+            </label>
+            <label className="inline-flex cursor-pointer items-center gap-2">
+              <input type="checkbox" checked={filters.hideClearanceRequired} onChange={(event) => setFilters((current) => ({ ...current, hideClearanceRequired: event.target.checked }))} />
+              Hide security clearance required
+            </label>
+          </div>
+        </div>
+        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-[minmax(14rem,1.4fr)_repeat(4,minmax(8rem,1fr))]">
           <label className="grid gap-1 text-sm font-medium text-slate-700">
             Search
             <span className="relative">

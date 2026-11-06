@@ -1,7 +1,13 @@
 {
-  "last_updated": "2026-11-05T23:28:29Z",
-  "total_jobs": 5493,
-  "big_tech_jobs": 695,
-  "fresh_24h_jobs": 114,
-  "sources_synced": 6
+  "last_updated": "2026-11-06T01:06:51Z",
+  "last_attempted": "2026-11-06T01:06:51Z",
+  "sync_status": "success",
+  "total_jobs": 6114,
+  "big_tech_jobs": 769,
+  "fresh_24h_jobs": 780,
+  "sources_synced": 1,
+  "sources_attempted": 1,
+  "sources_failed": 0,
+  "failed_companies": [],
+  "full_description_jobs": 6104
 }

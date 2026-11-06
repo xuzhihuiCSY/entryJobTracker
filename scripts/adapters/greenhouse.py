@@ -101,7 +101,38 @@ def _primary_location(locations: list[str]) -> str:
     return locations[0] if locations else ""
 
 
+def _level_hint(job: dict[str, Any]) -> str:
+    for field in job.get("metadata") or []:
+        if str(field.get("name") or "").casefold() not in {"employment type", "job type", "career level"}:
+            continue
+        value = str(field.get("value") or "").casefold()
+        if re.search(r"\bintern(?:ship)?\b|\bco-?op\b", value):
+            return "Intern"
+        if re.search(r"\bnew grad(?:uate)?\b|\buniversity grad(?:uate)?\b", value):
+            return "New Grad"
+    return ""
+
+
+def _posting_key(job: dict[str, Any]) -> tuple[str, tuple[str, ...]]:
+    # The same requisition can be published to both industry and campus boards
+    # with different posting IDs and a different order of the same locations.
+    locations = sorted({part.strip().casefold() for location in job.get("locations", []) for part in location.split(";")})
+    return job["requisition_id"], tuple(locations)
+
+
 def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
+    additional_keys = company_config.get("additional_source_keys") or []
+    if additional_keys:
+        results: list[dict[str, Any]] = []
+        seen: set[tuple[str, tuple[str, ...]]] = set()
+        for key in dict.fromkeys([company_config.get("source_key"), *additional_keys]):
+            config = {**company_config, "source_key": key, "additional_source_keys": []}
+            for job in fetch_company_jobs(config):
+                key = _posting_key(job)
+                if key not in seen:
+                    seen.add(key)
+                    results.append(job)
+        return results
     source_key = company_config.get("source_key")
     if not source_key:
         return []
@@ -115,6 +146,8 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
         results.append(
             {
                 "external_id": str(job.get("id") or ""),
+                "requisition_id": str(job.get("internal_job_id") or job.get("id") or ""),
+                "level_hint": _level_hint(job),
                 "title": job.get("title") or "",
                 "location_raw": _primary_location(locations),
                 "locations": locations,

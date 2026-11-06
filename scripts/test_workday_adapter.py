@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from adapters import workday
+from unittest.mock import patch
 
 
 def test_workday_filters_shared_tenant_by_title() -> None:
@@ -44,6 +45,16 @@ def test_workday_filters_shared_tenant_by_title() -> None:
     assert jobs[0]["title"] == "Oliver Wyman - Software Engineer"
 
 
+def test_workday_merges_experienced_and_campus_boards() -> None:
+    def fake_post(url: str, *_args: object, **_kwargs: object) -> dict:
+        campus = "/Campus/" in url
+        return {"total": 1, "jobPostings": [{"title": "Software Engineer Intern" if campus else "Software Engineer", "externalPath": "/job/one", "locationsText": "New York, NY", "bulletFields": ["CAMPUS" if campus else "REGULAR"]}]}
+    with patch.object(workday, "http_post_json", side_effect=fake_post), patch.object(workday, "TECH_SEARCH_TERMS", ["software"]):
+        jobs = workday.fetch_company_jobs({"source_key": "example.wd3/Experienced", "additional_source_keys": ["example.wd3/Campus", "example.wd3/Experienced"]})
+    assert {job["external_id"] for job in jobs} == {"CAMPUS", "REGULAR"}
+
+
 if __name__ == "__main__":
     test_workday_filters_shared_tenant_by_title()
+    test_workday_merges_experienced_and_campus_boards()
     print("Workday adapter tests passed")

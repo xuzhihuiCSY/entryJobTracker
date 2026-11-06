@@ -2,15 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from bs4 import BeautifulSoup
-
 from utils import http_get_json
-
-
-def _clean(value: str | None) -> str:
-    if not value:
-        return ""
-    return BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
 
 
 def _location(job: dict[str, Any]) -> str:
@@ -42,11 +34,13 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
             continue
         job_path = job.get("job_path") or ""
         job_url = f"https://www.amazon.jobs{job_path}" if job_path.startswith("/") else job_path
-        description = " ".join(
+        description = "\n".join(
             [
-                _clean(job.get("description")),
-                _clean(job.get("basic_qualifications")),
-                _clean(job.get("preferred_qualifications")),
+                job.get("description") or "",
+                "<h3>Minimum Qualifications</h3>",
+                job.get("basic_qualifications") or "",
+                "<h3>Preferred Qualifications</h3>",
+                job.get("preferred_qualifications") or "",
             ]
         )
         results.append(

@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -12,6 +14,7 @@ import yaml
 from adapters import get_adapter
 from normalizer import dedupe_jobs, is_relevant_technical_job, make_job_id, normalize_job
 from utils import read_json, setup_logging, write_json
+from job_details import enrich_description
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPANIES_YAML = ROOT / "scripts" / "data" / "companies.yaml"
@@ -33,8 +36,13 @@ def load_companies() -> list[dict[str, Any]]:
     return payload
 
 
-def select_companies(companies: list[dict[str, Any]], priority: int | None, include_all: bool) -> list[dict[str, Any]]:
+def select_companies(companies: list[dict[str, Any]], priority: int | None, include_all: bool, slugs: list[str] | None = None) -> list[dict[str, Any]]:
     selected = [company for company in companies if company.get("enabled", True)]
+    if slugs:
+        unknown = set(slugs) - {company["slug"] for company in companies}
+        if unknown:
+            raise ValueError(f"Unknown company slugs: {', '.join(sorted(unknown))}")
+        return [company for company in selected if company["slug"] in slugs]
     if include_all:
         return selected
     if priority is None:
@@ -46,7 +54,9 @@ def fetch_raw_jobs(company: dict[str, Any]) -> list[dict[str, Any]] | None:
     adapter = get_adapter(company.get("source_type", "placeholder"))
     try:
         return adapter(company)
-    except Exception:
+    except Exception as error:
+        status_code = getattr(getattr(error, "response", None), "status_code", None)
+        company["_fetch_error"] = f"{type(error).__name__}" + (f" (HTTP {status_code})" if status_code else "")
         LOGGER.exception("Failed to fetch jobs for %s", company.get("name", company.get("slug")))
         return None
 
@@ -71,8 +81,10 @@ def build_company_rows(
     active_jobs: list[dict[str, Any]],
     synced_slugs: set[str],
     checked_at: str,
+    attempted_slugs: set[str] | None = None,
 ) -> list[dict[str, Any]]:
     counts = Counter(job["company_slug"] for job in active_jobs)
+    full_counts = Counter(job["company_slug"] for job in active_jobs if job.get("description_status") == "full")
     rows: list[dict[str, Any]] = []
     existing_rows = {
         row.get("slug"): row
@@ -89,17 +101,69 @@ def build_company_rows(
                 "company_group": company.get("company_group", "other"),
                 "career_url": company.get("career_url", ""),
                 "source_type": company.get("source_type", "placeholder"),
-                "active_job_count": counts.get(slug, previous.get("active_job_count", 0)),
+                "enabled": company.get("enabled", True),
+                "sync_priority": int(company.get("sync_priority", 3)),
+                "active_job_count": counts.get(slug, 0),
+                "full_description_count": full_counts.get(slug, 0),
+                "last_attempted": checked_at if slug in (attempted_slugs or synced_slugs) else previous.get("last_attempted", ""),
+                "sync_status": (
+                    "disabled" if not company.get("enabled", True) else
+                    "success" if slug in synced_slugs else
+                    "failed" if slug in (attempted_slugs or set()) else
+                    previous.get("sync_status", "unknown")
+                ),
+                "last_error": (
+                    "" if slug in synced_slugs else
+                    company.get("_fetch_error", "Fetch failed") if slug in (attempted_slugs or set()) else
+                    previous.get("last_error", "")
+                ),
                 "last_synced": checked_at if slug in synced_slugs else previous.get("last_synced", ""),
             }
         )
     return sorted(rows, key=lambda item: (item["company_group"] != "big_tech", item["name"].lower()))
 
 
-def run(priority: int | None, include_all: bool) -> None:
+def _fetch_with_details_unchecked(args: tuple[dict[str, Any], dict[str, Any], str]) -> tuple[list[dict[str, Any]] | None, dict[str, Any]]:
+    company, cache, checked_at = args
+    LOGGER.info("Fetching %s via %s", company["name"], company["source_type"])
+    raw_jobs = fetch_raw_jobs(company)
+    if raw_jobs is None:
+        return None, cache
+    results: list[dict[str, Any]] = []
+    details: dict[str, Any] = {}
+    detail_failures = 0
+    blocked = False
+    for raw in raw_jobs:
+        # Fetch details only for the U.S. technical postings the tracker uses.
+        # Classification runs again after enrichment with complete text.
+        preliminary = normalize_job(raw, company, checked_at, checked_at)
+        if not is_relevant_technical_job(preliminary):
+            continue
+        job_id = preliminary["id"]
+        enriched, detail = enrich_description(raw, company, cache.get(job_id, {}), checked_at, allow_fetch=not blocked)
+        results.append(enriched)
+        details[job_id] = detail
+        if detail.get("fetch_error"):
+            detail_failures += 1
+            blocked = blocked or detail.get("fetch_error_code") in {401, 403, 429} or detail_failures >= 5
+    LOGGER.info("%s: %s postings, %s full JDs", company["name"], len(results), sum(d.get("status") == "full" for d in details.values()))
+    return results, details
+
+
+def _fetch_with_details(args: tuple[dict[str, Any], dict[str, Any], str]) -> tuple[list[dict[str, Any]] | None, dict[str, Any]]:
+    try:
+        return _fetch_with_details_unchecked(args)
+    except Exception as error:
+        company, cache, _ = args
+        company["_fetch_error"] = type(error).__name__
+        LOGGER.exception("Could not normalize source %s; preserving previous postings", company["slug"])
+        return None, cache
+
+
+def run(priority: int | None, include_all: bool, slugs: list[str] | None = None) -> bool:
     checked_at = utc_now()
     companies = load_companies()
-    selected = select_companies(companies, priority, include_all)
+    selected = select_companies(companies, priority, include_all, slugs)
     seen_jobs = read_json(PUBLIC_DATA / "seen_jobs.json", {})
     previous_jobs = read_json(PUBLIC_DATA / "jobs.json", [])
     previous_first_seen_by_apply_url: dict[str, str] = {}
@@ -131,10 +195,14 @@ def run(priority: int | None, include_all: bool) -> None:
 
     normalized_jobs: list[dict[str, Any]] = list(previous_by_unsynced_company.values())
     synced_slugs: set[str] = set()
+    attempted_slugs = {company["slug"] for company in selected}
+    descriptions_dir = PUBLIC_DATA / "descriptions"
+    work = [(company, read_json(descriptions_dir / f"{company['slug']}.json", {}), checked_at) for company in selected]
+    # Each company is fetched serially within a worker; keep host load bounded.
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        fetched = list(pool.map(_fetch_with_details, work))
 
-    for company in selected:
-        LOGGER.info("Fetching %s via %s", company.get("name"), company.get("source_type"))
-        raw_jobs = fetch_raw_jobs(company)
+    for company, (raw_jobs, details) in zip(selected, fetched):
         if raw_jobs is None:
             normalized_jobs.extend(previous_by_company_slug.get(company["slug"], []))
             continue
@@ -142,17 +210,16 @@ def run(priority: int | None, include_all: bool) -> None:
         for raw_job in raw_jobs:
             first_seen = merge_first_seen(raw_job, company, seen_jobs, checked_at, previous_first_seen_by_apply_url)
             job = normalize_job(raw_job, company, checked_at, first_seen)
+            job.pop("description_text", None)
             if is_relevant_technical_job(job):
                 normalized_jobs.append(job)
-
-    if selected and not synced_slugs:
-        LOGGER.warning("No selected sources synced successfully; leaving public data unchanged")
-        return
+        active_ids = {job["id"] for job in normalized_jobs if job["company_slug"] == company["slug"]}
+        write_json(descriptions_dir / f"{company['slug']}.json", {key: detail for key, detail in details.items() if key in active_ids})
 
     active_jobs = dedupe_jobs(normalized_jobs)
     active_jobs.sort(key=lambda item: item.get("first_seen", ""), reverse=True)
 
-    companies_json = build_company_rows(companies, active_jobs, synced_slugs, checked_at)
+    companies_json = build_company_rows(companies, active_jobs, synced_slugs, checked_at, attempted_slugs)
     fresh_24h = 0
     checked_at_dt = datetime.fromisoformat(checked_at.replace("Z", "+00:00"))
     for job in active_jobs:
@@ -163,27 +230,48 @@ def run(priority: int | None, include_all: bool) -> None:
     write_json(PUBLIC_DATA / "jobs.json", active_jobs)
     write_json(PUBLIC_DATA / "companies.json", companies_json)
     write_json(PUBLIC_DATA / "seen_jobs.json", seen_jobs)
-    write_json(
-        PUBLIC_DATA / "last_updated.json",
-        {
-            "last_updated": checked_at,
+    previous_summary = read_json(PUBLIC_DATA / "last_updated.json", {})
+    failed_slugs = attempted_slugs - synced_slugs
+    summary = {
+            "last_updated": checked_at if synced_slugs else previous_summary.get("last_updated", ""),
+            "last_attempted": checked_at,
+            "sync_status": "success" if not failed_slugs else "partial" if synced_slugs else "failed",
             "total_jobs": len(active_jobs),
             "big_tech_jobs": sum(1 for job in active_jobs if job.get("company_group") == "big_tech"),
             "fresh_24h_jobs": fresh_24h,
             "sources_synced": len(synced_slugs),
-        },
+            "sources_attempted": len(attempted_slugs),
+            "sources_failed": len(failed_slugs),
+            "failed_companies": sorted(failed_slugs),
+            "full_description_jobs": sum(job.get("description_status") == "full" for job in active_jobs),
+    }
+    write_json(
+        PUBLIC_DATA / "last_updated.json",
+        summary,
     )
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as report:
+            report.write(f"Jobs: {len(active_jobs)}; sources: {len(synced_slugs)}/{len(attempted_slugs)}; full JDs: {summary['full_description_jobs']}.\n\n")
+            if failed_slugs:
+                report.write("Failed sources (previous postings retained): " + ", ".join(sorted(failed_slugs)) + "\n")
+    if failed_slugs:
+        LOGGER.warning("Failed sources (previous data retained): %s", ", ".join(sorted(failed_slugs)))
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            print("::warning title=Partial job source update::Previous data retained for: " + ", ".join(sorted(failed_slugs)))
     LOGGER.info("Wrote %s active jobs from %s synced sources", len(active_jobs), len(synced_slugs))
+    return bool(synced_slugs) or not selected
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch and normalize public tech jobs")
-    parser.add_argument("--priority", type=int, choices=[1, 2, 3], help="Sync only this priority")
-    parser.add_argument("--all", action="store_true", help="Sync every enabled company")
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--priority", type=int, choices=[1, 2, 3], help="Sync only this priority")
+    selection.add_argument("--all", action="store_true", help="Sync every enabled company")
+    selection.add_argument("--companies", nargs="+", metavar="SLUG", help="Sync only these company slugs")
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     setup_logging()
     args = parse_args()
-    run(priority=args.priority, include_all=args.all)
+    raise SystemExit(0 if run(priority=args.priority, include_all=args.all, slugs=args.companies) else 1)

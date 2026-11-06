@@ -21,9 +21,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: job-data-sync
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -55,17 +60,35 @@ jobs:
           fi
 
       - name: Fetch jobs
+        id: fetch
+        continue-on-error: true
         run: python scripts/fetch_jobs.py ${{ steps.sync.outputs.args }}
+
+      - name: Validate job data
+        if: ${{ !cancelled() }}
+        run: |
+          python scripts/reclassify_jobs.py
+          python scripts/validate_data.py
 
       - name: Commit data changes
         shell: bash
         run: |
-          if git diff --quiet -- public/data/*.json; then
+          git fetch origin "$GITHUB_REF_NAME"
+          if [[ "$(git rev-parse FETCH_HEAD)" != "$GITHUB_SHA" ]]; then
+            echo "::warning::The branch advanced during this sync; keeping the newer snapshot. The next run will refresh the new branch head."
+            echo "Branch advanced during sync; stale generated data was not published." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git add -A -- public/data
+          if git diff --cached --quiet; then
             echo "No public data changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/*.json
           git commit -m "Update job data"
           git push
+
+      - name: Report total source failure
+        if: steps.fetch.outcome == 'failure'
+        run: exit 1

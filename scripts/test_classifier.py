@@ -14,6 +14,25 @@ def test_actual_intern_titles() -> None:
     assert classify_level("Summer Intern, Machine Learning") == "Intern"
 
 
+def test_campus_aliases_and_description_context() -> None:
+    for title in ["Software Engineer Graduate - 2027", "Software Engineer, New College Grad", "Software Engineer, University Graduate"]:
+        assert classify_level(title) == "New Grad"
+    assert classify_level("Software Engineer", "This role is designed for recent graduates.") == "New Grad"
+    assert classify_level("Software Engineer", "As a software engineering intern, you will build tools.") == "Intern"
+    assert classify_level("Senior Software Engineer, Graduate Platform") == "Senior"
+    assert classify_level("Staff Software Engineer, University Infrastructure") == "Staff"
+    assert classify_level("Software Engineer", "A graduate degree is required.") == "Unknown"
+    assert classify_level("Software Engineer", "Requires 5+ years of experience. Preferred: 2+ years of Python experience.") == "Mid"
+    assert classify_level("Software Engineer, Python 3") == "Unknown"
+    assert classify_category("Data Science Intern") == "DS"
+    assert classify_category("Data Engineering Intern") == "Data Engineer"
+    assert classify_category("Machine Learning Intern") == "ML"
+    assert classify_level("Software Engineering Analyst - Campus") == "New Grad"
+    assert classify_level("Software Engineer, University Hire") == "New Grad"
+    assert classify_level("Junior Software Developer") == "Entry"
+    assert classify_level("Software Engineer, Campus Network Infrastructure") == "Unknown"
+
+
 def test_senior_beats_entry_description_noise() -> None:
     assert classify_level("Senior Software Engineer", "0-2 years mentioned in unrelated text") == "Senior"
 
@@ -67,6 +86,7 @@ def test_linear_engineering_titles_are_technical() -> None:
 
 
 if __name__ == "__main__":
+    test_campus_aliases_and_description_context()
     test_internals_is_not_intern()
     test_actual_intern_titles()
     test_senior_beats_entry_description_noise()

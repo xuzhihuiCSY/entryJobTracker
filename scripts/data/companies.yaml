@@ -172,9 +172,9 @@
 - name: Zoom
   slug: zoom
   company_group: public
-  source_type: zoom
-  source_key:
-  career_url: https://careers.zoom.us/jobs/search
+  source_type: workday
+  source_key: zoom.wd5/Zoom
+  career_url: https://zoom.wd5.myworkdayjobs.com/Zoom
   sync_priority: 2
   enabled: true
 
@@ -703,10 +703,10 @@
 - name: PwC
   slug: pwc
   company_group: private
-  source_type: talentbrew
-  source_key: 932
-  source_country: United States
-  career_url: https://jobs.us.pwc.com/
+  source_type: workday
+  source_key: pwc.wd3/US_Experienced_Careers
+  additional_source_keys: [pwc.wd3/US_Entry_Level_Careers]
+  career_url: https://pwc.wd3.myworkdayjobs.com/US_Experienced_Careers
   sync_priority: 3
   enabled: true
 
@@ -862,6 +862,99 @@
   source_base_url: https://careers.loreal.com/en_US/jobs/SearchJobsAJAX
   career_url: https://careers.loreal.com/en_US/jobs/SearchJobs
   sync_priority: 3
+  enabled: true
+
+- name: Palantir
+  slug: palantir
+  company_group: public
+  source_type: lever
+  source_key: palantir
+  career_url: https://jobs.lever.co/palantir
+  sync_priority: 2
+  enabled: true
+
+- name: Hudson River Trading
+  slug: hudson-river-trading
+  company_group: private
+  source_type: greenhouse
+  source_key: wehrtyou
+  career_url: https://www.hudsonrivertrading.com/careers/
+  sync_priority: 2
+  enabled: true
+
+- name: Jane Street
+  slug: jane-street
+  company_group: private
+  source_type: greenhouse
+  source_key: janestreet
+  career_url: https://www.janestreet.com/join-jane-street/open-roles/
+  sync_priority: 2
+  enabled: true
+
+# The official site returns HTTP 403 to the crawler. Keep its career link
+# available, but do not mark it as an active source until an endpoint is verified.
+- name: Citadel
+  slug: citadel
+  company_group: private
+  source_type: placeholder
+  source_key:
+  career_url: https://www.citadel.com/careers/open-opportunities/
+  sync_priority: 2
+  enabled: false
+
+- name: Capital One
+  slug: capital-one
+  company_group: public
+  source_type: talentbrew
+  source_key: 234
+  source_country: United States
+  source_search_terms:
+    - technology development program
+    - technology internship program
+    - software engineer
+    - machine learning
+    - data scientist
+    - data engineer
+    - security engineer
+  career_url: https://www.capitalonecareers.com/
+  sync_priority: 2
+  enabled: true
+
+- name: Benchling
+  slug: benchling
+  company_group: private
+  source_type: ashby
+  source_key: benchling
+  career_url: https://jobs.ashbyhq.com/benchling
+  sync_priority: 2
+  enabled: true
+
+- name: Together AI
+  slug: together-ai
+  company_group: private
+  source_type: greenhouse
+  source_key: togetherai
+  career_url: https://job-boards.greenhouse.io/togetherai
+  sync_priority: 2
+  enabled: true
+
+- name: Airtable
+  slug: airtable
+  company_group: private
+  source_type: greenhouse
+  source_key: airtable
+  career_url: https://job-boards.greenhouse.io/airtable
+  sync_priority: 2
+  enabled: true
+
+- name: Duolingo
+  slug: duolingo
+  company_group: public
+  source_type: greenhouse
+  source_key: duolingo
+  additional_source_keys: [duolingounirecruitment]
+  career_url: https://careers.duolingo.com/
+  sync_priority: 2
   enabled: true
 
 - name: Ford

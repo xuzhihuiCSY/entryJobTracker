@@ -7,6 +7,10 @@ export const DEFAULT_FILTERS: JobFilterState = {
   company: "all",
   category: "all",
   level: "all",
+  phd: "exclude_required",
+  visa: "all",
+  hideCitizenshipRequired: false,
+  hideClearanceRequired: false,
   sort: "first_seen_desc"
 };
 
@@ -32,6 +36,12 @@ export function filterJobs(jobs: Job[], filters: JobFilterState): Job[] {
     if (filters.company !== "all" && job.company !== filters.company) return false;
     if (filters.category !== "all" && job.category !== filters.category) return false;
     if (filters.level !== "all" && job.level !== filters.level) return false;
+    if (filters.phd === "exclude_required" && job.phd_requirement === "required") return false;
+    if (filters.phd === "required" && job.phd_requirement !== "required") return false;
+    if (filters.visa === "exclude_no_sponsorship" && job.visa_signal === "not_likely") return false;
+    if (filters.visa !== "all" && filters.visa !== "exclude_no_sponsorship" && (job.visa_signal || "unknown") !== filters.visa) return false;
+    if (filters.hideCitizenshipRequired && job.requires_citizenship) return false;
+    if (filters.hideClearanceRequired && job.requires_clearance) return false;
     return true;
   });
 

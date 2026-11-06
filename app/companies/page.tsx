@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ExternalLink } from "lucide-react";
 import { CompanyBadge } from "@/components/CompanyBadge";
+import { CompanySyncStatus } from "@/components/CompanySyncStatus";
 import { LocalDateTime } from "@/components/LocalDateTime";
 import { getCompanies } from "@/lib/jobs";
 
@@ -33,7 +34,8 @@ export default function CompaniesPage() {
                 <th className="px-4 py-3">Group</th>
                 <th className="px-4 py-3">Source</th>
                 <th className="px-4 py-3">Active jobs</th>
-                <th className="px-4 py-3">Last synced</th>
+                <th className="px-4 py-3">Sync status</th>
+                <th className="px-4 py-3">Last successful sync / attempt</th>
                 <th className="px-4 py-3">Career page</th>
               </tr>
             </thead>
@@ -45,10 +47,20 @@ export default function CompaniesPage() {
                     <td className="px-4 py-3">
                       <CompanyBadge group={company.company_group} />
                     </td>
-                    <td className="px-4 py-3 text-slate-600">{company.source_type}</td>
-                    <td className="px-4 py-3 text-slate-600">{company.active_job_count}</td>
+                    <td className="px-4 py-3 text-slate-600">
+                      {company.source_type}
+                      {company.enabled === false ? (
+                        <span className="mt-1 block text-xs text-amber-700">Not enabled</span>
+                      ) : null}
+                    </td>
+                    <td className="px-4 py-3 text-slate-600">
+                      {company.active_job_count}
+                      <span className="mt-1 block text-xs text-muted">{company.full_description_count ?? 0} full JDs</span>
+                    </td>
+                    <td className="px-4 py-3"><CompanySyncStatus company={company} /></td>
                     <td className="px-4 py-3 text-slate-600">
                       <LocalDateTime value={company.last_synced} />
+                      {company.last_attempted ? <div className="mt-1 text-xs text-muted">Attempt: <LocalDateTime value={company.last_attempted} /></div> : null}
                     </td>
                     <td className="px-4 py-3">
                       <a
@@ -65,7 +77,7 @@ export default function CompaniesPage() {
                 ))
               ) : (
                 <tr>
-                  <td className="px-4 py-8 text-center text-muted" colSpan={6}>
+                  <td className="px-4 py-8 text-center text-muted" colSpan={7}>
                     No company sync data yet. Run the crawler to populate this table.
                   </td>
                 </tr>

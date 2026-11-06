@@ -1,0 +1,57 @@
+name: Validate application
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "public/data/**"
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "public/data/**"
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install crawler dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test crawler and validate snapshot
+        run: |
+          python scripts/run_tests.py
+          python scripts/validate_data.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Test filters and build production site
+        run: |
+          npm run test:filters
+          npm run typecheck
+          npm run build

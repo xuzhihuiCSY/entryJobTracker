@@ -40,6 +40,7 @@ def fetch_company_jobs(company_config: dict[str, Any]) -> list[dict[str, Any]]:
             {
                 "external_id": str(job.get("id") or ""),
                 "title": job.get("title") or "",
+                "level_hint": "Intern" if str(job.get("employmentType") or "").casefold() == "intern" else "",
                 "location_raw": _location_from_job(job),
                 "description": job.get("descriptionPlain") or job.get("descriptionHtml") or "",
                 "apply_url": job.get("jobUrl") or "",

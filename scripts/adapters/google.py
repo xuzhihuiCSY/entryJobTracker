@@ -43,7 +43,7 @@ def _parse_jobs(html: str, query: str) -> list[dict[str, Any]]:
         href = link.get("href") if link else ""
         apply_url = urljoin(BASE_URL, href)
         external_id = _external_id_from_url(href) or heading.get_text(" ", strip=True)
-        description = card.get_text(" ", strip=True)
+        description = str(card)
         jobs.append(
             {
                 "external_id": external_id,

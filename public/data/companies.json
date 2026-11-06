@@ -330,6 +330,21 @@
     "last_synced": "2026-11-06T02:28:37Z"
   },
   {
+    "name": "CarGurus",
+    "slug": "cargurus",
+    "company_group": "public",
+    "career_url": "https://careers.cargurus.com/us/en",
+    "source_type": "greenhouse",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 26,
+    "full_description_count": 26,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
+  },
+  {
     "name": "Cisco",
     "slug": "cisco",
     "company_group": "public",
@@ -613,6 +628,21 @@
     "sync_status": "success",
     "last_error": "",
     "last_synced": "2026-11-06T02:28:37Z"
+  },
+  {
+    "name": "Glean",
+    "slug": "glean",
+    "company_group": "private",
+    "career_url": "https://job-boards.greenhouse.io/gleanwork",
+    "source_type": "greenhouse",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 36,
+    "full_description_count": 36,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
   },
   {
     "name": "Goldman Sachs",
@@ -1290,6 +1320,36 @@
     "last_synced": "2026-11-06T02:28:37Z"
   },
   {
+    "name": "ServiceNow",
+    "slug": "servicenow",
+    "company_group": "public",
+    "career_url": "https://careers.servicenow.com/",
+    "source_type": "smartrecruiters",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 144,
+    "full_description_count": 144,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
+  },
+  {
+    "name": "Sigma Computing",
+    "slug": "sigma-computing",
+    "company_group": "private",
+    "career_url": "https://job-boards.greenhouse.io/sigmacomputing",
+    "source_type": "greenhouse",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 35,
+    "full_description_count": 35,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
+  },
+  {
     "name": "Snap",
     "slug": "snap",
     "company_group": "public",
@@ -1395,6 +1455,21 @@
     "last_synced": "2026-11-06T02:28:37Z"
   },
   {
+    "name": "Two Sigma",
+    "slug": "two-sigma",
+    "company_group": "private",
+    "career_url": "https://careers.twosigma.com/careers/OpenRoles",
+    "source_type": "two_sigma",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 33,
+    "full_description_count": 33,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
+  },
+  {
     "name": "Uber",
     "slug": "uber",
     "company_group": "public",
@@ -1468,6 +1543,21 @@
     "sync_status": "success",
     "last_error": "",
     "last_synced": "2026-11-06T02:28:37Z"
+  },
+  {
+    "name": "Verkada",
+    "slug": "verkada",
+    "company_group": "private",
+    "career_url": "https://job-boards.greenhouse.io/verkada",
+    "source_type": "greenhouse",
+    "enabled": true,
+    "sync_priority": 2,
+    "active_job_count": 93,
+    "full_description_count": 93,
+    "last_attempted": "2026-11-06T05:57:02Z",
+    "sync_status": "success",
+    "last_error": "",
+    "last_synced": "2026-11-06T05:57:02Z"
   },
   {
     "name": "Visa",

@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 PHD = re.compile(r"\b(?:ph\s*\.?\s*d\b\.?|d\s*\.?\s*phil\b\.?|doctor of philosophy\b|doctorate\b|doctoral\b)", re.I)
 OTHER_DEGREE = re.compile(
-    r"\b(?:master(?:['’]s|s)?|bachelor(?:['’]s|s)?|mba|ms|msc|bs|bsc|(?:other|another|equivalent) degree)\b", re.I
+    r"\b(?:master(?:['’]s|s)?|bachelor(?:['’]s|s)?|mba|ms|msc|bs|bsc|(?:other|another|equivalent)(?: advanced| graduate)? degree|advanced degree|graduate degree)\b", re.I
 )
 PREFERRED = re.compile(r"\b(?:prefer(?:red|ably)?|desired|desirable|ideally|a plus|nice[- ]to[- ]have|bonus)\b", re.I)
 NEGATED = re.compile(
@@ -117,11 +117,18 @@ def classify_phd_requirement(title: str, description: str = "") -> EducationSign
         line_alternative = "PhD" in line and _alternative(line.replace(";", ","))
         adjacent_alternative = "PhD" in line and bool(re.search(r"\bor\s+(?:PhD|an?\s+PhD)|\bOR\b", context)) and _alternative(context.replace(";", ",").replace(".", ","))
         experience_path = bool(re.match(r"^(?:for\s+)?PhD(?:\s+holders?)?\s*:", line, re.I)) and bool(OTHER_DEGREE.search(context))
+        # A post-PhD experience bullet does not revoke an explicit degree waiver
+        # in the preceding eligibility bullet. A separate "must have a PhD"
+        # requirement still wins below.
+        post_phd_path = bool(re.search(r"\bpost[- ]PhD\b", line, re.I)) and any(
+            "PhD" in previous and _alternative(previous)
+            for previous in lines[max(0, index - 2):index]
+        )
         for sentence in re.split(r"(?<=[.!?;])\s+", line):
             if "PhD" not in sentence:
                 continue
             evidence = sentence[:500]
-            if NEGATED.search(sentence) or _alternative(sentence) or line_alternative or adjacent_alternative or experience_path:
+            if NEGATED.search(sentence) or _alternative(sentence) or line_alternative or adjacent_alternative or experience_path or post_phd_path:
                 signals.append(EducationSignal("optional", evidence))
             elif PREFERRED.search(sentence) or section == "preferred":
                 signals.append(EducationSignal("preferred", evidence))

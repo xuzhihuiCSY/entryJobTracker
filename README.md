@@ -232,6 +232,16 @@ Do not invent `source_key` values. If a company source is uncertain, leave `sour
 
 ## GitHub Actions automatic updates
 
+Verkada, CarGurus, Sigma Computing, Glean, ServiceNow, and Two Sigma use daily
+priority-2 syncing. CarGurus combines its main Greenhouse board with the `ecjobb`
+campus board, deduplicating shared requisitions and locations. ServiceNow uses
+the SmartRecruiters listing/detail APIs and retains explicit employment and
+early-career metadata; Senior/Staff titles retain their seniority. Two Sigma
+uses its current `/careers/OpenRoles` board, follows pagination, preserves
+Internship/Early Careers metadata, and extracts the full position body from
+official detail pages. Invalid or incomplete listings fail rather than clearing
+a company's previous postings.
+
 The homepage chart uses `public/data/history.json`, with the latest successful
 or partially successful snapshot per UTC day. Each sync records the active-job
 total, companies with active postings, and known failed sources; a total source

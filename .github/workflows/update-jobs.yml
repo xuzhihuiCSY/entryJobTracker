@@ -19,4 +19,5 @@ jobs:
         with:
           name: two-sigma-public-fixtures
           path: .cache/two-sigma-*.html
+          include-hidden-files: true
           retention-days: 3

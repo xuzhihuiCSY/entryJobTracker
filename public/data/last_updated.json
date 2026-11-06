@@ -1,12 +1,12 @@
 {
   "last_updated": "2026-11-06T01:39:30Z",
-  "last_attempted": "2026-11-06T01:39:30Z",
-  "sync_status": "partial",
+  "last_attempted": "2026-11-06T01:51:58Z",
+  "sync_status": "failed",
   "total_jobs": 6116,
   "big_tech_jobs": 770,
   "fresh_24h_jobs": 785,
-  "sources_synced": 100,
-  "sources_attempted": 101,
+  "sources_synced": 0,
+  "sources_attempted": 1,
   "sources_failed": 1,
   "failed_companies": [
     "uber"

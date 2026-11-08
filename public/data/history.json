@@ -11729,8 +11729,8 @@
   },
   {
     "date": "2026-11-08",
-    "recorded_at": "2026-11-08T05:26:09Z",
-    "total_jobs": 6463,
+    "recorded_at": "2026-11-08T13:01:37Z",
+    "total_jobs": 6464,
     "companies_with_jobs": 95,
     "comparable_jobs": {
       "adobe:workday": 18,
@@ -11790,7 +11790,7 @@
       "mars:workday": 0,
       "mastercard:workday": 1,
       "mckinsey:mckinsey": 13,
-      "meta:custom_meta": 29,
+      "meta:custom_meta": 30,
       "microsoft:custom_microsoft": 3,
       "modal:ashby": 13,
       "mongodb:greenhouse": 47,

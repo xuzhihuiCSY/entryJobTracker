@@ -9,10 +9,10 @@
     "sync_priority": 1,
     "active_job_count": 76,
     "full_description_count": 76,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "Apple",
@@ -24,10 +24,10 @@
     "sync_priority": 1,
     "active_job_count": 15,
     "full_description_count": 15,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "ByteDance",
@@ -54,10 +54,10 @@
     "sync_priority": 1,
     "active_job_count": 174,
     "full_description_count": 174,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "Meta",
@@ -67,12 +67,12 @@
     "source_type": "custom_meta",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 29,
-    "full_description_count": 29,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "active_job_count": 30,
+    "full_description_count": 30,
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "Microsoft",
@@ -84,10 +84,10 @@
     "sync_priority": 1,
     "active_job_count": 3,
     "full_description_count": 3,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "NVIDIA",
@@ -99,10 +99,10 @@
     "sync_priority": 1,
     "active_job_count": 79,
     "full_description_count": 79,
-    "last_attempted": "2026-11-08T05:26:09Z",
+    "last_attempted": "2026-11-08T13:01:37Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-08T05:26:09Z"
+    "last_synced": "2026-11-08T13:01:37Z"
   },
   {
     "name": "Adobe",

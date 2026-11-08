@@ -103,6 +103,7 @@ export type JobHistoryPoint = {
   total_jobs: number;
   companies_with_jobs: number;
   failed_sources?: number;
+  comparable_jobs?: Record<string, number>;
 };
 
 export type JobSort = "first_seen_desc" | "entry_first" | "company_asc" | "title_asc";

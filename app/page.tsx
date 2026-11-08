@@ -3,6 +3,7 @@ import { ArrowRight, Building2, Clock3, Landmark, ListChecks } from "lucide-reac
 import { JobStats } from "@/components/JobStats";
 import { JobGrowthChart } from "@/components/JobGrowthChart";
 import { getJobHistory, getLastUpdated } from "@/lib/jobs";
+import { comparableJobTrend } from "@/lib/job-trends";
 
 const actions = [
   { href: "/jobs", label: "Browse Jobs", icon: ListChecks },
@@ -14,6 +15,12 @@ const actions = [
 export default function HomePage() {
   const stats = getLastUpdated();
   const history = getJobHistory();
+  const trends = {
+    7: comparableJobTrend(history, 7),
+    30: comparableJobTrend(history, 30),
+    90: comparableJobTrend(history, 90),
+    all: comparableJobTrend(history, "all")
+  };
 
   return (
     <div className="grid gap-8">
@@ -46,7 +53,7 @@ export default function HomePage() {
             })}
           </div>
         </div>
-        <JobGrowthChart history={history} />
+        <JobGrowthChart trends={trends} />
       </section>
 
       <JobStats stats={stats} />

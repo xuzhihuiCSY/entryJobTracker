@@ -30,7 +30,21 @@ def test_partial_snapshots_record_failure_context_and_total_failure_does_not_ove
         assert history_point(invalid, companies) is None
 
 
+def test_comparable_counts_keep_synced_zeroes_and_exclude_unavailable_sources():
+    tracked = {"source_type": "greenhouse", "active_job_count": 4, "last_synced": "2026-11-06T01:00:00Z"}
+    companies = [
+        {**tracked, "slug": "established"},
+        {**tracked, "slug": "zero", "active_job_count": 0},
+        {**tracked, "slug": "new", "last_synced": ""},
+        {**tracked, "slug": "failed", "sync_status": "failed"},
+        {**tracked, "slug": "disabled", "enabled": False},
+    ]
+    point = history_point({"last_updated": "2026-11-06T01:00:00Z", "total_jobs": 16}, companies)
+    assert point["comparable_jobs"] == {"established:greenhouse": 4, "zero:greenhouse": 0}
+
+
 if __name__ == "__main__":
     test_utc_days_and_latest_snapshot_win_without_inventing_missing_dates()
     test_partial_snapshots_record_failure_context_and_total_failure_does_not_overwrite()
+    test_comparable_counts_keep_synced_zeroes_and_exclude_unavailable_sources()
     print("job history tests passed")

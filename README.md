@@ -244,13 +244,15 @@ a company's previous postings.
 
 The homepage chart uses `public/data/history.json`, with the latest successful
 or partially successful snapshot per UTC day. Each sync records the active-job
-total, companies with active postings, and known failed sources; a total source
+total, comparable counts by company and source type, and known failed sources. A total source
 failure does not create a new observation. Both crawling and cached-JD
 reclassification update the day's final count before validation and commit.
-Missing days remain gaps. Net change compares recorded snapshots, and percentage
-change uses the first count in the selected window (undefined for a zero baseline).
-Counts cover all tracked job levels and can change when source coverage or
-classification rules change, as well as when postings open or close.
+Each chart range holds its company set fixed across recorded days. A company
+qualifies after a successful sync and must have a count from the same source type
+on every displayed day. A valid zero is included. Failed and disabled sources
+are excluded from the comparison. Days without comparable data remain gaps.
+Percentage change uses the first comparable count in the range, when nonzero.
+Counts cover all tracked job levels and reflect the tracker's collection rules.
 
 The initial history was recovered from committed snapshots, without deriving
 counts from `first_seen` or fabricating missing dates. To repeat this one-time

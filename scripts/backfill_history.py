@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+from collections import Counter
 
 from fetch_jobs import PUBLIC_DATA, ROOT
 from job_history import history_point, merge_history, record_history
@@ -24,18 +25,29 @@ def main() -> None:
     if shallow == "true":
         raise SystemExit("Backfill needs full Git history; fetch it before running this one-time command.")
     commits = subprocess.check_output(["git", "log", "--reverse", "--format=%H", "HEAD", "--", "public/data/last_updated.json"], cwd=ROOT, text=True).splitlines()
-    history = []
+    history = read_json(PUBLIC_DATA / "history.json", [])
+    daily = {}
     for commit in commits:
         summary = snapshot(commit, "last_updated.json")
+        point = history_point(summary, []) if isinstance(summary, dict) else None
+        if point is None:
+            continue
+        day = point["date"]
+        if day not in daily or point["recorded_at"] >= daily[day][0]:
+            daily[day] = point["recorded_at"], commit, summary
+
+    for _, commit, summary in daily.values():
         companies = snapshot(commit, "companies.json")
-        if isinstance(summary, dict) and isinstance(companies, list):
-            point = history_point(summary, companies)
-            if point is not None:
-                history = merge_history(history, point)
-    # Keep observations already recorded by future syncs even if their commits
-    # don't appear in this checkout's history yet.
-    for point in read_json(PUBLIC_DATA / "history.json", []):
-        history = merge_history(history, point)
+        jobs = snapshot(commit, "jobs.json")
+        if not isinstance(companies, list) or not isinstance(jobs, list) or len(jobs) != summary["total_jobs"]:
+            continue
+        # Older company rows sometimes retained stale counts after jobs closed.
+        counts = Counter(job["company_slug"] for job in jobs)
+        companies = [{**company, "active_job_count": counts[company["slug"]]} for company in companies]
+        point = history_point(summary, companies)
+        if point is not None:
+            history = merge_history(history, point)
+    # A recovered snapshot enriches an existing legacy point at the same timestamp.
     write_json(PUBLIC_DATA / "history.json", history)
     record_history(PUBLIC_DATA, read_json(PUBLIC_DATA / "last_updated.json", {}), read_json(PUBLIC_DATA / "companies.json", []))
     history = read_json(PUBLIC_DATA / "history.json", [])

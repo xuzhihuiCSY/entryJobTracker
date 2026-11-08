@@ -5,6 +5,7 @@ from collections import Counter
 from datetime import datetime
 
 from fetch_jobs import PUBLIC_DATA, load_companies
+from job_history import comparable_job_counts
 from utils import read_json
 
 
@@ -44,9 +45,15 @@ def validate() -> None:
         assert type(point["total_jobs"]) is int and point["total_jobs"] >= 0
         assert type(point["companies_with_jobs"]) is int and point["companies_with_jobs"] >= 0
         assert point.get("failed_sources", 0) >= 0
+        if "comparable_jobs" in point:
+            counts = point["comparable_jobs"]
+            assert isinstance(counts, dict) and all(type(count) is int and count >= 0 for count in counts.values())
+            assert sum(counts.values()) <= point["total_jobs"], "Comparable counts exceed the snapshot total"
     if summary.get("sync_status") != "failed" and summary.get("sources_synced", 0) > 0:
         assert history and history[-1]["recorded_at"] == summary["last_updated"], "History is missing the latest snapshot"
         assert history[-1]["total_jobs"] == len(jobs), "History count does not match jobs"
+        if "comparable_jobs" in history[-1]:
+            assert history[-1]["comparable_jobs"] == comparable_job_counts(companies), "Comparable counts do not match company snapshots"
     print(f"Snapshot valid: {len(jobs)} jobs, {len(companies)} companies, {sum(full.values())} full JDs")
 
 

@@ -27,10 +27,25 @@ def history_point(summary: dict[str, Any], companies: list[dict[str, Any]]) -> d
         "recorded_at": timestamp.isoformat().replace("+00:00", "Z"),
         "total_jobs": total,
         "companies_with_jobs": sum(company.get("active_job_count", 0) > 0 for company in companies),
+        "comparable_jobs": comparable_job_counts(companies),
     }
     if any("sync_status" in company for company in companies):
         point["failed_sources"] = sum(company.get("sync_status") == "failed" for company in companies)
     return point
+
+
+def comparable_job_counts(companies: list[dict[str, Any]]) -> dict[str, int]:
+    counts = {}
+    for company in companies:
+        if not company.get("enabled", True) or not company.get("last_synced"):
+            continue
+        if company.get("sync_status") in {"failed", "disabled"}:
+            continue
+        slug, source = company.get("slug"), company.get("source_type")
+        count = company.get("active_job_count")
+        if slug and source and source != "placeholder" and type(count) is int and count >= 0:
+            counts[f"{slug}:{source}"] = count
+    return dict(sorted(counts.items()))
 
 
 def merge_history(history: list[dict[str, Any]], point: dict[str, Any]) -> list[dict[str, Any]]:

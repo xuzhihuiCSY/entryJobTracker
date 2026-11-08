@@ -3,7 +3,7 @@ import { ArrowRight, Building2, Clock3, Landmark, ListChecks } from "lucide-reac
 import { JobStats } from "@/components/JobStats";
 import { JobGrowthChart } from "@/components/JobGrowthChart";
 import { getJobHistory, getLastUpdated } from "@/lib/jobs";
-import { comparableJobTrend } from "@/lib/job-trends";
+import { bigFiveJobTrend } from "@/lib/job-trends";
 
 const actions = [
   { href: "/jobs", label: "Browse Jobs", icon: ListChecks },
@@ -16,10 +16,10 @@ export default function HomePage() {
   const stats = getLastUpdated();
   const history = getJobHistory();
   const trends = {
-    7: comparableJobTrend(history, 7),
-    30: comparableJobTrend(history, 30),
-    90: comparableJobTrend(history, 90),
-    all: comparableJobTrend(history, "all")
+    7: bigFiveJobTrend(history, 7),
+    30: bigFiveJobTrend(history, 30),
+    90: bigFiveJobTrend(history, 90),
+    all: bigFiveJobTrend(history, "all")
   };
 
   return (

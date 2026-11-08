@@ -2,12 +2,15 @@ import type { JobHistoryPoint } from "./types";
 
 export type TrendRange = 7 | 30 | 90 | "all";
 export const DAY_MS = 86_400_000;
-type TrendPoint = Pick<JobHistoryPoint, "date" | "total_jobs">;
+export type TrendPoint = Pick<JobHistoryPoint, "date" | "total_jobs">;
 
-export type ComparableJobTrend = {
-  companyCount: number;
-  points: TrendPoint[];
-};
+export const BIG_FIVE_COMPANIES = {
+  apple: "Apple",
+  microsoft: "Microsoft",
+  google: "Google",
+  amazon: "Amazon",
+  meta: "Meta"
+} as const;
 
 export function visibleHistory(history: JobHistoryPoint[], range: TrendRange): JobHistoryPoint[] {
   if (!history.length || range === "all") return history;
@@ -16,22 +19,21 @@ export function visibleHistory(history: JobHistoryPoint[], range: TrendRange): J
   return history.filter((point) => Date.parse(`${point.date}T00:00:00Z`) >= start);
 }
 
-export function comparableJobTrend(history: JobHistoryPoint[], range: TrendRange): ComparableJobTrend {
-  const snapshots = visibleHistory(history, range).flatMap(({ date, comparable_jobs }) => {
-    if (!comparable_jobs || !Object.keys(comparable_jobs).length) return [];
-    return [{ date, counts: comparable_jobs }];
-  });
-  const keys = Object.keys(snapshots[0]?.counts ?? {}).filter(
-    (key) => snapshots.every(({ counts }) => Object.prototype.hasOwnProperty.call(counts, key))
-  );
+export function bigFiveJobTrend(history: JobHistoryPoint[], range: TrendRange): TrendPoint[] {
+  const companies = Object.keys(BIG_FIVE_COMPANIES);
+  // Use the latest complete snapshot to keep the same sources across every range.
+  let keys: string[] = [];
+  for (let i = history.length - 1; i >= 0; i--) {
+    const sourceKeys = Object.keys(history[i].comparable_jobs ?? {});
+    keys = companies.flatMap((slug) => sourceKeys.find((key) => key.startsWith(`${slug}:`)) ?? []);
+    if (keys.length === companies.length) break;
+  }
+  if (keys.length !== companies.length) return [];
 
-  return {
-    companyCount: keys.length,
-    points: keys.length ? snapshots.map(({ date, counts }) => ({
-      date,
-      total_jobs: keys.reduce((total, key) => total + counts[key], 0)
-    })) : []
-  };
+  return visibleHistory(history, range).flatMap(({ date, comparable_jobs: counts }) => {
+    if (!counts || !keys.every((key) => Object.prototype.hasOwnProperty.call(counts, key))) return [];
+    return [{ date, total_jobs: keys.reduce((total, key) => total + counts[key], 0) }];
+  });
 }
 
 export function jobGrowth(history: TrendPoint[]) {

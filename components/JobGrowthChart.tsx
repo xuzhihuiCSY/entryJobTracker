@@ -1,20 +1,20 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import { DAY_MS, jobGrowth, snapshotChanges, trendBounds, type ComparableJobTrend, type TrendRange } from "@/lib/job-trends";
+import { BIG_FIVE_COMPANIES, DAY_MS, jobGrowth, snapshotChanges, trendBounds, type TrendPoint, type TrendRange } from "@/lib/job-trends";
 
 const number = new Intl.NumberFormat("en-US");
 const date = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 const signed = (value: number) => `${value > 0 ? "+" : ""}${number.format(value)}`;
 const HEIGHT = 244, LEFT = 54, RIGHT = 20, TOP = 18, BOTTOM = 38;
 
-export function JobGrowthChart({ trends }: { trends: Record<TrendRange, ComparableJobTrend> }) {
+export function JobGrowthChart({ trends }: { trends: Record<TrendRange, TrendPoint[]> }) {
   const [range, setRange] = useState<TrendRange>(30);
   const [mode, setMode] = useState<"total" | "change">("total");
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [width, setWidth] = useState(620);
   const plot = useRef<SVGSVGElement>(null);
-  const { points, companyCount } = trends[range];
+  const points = trends[range];
   useEffect(() => {
     if (!plot.current) return;
     const observer = new ResizeObserver(([entry]) => setWidth(Math.max(200, Math.round(entry.contentRect.width))));
@@ -43,7 +43,7 @@ export function JobGrowthChart({ trends }: { trends: Record<TrendRange, Comparab
     <section aria-labelledby={`${gradient}-title`} className="min-w-0 rounded-xl border border-line bg-white p-5 shadow-subtle sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h2 id={`${gradient}-title`} className="text-sm font-semibold text-slate-700">Same-company job trends</h2>
+          <h2 id={`${gradient}-title`} className="text-sm font-semibold text-slate-700">Big Five job trends</h2>
           <p className="mt-1 text-3xl font-semibold tracking-tight text-ink">{latest ? number.format(latest.total_jobs) : "—"}<span className="ml-2 text-sm font-normal tracking-normal text-slate-500">active jobs</span></p>
         </div>
         <div aria-label="Chart time range" className="flex rounded-lg bg-slate-100 p-1">
@@ -64,8 +64,8 @@ export function JobGrowthChart({ trends }: { trends: Record<TrendRange, Comparab
         </div>
       </div>
 
-      {companyCount > 0 && <p className="mt-2 text-xs text-slate-500">{companyCount} comparable {companyCount === 1 ? "company" : "companies"} throughout this range.</p>}
-      {!points.length ? <div className="flex h-56 items-center justify-center text-center text-sm text-slate-500">No comparable company snapshots in this range.</div> : <>
+      <p className="mt-2 text-xs text-slate-500">{Object.values(BIG_FIVE_COMPANIES).join(" · ")}</p>
+      {!points.length ? <div className="flex h-56 items-center justify-center text-center text-sm text-slate-500">No complete Big Five snapshots in this range.</div> : <>
         <svg ref={plot} viewBox={`0 0 ${width} ${HEIGHT}`} style={{ height: HEIGHT }} className="mt-4 w-full rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-700" role="group" aria-roledescription="interactive chart" aria-label={`${mode === "total" ? "Active jobs" : "Net change per snapshot"}, ${date(points[0].date)} to ${date(latest.date)}. Use left and right arrow keys to explore snapshots.`} tabIndex={0}
           onKeyDown={(event) => {
             let next = index;
@@ -105,7 +105,7 @@ export function JobGrowthChart({ trends }: { trends: Record<TrendRange, Comparab
           <div className="mt-2 max-h-52 overflow-auto"><table className="w-full text-left"><caption className="sr-only">Daily job counts in the selected range</caption><thead><tr><th scope="col" className="py-1">Date (UTC)</th><th scope="col">Active jobs</th><th scope="col">Net change</th></tr></thead><tbody>{points.map((point) => <tr key={point.date} className="border-t border-slate-100"><td className="py-1">{point.date}</td><td>{number.format(point.total_jobs)}</td><td>{changes.get(point.date) == null ? "—" : signed(changes.get(point.date)!)}</td></tr>)}</tbody></table></div>
         </details>
       </>}
-      <p className="mt-3 text-[11px] leading-5 text-slate-500">Each range uses the same companies and source types across its recorded UTC days. Failed sources are excluded and missing days remain blank. Counts reflect the tracker’s collection rules.</p>
+      <p className="mt-3 text-[11px] leading-5 text-slate-500">Each point uses the same five sources as the latest complete snapshot. Days without comparable counts for all five are skipped. Counts reflect the tracker’s collection rules.</p>
     </section>
   );
 }

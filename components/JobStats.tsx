@@ -15,20 +15,20 @@ export function JobStats({ stats }: JobStatsProps) {
   ];
 
   return (
-    <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      {items.map((item) => {
-        const Icon = item.icon;
-        return (
-          <div key={item.label} className="rounded-lg border border-line bg-white p-4 shadow-subtle">
-            <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-slate-100 text-slate-700">
-              <Icon aria-hidden="true" className="h-5 w-5" />
+    <section aria-labelledby="tracker-overview" className="mt-6">
+      <h2 id="tracker-overview" className="text-sm font-semibold text-slate-700">Tracker overview</h2>
+      <div className="mt-2 grid grid-cols-2 gap-3">
+        {items.map(({ label, value, icon: Icon }) => (
+          <div key={label} className="rounded-lg border border-line bg-white p-3 shadow-subtle sm:px-4">
+            <div className="flex items-center justify-between gap-2">
+              <div className="text-2xl font-semibold tabular-nums text-ink">{value.toLocaleString("en-US")}</div>
+              <Icon aria-hidden="true" className="h-5 w-5 shrink-0 text-slate-500" />
             </div>
-            <div className="text-2xl font-semibold text-ink">{item.value}</div>
-            <div className="mt-1 text-sm text-muted">{item.label}</div>
+            <div className="mt-1 text-sm text-muted">{label}</div>
           </div>
-        );
-      })}
-      <p className="sm:col-span-2 lg:col-span-4 text-sm text-muted">
+        ))}
+      </div>
+      <p className="mt-2 text-xs text-muted">
         Last updated: <LocalDateTime value={stats.last_updated} />
       </p>
     </section>

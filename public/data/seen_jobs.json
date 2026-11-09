@@ -357430,5 +357430,107 @@
   },
   "apple-200690865-0836": {
     "first_seen": "2026-11-09T15:44:38Z"
+  },
+  "openai-6384df1b-c2e0-4265-ad9b-d4a7bca706d6": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "anthropic-5459191008": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "anthropic-5468930008": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "anthropic-5460476008": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "cloudflare-8336559": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "ramp-939892e5-5273-4bfc-8c41-a6c51cabb228": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "notion-06c2599d-4dd5-4f97-843f-7194b546f042": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "oracle-342864": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "bytedance-7466230164960495880": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "waymo-8364459": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "perplexity-849874fd-ccb4-4d7e-8551-29c5a418e2c7": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "replit-298db311-7d58-46f5-a6ec-8a10edcb43c2": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "uber-302523": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "lyft-8927340002": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "doordash-8365234": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "reddit-8331370": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "paypal-r0139000": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "paypal-r0139003": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "morgan-stanley-jr036762": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "morgan-stanley-jr042814": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "morgan-stanley-jr042774": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "visa-ref090029w": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "visa-ref090028w": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "coca-cola-r-148755": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103080946464": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103080946352": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103080946320": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103079899584": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103079899328": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-103079898960": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-101998138384": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-101019112864": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-100950227840": {
+    "first_seen": "2026-11-09T18:59:43Z"
+  },
+  "capital-one-101361027392": {
+    "first_seen": "2026-11-09T18:59:43Z"
   }
 }

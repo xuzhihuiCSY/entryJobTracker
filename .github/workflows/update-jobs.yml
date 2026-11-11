@@ -101,7 +101,7 @@ jobs:
             echo "Branch advanced during sync; stale generated data was not published." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          git add -A -- public/data
+          git add -A -- public/data data/seen_jobs.json
           if git diff --cached --quiet; then
             echo "No public data changes to commit."
             exit 0

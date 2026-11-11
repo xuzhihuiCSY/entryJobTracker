@@ -14,7 +14,7 @@ The MVP is intentionally simple:
 
 ## Why there is no database
 
-The site only needs to display current active jobs. `public/data/jobs.json` is the current snapshot, while `public/data/seen_jobs.json` preserves `first_seen` timestamps. This keeps hosting and deployment simple, avoids operational database work, and makes the data diffable in Git.
+`public/data/jobs.json` is the current active-job snapshot shared by the Jobs and Fresh pages. The crawler stores `first_seen` timestamps in `data/seen_jobs.json`, outside the public site files.
 
 Closed jobs are not retained in `jobs.json`. If a job disappears from the next source response, it is removed from the active listing.
 
@@ -56,7 +56,7 @@ The crawler writes:
 
 - `public/data/jobs.json`
 - `public/data/companies.json`
-- `public/data/seen_jobs.json`
+- `data/seen_jobs.json` (crawler history)
 - `public/data/last_updated.json`
 - `public/data/descriptions/<company-slug>.json` (posting text, loaded on demand)
 
@@ -307,7 +307,7 @@ Incomplete or missing JDs keep their sponsorship status unknown.
 - Manual runs for `all`, `1`, `2`, or `3`
 
 After the crawler runs, the workflow validates and commits changes under
-`public/data/`, including the per-company description files. Runs are serialized
+`public/data/` and `data/seen_jobs.json`. Runs are serialized
 to prevent overlapping scheduled jobs from overwriting each other's snapshots.
 If the branch advances while a crawler is running, that run does not publish its
 older generated snapshot; the next scheduled run picks up the new branch head.

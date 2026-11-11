@@ -20,6 +20,7 @@ from job_history import record_history
 ROOT = Path(__file__).resolve().parents[1]
 COMPANIES_YAML = ROOT / "scripts" / "data" / "companies.yaml"
 PUBLIC_DATA = ROOT / "public" / "data"
+SEEN_JOBS = ROOT / "data" / "seen_jobs.json"
 
 LOGGER = logging.getLogger(__name__)
 
@@ -165,7 +166,7 @@ def run(priority: int | None, include_all: bool, slugs: list[str] | None = None)
     checked_at = utc_now()
     companies = load_companies()
     selected = select_companies(companies, priority, include_all, slugs)
-    seen_jobs = read_json(PUBLIC_DATA / "seen_jobs.json", {})
+    seen_jobs = read_json(SEEN_JOBS, {})
     previous_jobs = read_json(PUBLIC_DATA / "jobs.json", [])
     previous_first_seen_by_apply_url: dict[str, str] = {}
     for job in previous_jobs:
@@ -230,7 +231,7 @@ def run(priority: int | None, include_all: bool, slugs: list[str] | None = None)
 
     write_json(PUBLIC_DATA / "jobs.json", active_jobs)
     write_json(PUBLIC_DATA / "companies.json", companies_json)
-    write_json(PUBLIC_DATA / "seen_jobs.json", seen_jobs)
+    write_json(SEEN_JOBS, seen_jobs)
     previous_summary = read_json(PUBLIC_DATA / "last_updated.json", {})
     failed_slugs = attempted_slugs - synced_slugs
     summary = {

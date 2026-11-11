@@ -1,9 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { JobFilters } from "@/components/JobFilters";
-import { isFresh } from "@/lib/filters";
-import type { Job } from "@/lib/types";
+import { useState } from "react";
+import { JobSnapshotFilters } from "@/components/JobSnapshotFilters";
 
 const windows = [
   { label: "24h", hours: 24 },
@@ -11,13 +9,8 @@ const windows = [
   { label: "7d", hours: 24 * 7 }
 ];
 
-type FreshJobsClientProps = {
-  jobs: Job[];
-};
-
-export function FreshJobsClient({ jobs }: FreshJobsClientProps) {
+export function FreshJobsClient() {
   const [hours, setHours] = useState(24);
-  const freshJobs = useMemo(() => jobs.filter((job) => isFresh(job, hours)), [hours, jobs]);
 
   return (
     <div className="grid gap-5">
@@ -43,7 +36,7 @@ export function FreshJobsClient({ jobs }: FreshJobsClientProps) {
           ))}
         </div>
       </div>
-      <JobFilters jobs={freshJobs} emptyMessage="No fresh jobs in this time window." />
+      <JobSnapshotFilters freshHours={hours} />
     </div>
   );
 }

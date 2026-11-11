@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { FreshJobsClient } from "@/app/fresh/FreshJobsClient";
-import { getJobs } from "@/lib/jobs";
 
 export const metadata: Metadata = {
   title: "Fresh Tech Jobs",
@@ -12,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function FreshPage() {
-  return <FreshJobsClient jobs={getJobs()} />;
+  return <FreshJobsClient />;
 }

@@ -10,11 +10,17 @@ def test_partial_sync_removes_closed_jobs_and_preserves_failed_and_unscheduled_s
     companies = [{"name": slug, "slug": slug, "source_type": "greenhouse", "enabled": True, "sync_priority": priority} for slug, priority in [("closed", 1), ("failed", 1), ("unscheduled", 2)]]
     previous = [{"id": slug + "-1", "company_slug": slug, "first_seen": "2026-01-01T00:00:00Z", "company_group": "public"} for slug in ["closed", "failed", "unscheduled"]]
     with TemporaryDirectory() as directory:
-        root = Path(directory)
+        root = Path(directory) / "public"
+        root.mkdir()
+        seen_path = root.parent / "seen_jobs.json"
+        seen = {"closed-1": {"first_seen": "2026-01-01T00:00:00Z"}}
+        seen_path.write_text(json.dumps(seen))
         (root / "jobs.json").write_text(json.dumps(previous))
         (root / "companies.json").write_text(json.dumps([{"slug": c["slug"], "active_job_count": 1, "last_synced": "2026-01-01T00:00:00Z"} for c in companies]))
-        with patch.object(fetch_jobs, "PUBLIC_DATA", root), patch.object(fetch_jobs, "load_companies", return_value=companies), patch.object(fetch_jobs, "fetch_raw_jobs", side_effect=lambda c: None if c["slug"] == "failed" else []):
+        with patch.object(fetch_jobs, "PUBLIC_DATA", root), patch.object(fetch_jobs, "SEEN_JOBS", seen_path), patch.object(fetch_jobs, "load_companies", return_value=companies), patch.object(fetch_jobs, "fetch_raw_jobs", side_effect=lambda c: None if c["slug"] == "failed" else []):
             assert fetch_jobs.run(1, False)
+        assert json.loads(seen_path.read_text()) == seen
+        assert not (root / "seen_jobs.json").exists()
         jobs = json.loads((root / "jobs.json").read_text())
         rows = {c["slug"]: c for c in json.loads((root / "companies.json").read_text())}
         summary = json.loads((root / "last_updated.json").read_text())
@@ -35,7 +41,7 @@ def test_total_failure_does_not_claim_new_success() -> None:
         root = Path(directory)
         (root / "last_updated.json").write_text(json.dumps({"last_updated": "2026-01-01T00:00:00Z"}))
         company = {"name": "Failed", "slug": "failed", "source_type": "greenhouse"}
-        with patch.object(fetch_jobs, "PUBLIC_DATA", root), patch.object(fetch_jobs, "load_companies", return_value=[company]), patch.object(fetch_jobs, "fetch_raw_jobs", return_value=None):
+        with patch.object(fetch_jobs, "PUBLIC_DATA", root), patch.object(fetch_jobs, "SEEN_JOBS", root / "seen_jobs.json"), patch.object(fetch_jobs, "load_companies", return_value=[company]), patch.object(fetch_jobs, "fetch_raw_jobs", return_value=None):
             assert fetch_jobs.run(None, True) is False
         summary = json.loads((root / "last_updated.json").read_text())
         assert summary["last_updated"] == "2026-01-01T00:00:00Z"

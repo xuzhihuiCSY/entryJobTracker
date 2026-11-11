@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { JobFilters } from "@/components/JobFilters";
-import { getJobs } from "@/lib/jobs";
+import { JobSnapshotFilters } from "@/components/JobSnapshotFilters";
 
 export const metadata: Metadata = {
   title: "Entry-Focused Tech Jobs",
@@ -12,8 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function JobsPage() {
-  const jobs = getJobs();
-
   return (
     <div className="grid gap-5">
       <div>
@@ -23,7 +20,7 @@ export default function JobsPage() {
           you want to browse the full active dataset.
         </p>
       </div>
-      <JobFilters jobs={jobs} defaultEntryOnly />
+      <JobSnapshotFilters defaultEntryOnly />
     </div>
   );
 }

@@ -5,10 +5,12 @@ on:
     branches: [main]
     paths-ignore:
       - "public/data/**"
+      - "data/seen_jobs.json"
       - "**.md"
   pull_request:
     paths-ignore:
       - "public/data/**"
+      - "data/seen_jobs.json"
       - "**.md"
   workflow_dispatch:
 

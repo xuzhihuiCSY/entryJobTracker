@@ -9,10 +9,10 @@
     "sync_priority": 1,
     "active_job_count": 74,
     "full_description_count": 74,
-    "last_attempted": "2026-11-13T14:26:24Z",
+    "last_attempted": "2026-11-13T23:24:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-13T14:26:24Z"
+    "last_synced": "2026-11-13T23:24:44Z"
   },
   {
     "name": "Apple",
@@ -22,12 +22,12 @@
     "source_type": "custom_apple",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 12,
-    "full_description_count": 12,
-    "last_attempted": "2026-11-13T14:26:24Z",
+    "active_job_count": 18,
+    "full_description_count": 18,
+    "last_attempted": "2026-11-13T23:24:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-13T14:26:24Z"
+    "last_synced": "2026-11-13T23:24:44Z"
   },
   {
     "name": "ByteDance",
@@ -52,12 +52,12 @@
     "source_type": "custom_google",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 178,
-    "full_description_count": 178,
-    "last_attempted": "2026-11-13T14:26:24Z",
+    "active_job_count": 177,
+    "full_description_count": 177,
+    "last_attempted": "2026-11-13T23:24:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-13T14:26:24Z"
+    "last_synced": "2026-11-13T23:24:44Z"
   },
   {
     "name": "Meta",
@@ -67,12 +67,12 @@
     "source_type": "custom_meta",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 34,
-    "full_description_count": 34,
-    "last_attempted": "2026-11-13T14:26:24Z",
+    "active_job_count": 33,
+    "full_description_count": 33,
+    "last_attempted": "2026-11-13T23:24:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-13T14:26:24Z"
+    "last_synced": "2026-11-13T23:24:44Z"
   },
   {
     "name": "Microsoft",
@@ -82,12 +82,12 @@
     "source_type": "custom_microsoft",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 5,
-    "full_description_count": 5,
-    "last_attempted": "2026-11-13T14:26:24Z",
+    "active_job_count": 8,
+    "full_description_count": 8,
+    "last_attempted": "2026-11-13T23:24:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-13T14:26:24Z"
+    "last_synced": "2026-11-13T23:24:44Z"
   },
   {
     "name": "NVIDIA",
@@ -99,9 +99,9 @@
     "sync_priority": 1,
     "active_job_count": 76,
     "full_description_count": 76,
-    "last_attempted": "2026-11-13T14:26:24Z",
-    "sync_status": "success",
-    "last_error": "",
+    "last_attempted": "2026-11-13T23:24:44Z",
+    "sync_status": "failed",
+    "last_error": "HTTPError (HTTP 521)",
     "last_synced": "2026-11-13T14:26:24Z"
   },
   {

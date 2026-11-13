@@ -12309,7 +12309,7 @@
   },
   {
     "date": "2026-11-13",
-    "recorded_at": "2026-11-13T05:56:43Z",
+    "recorded_at": "2026-11-13T14:26:24Z",
     "total_jobs": 6494,
     "companies_with_jobs": 95,
     "comparable_jobs": {
@@ -12317,7 +12317,7 @@
       "affirm:greenhouse": 24,
       "airbnb:greenhouse": 50,
       "airtable:greenhouse": 0,
-      "amazon:custom_amazon": 76,
+      "amazon:custom_amazon": 74,
       "amd:custom_amd": 232,
       "anthropic:greenhouse": 235,
       "apollo-global-management:workday": 1,
@@ -12353,7 +12353,7 @@
       "gitlab:greenhouse": 22,
       "glean:greenhouse": 35,
       "goldman-sachs:goldman_sachs": 26,
-      "google:custom_google": 176,
+      "google:custom_google": 178,
       "hp:workday": 9,
       "hubspot:greenhouse": 5,
       "hudson-river-trading:greenhouse": 30,

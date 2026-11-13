@@ -1,29 +1,9 @@
 {
-  "bcg-59484": {
-    "text": "Take on the role of Global Cybersecurity Senior Manager - Data Protection Engineer, leading the design and implementation of data protection strategies across multiple platforms. Oversee compliance, process improvements, and technical solutions. Ideal for experienced professionals in information security and data protection with strong analytical and communication skills.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318513525?post_onboarding_pid=790318513525&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-11T16:27:07Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
   "bcg-59461": {
     "text": "We are expanding our team: As a Forward Deployed AI Engineer, you will contribute to the development and deployment of innovative AI solutions, collaborating with clients across diverse industries. Ideal candidates bring strong software development expertise and a passion for large-scale data analytics.",
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318493227?post_onboarding_pid=790318493227&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-06T00:43:50Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-59702": {
-    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
     "fetch_error": "ValueError",
@@ -54,16 +34,6 @@
     "status": "summary",
     "fetched_at": "",
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790314311785?post_onboarding_pid=790314311785&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-09T18:59:43Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-60260": {
-    "text": "We are expanding our team: The Information Security Senior Director leads enterprise cybersecurity strategy and federal compliance for BCG Federal, overseeing a dedicated cyber team and ensuring robust security controls. Ideal candidates bring extensive IT security experience and proven leadership in defense or national security environments.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318980388?post_onboarding_pid=790318980388&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
     "last_attempted": "2026-11-09T18:59:43Z",
     "fetch_error": "ValueError",
@@ -106,6 +76,36 @@
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790316247101?post_onboarding_pid=790316247101&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-60260": {
+    "text": "We are expanding our team: The Information Security Senior Director leads enterprise cybersecurity strategy and federal compliance for BCG Federal, overseeing a dedicated cyber team and ensuring robust security controls. Ideal candidates bring extensive IT security experience and proven leadership in defense or national security environments.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318980388?post_onboarding_pid=790318980388&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-09T18:59:43Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-59702": {
+    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-06T00:43:50Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
+  "bcg-60367": {
+    "text": "We are seeking a Global Cybersecurity Senior Manager – Architecture to lead security architecture and governance for enterprise identity and access management. Drive the design of secure, resilient identity solutions and support BCG’s Zero Trust strategy. Ideal for experienced professionals with deep expertise in identity security and enterprise authentication technologies.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790319062547?post_onboarding_pid=790319062547&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-13T16:39:18Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   }

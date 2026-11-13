@@ -7,12 +7,12 @@
     "source_type": "custom_amazon",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 77,
-    "full_description_count": 77,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "active_job_count": 76,
+    "full_description_count": 76,
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "Apple",
@@ -24,10 +24,10 @@
     "sync_priority": 1,
     "active_job_count": 12,
     "full_description_count": 12,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "ByteDance",
@@ -54,10 +54,10 @@
     "sync_priority": 1,
     "active_job_count": 176,
     "full_description_count": 176,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "Meta",
@@ -69,10 +69,10 @@
     "sync_priority": 1,
     "active_job_count": 34,
     "full_description_count": 34,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "Microsoft",
@@ -82,12 +82,12 @@
     "source_type": "custom_microsoft",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 7,
-    "full_description_count": 7,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "active_job_count": 5,
+    "full_description_count": 5,
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "NVIDIA",
@@ -97,12 +97,12 @@
     "source_type": "custom_nvidia",
     "enabled": true,
     "sync_priority": 1,
-    "active_job_count": 78,
-    "full_description_count": 78,
-    "last_attempted": "2026-11-12T23:23:37Z",
+    "active_job_count": 76,
+    "full_description_count": 76,
+    "last_attempted": "2026-11-13T05:56:43Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-12T23:23:37Z"
+    "last_synced": "2026-11-13T05:56:43Z"
   },
   {
     "name": "Adobe",

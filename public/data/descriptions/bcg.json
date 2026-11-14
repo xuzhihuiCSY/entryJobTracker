@@ -9,6 +9,16 @@
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
+  "bcg-59702": {
+    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-06T00:43:50Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
   "bcg-56622": {
     "text": "We are recruiting a Senior AI Tech Architect to lead the development of innovative IT solutions for the US Public Sector. Collaborate with interdisciplinary teams to design and optimize technology architectures, applying deep expertise in IT architecture and solution design. Ideal for experienced professionals with a strong background in software engineering and architecture.",
     "status": "summary",
@@ -26,16 +36,6 @@
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790314312010?post_onboarding_pid=790314312010&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-57013": {
-    "text": "We are currently hiring a Lead AI Tech Architect - AI Platforms to design and guide the implementation of intelligent, agentic AI platforms. You will collaborate with cross-functional teams to deliver scalable AI architectures, leveraging your expertise in AI systems and technical leadership. Ideal candidates bring significant experience in software or AI engineering and a strong foundation in distributed systems.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790314311785?post_onboarding_pid=790314311785&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-09T18:59:43Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
@@ -76,36 +76,6 @@
     "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790316247101?post_onboarding_pid=790316247101&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
     "parser_version": 1,
     "last_attempted": "2026-11-06T00:43:50Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-60260": {
-    "text": "We are expanding our team: The Information Security Senior Director leads enterprise cybersecurity strategy and federal compliance for BCG Federal, overseeing a dedicated cyber team and ensuring robust security controls. Ideal candidates bring extensive IT security experience and proven leadership in defense or national security environments.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790318980388?post_onboarding_pid=790318980388&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-09T18:59:43Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-59702": {
-    "text": "We are expanding our team: As a Forward Deployed AI Engineer Intern, you will contribute to the development of innovative AI solutions, collaborating with clients and internal teams. Ideal for students pursuing a Master's or PhD with a passion for software development and large-scale data analytics.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711565?post_onboarding_pid=790318711565&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-06T00:43:50Z",
-    "fetch_error": "ValueError",
-    "fetch_error_code": null
-  },
-  "bcg-60367": {
-    "text": "We are seeking a Global Cybersecurity Senior Manager – Architecture to lead security architecture and governance for enterprise identity and access management. Drive the design of secure, resilient identity solutions and support BCG’s Zero Trust strategy. Ideal for experienced professionals with deep expertise in identity security and enterprise authentication technologies.",
-    "status": "summary",
-    "fetched_at": "",
-    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790319062547?post_onboarding_pid=790319062547&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
-    "parser_version": 1,
-    "last_attempted": "2026-11-13T16:39:18Z",
     "fetch_error": "ValueError",
     "fetch_error_code": null
   }

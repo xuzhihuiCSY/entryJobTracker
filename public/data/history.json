@@ -12424,8 +12424,8 @@
   },
   {
     "date": "2026-11-14",
-    "recorded_at": "2026-11-14T15:15:18Z",
-    "total_jobs": 6480,
+    "recorded_at": "2026-11-14T22:10:15Z",
+    "total_jobs": 6482,
     "companies_with_jobs": 95,
     "comparable_jobs": {
       "affirm:greenhouse": 21,
@@ -12435,7 +12435,7 @@
       "amd:custom_amd": 240,
       "anthropic:greenhouse": 233,
       "apollo-global-management:workday": 1,
-      "apple:custom_apple": 19,
+      "apple:custom_apple": 20,
       "asana:greenhouse": 6,
       "bain:bain": 0,
       "bank-of-america:bank_of_america": 32,
@@ -12485,6 +12485,7 @@
       "morgan-stanley:workday": 29,
       "netflix:eightfold": 50,
       "notion:ashby": 26,
+      "nvidia:custom_nvidia": 77,
       "oliver-wyman:workday": 2,
       "openai:ashby": 342,
       "oracle:oracle_hcm": 481,
@@ -12524,6 +12525,6 @@
       "writer:ashby": 8,
       "zoom:workday": 5
     },
-    "failed_sources": 12
+    "failed_sources": 11
   }
 ]

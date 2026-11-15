@@ -360061,5 +360061,32 @@
   },
   "amazon-9c5f84fa-82d6-4d98-8b96-b4c03b967651": {
     "first_seen": "2026-11-15T13:44:08Z"
+  },
+  "openai-73875295-889e-4373-b20f-654e85c66ba4": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "anthropic-5469291008": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "oracle-350148": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "samsara-8387002": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "samsara-8374911": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "samsara-8387609": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "samsara-8223641": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "perplexity-10a51134-6741-40ec-8cca-a8ac1534673b": {
+    "first_seen": "2026-11-15T15:46:16Z"
+  },
+  "wells-fargo-r-586337": {
+    "first_seen": "2026-11-15T15:46:16Z"
   }
 }

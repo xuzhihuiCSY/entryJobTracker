@@ -360118,5 +360118,104 @@
   },
   "nvidia-jr2029548": {
     "first_seen": "2026-11-16T15:20:43Z"
+  },
+  "openai-2d1901e0-e5ad-4c2e-88f8-dd9d21257f62": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "openai-2320fe69-df26-4d1d-ada6-d1a46c0e68a1": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "openai-9635775d-18fa-47bb-9ede-9a4137618de0": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "cloudflare-8383577": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "oracle-342748": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "oracle-350002": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "oracle-349999": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "oracle-347245": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "oracle-350001": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "mongodb-8384442": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "perplexity-4c316774-abea-47d9-b681-5fdc005e4229": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "perplexity-5149f625-1c76-4ca1-b076-7b81ed23c758": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "cohere-c4192057-43fa-45c9-a40e-6f29131bf11d": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "uber-304305": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "doordash-8392790": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "pinterest-8384909": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "robinhood-8354333": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "robinhood-8385931": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "amd-91795": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "amd-98131": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "amd-97477": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "wells-fargo-r-587511": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "dell-302093": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "capital-one-103389099696": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "capital-one-103387883312": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "capital-one-103387882800": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "capital-one-103387882448": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "capital-one-103359321296": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "ford-73514": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "ford-73114": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "ford-73608": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "servicenow-744000161860014": {
+    "first_seen": "2026-11-16T18:45:54Z"
+  },
+  "servicenow-744000161721289": {
+    "first_seen": "2026-11-16T18:45:54Z"
   }
 }

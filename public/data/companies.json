@@ -39,10 +39,10 @@
     "sync_priority": 2,
     "active_job_count": 394,
     "full_description_count": 394,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Google",
@@ -114,10 +114,10 @@
     "sync_priority": 2,
     "active_job_count": 17,
     "full_description_count": 17,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Affirm",
@@ -129,10 +129,10 @@
     "sync_priority": 2,
     "active_job_count": 21,
     "full_description_count": 21,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Airbnb",
@@ -142,12 +142,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 52,
-    "full_description_count": 52,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 50,
+    "full_description_count": 50,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Airtable",
@@ -159,10 +159,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "AMD",
@@ -172,12 +172,12 @@
     "source_type": "custom_amd",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 239,
-    "full_description_count": 239,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 235,
+    "full_description_count": 235,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Anthropic",
@@ -187,12 +187,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 233,
-    "full_description_count": 233,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 234,
+    "full_description_count": 234,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Apollo Global Management",
@@ -204,10 +204,10 @@
     "sync_priority": 2,
     "active_job_count": 1,
     "full_description_count": 1,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Asana",
@@ -217,12 +217,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 6,
-    "full_description_count": 6,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 7,
+    "full_description_count": 7,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Bain & Company",
@@ -264,10 +264,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Benchling",
@@ -279,10 +279,10 @@
     "sync_priority": 2,
     "active_job_count": 10,
     "full_description_count": 10,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "BlackRock",
@@ -294,10 +294,10 @@
     "sync_priority": 2,
     "active_job_count": 11,
     "full_description_count": 11,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Boston Consulting Group",
@@ -309,10 +309,10 @@
     "sync_priority": 2,
     "active_job_count": 8,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Capital One",
@@ -322,12 +322,12 @@
     "source_type": "talentbrew",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 170,
-    "full_description_count": 170,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 167,
+    "full_description_count": 167,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "CarGurus",
@@ -339,10 +339,10 @@
     "sync_priority": 2,
     "active_job_count": 24,
     "full_description_count": 24,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Cisco",
@@ -352,12 +352,12 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 16,
-    "full_description_count": 16,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 14,
+    "full_description_count": 14,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Citadel",
@@ -397,12 +397,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 135,
-    "full_description_count": 135,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 136,
+    "full_description_count": 136,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Cohere",
@@ -412,12 +412,12 @@
     "source_type": "ashby",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 13,
-    "full_description_count": 13,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 14,
+    "full_description_count": 14,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Coinbase",
@@ -429,10 +429,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Cursor",
@@ -444,10 +444,10 @@
     "sync_priority": 2,
     "active_job_count": 18,
     "full_description_count": 18,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Databricks",
@@ -457,12 +457,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 173,
-    "full_description_count": 173,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 172,
+    "full_description_count": 172,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Datadog",
@@ -472,12 +472,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 42,
-    "full_description_count": 42,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 41,
+    "full_description_count": 41,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Dell Technologies",
@@ -487,12 +487,12 @@
     "source_type": "oracle_hcm",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 13,
-    "full_description_count": 13,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 14,
+    "full_description_count": 14,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Deloitte",
@@ -519,10 +519,10 @@
     "sync_priority": 2,
     "active_job_count": 8,
     "full_description_count": 8,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "DoorDash",
@@ -534,10 +534,10 @@
     "sync_priority": 2,
     "active_job_count": 91,
     "full_description_count": 91,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Dropbox",
@@ -549,10 +549,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Duolingo",
@@ -564,10 +564,10 @@
     "sync_priority": 2,
     "active_job_count": 19,
     "full_description_count": 19,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "EY",
@@ -594,10 +594,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Ford",
@@ -607,12 +607,12 @@
     "source_type": "oracle_hcm",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 71,
-    "full_description_count": 71,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 69,
+    "full_description_count": 69,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "GitLab",
@@ -624,10 +624,10 @@
     "sync_priority": 2,
     "active_job_count": 22,
     "full_description_count": 22,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Glean",
@@ -639,10 +639,10 @@
     "sync_priority": 2,
     "active_job_count": 35,
     "full_description_count": 35,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Goldman Sachs",
@@ -669,10 +669,10 @@
     "sync_priority": 2,
     "active_job_count": 9,
     "full_description_count": 9,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "HubSpot",
@@ -682,12 +682,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 6,
-    "full_description_count": 6,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 4,
+    "full_description_count": 4,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Hudson River Trading",
@@ -699,10 +699,10 @@
     "sync_priority": 2,
     "active_job_count": 31,
     "full_description_count": 31,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "IBM",
@@ -714,10 +714,10 @@
     "sync_priority": 2,
     "active_job_count": 104,
     "full_description_count": 104,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Instacart",
@@ -729,10 +729,10 @@
     "sync_priority": 2,
     "active_job_count": 20,
     "full_description_count": 20,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Intel",
@@ -744,10 +744,10 @@
     "sync_priority": 2,
     "active_job_count": 3,
     "full_description_count": 3,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Jane Street",
@@ -759,10 +759,10 @@
     "sync_priority": 2,
     "active_job_count": 43,
     "full_description_count": 43,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Johnson & Johnson",
@@ -774,10 +774,10 @@
     "sync_priority": 2,
     "active_job_count": 8,
     "full_description_count": 8,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "JPMorgan Chase",
@@ -834,10 +834,10 @@
     "sync_priority": 2,
     "active_job_count": 6,
     "full_description_count": 6,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Lyft",
@@ -847,12 +847,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 25,
-    "full_description_count": 25,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 24,
+    "full_description_count": 24,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Mars",
@@ -864,10 +864,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Mastercard",
@@ -879,10 +879,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "McKinsey & Company",
@@ -909,10 +909,10 @@
     "sync_priority": 2,
     "active_job_count": 13,
     "full_description_count": 13,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "MongoDB",
@@ -922,12 +922,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 53,
-    "full_description_count": 53,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 54,
+    "full_description_count": 54,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Morgan Stanley",
@@ -939,10 +939,10 @@
     "sync_priority": 2,
     "active_job_count": 29,
     "full_description_count": 29,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Netflix",
@@ -954,10 +954,10 @@
     "sync_priority": 2,
     "active_job_count": 50,
     "full_description_count": 50,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Notion",
@@ -969,10 +969,10 @@
     "sync_priority": 2,
     "active_job_count": 26,
     "full_description_count": 26,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Oliver Wyman",
@@ -997,12 +997,12 @@
     "source_type": "ashby",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 343,
-    "full_description_count": 343,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 344,
+    "full_description_count": 344,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Oracle",
@@ -1012,12 +1012,12 @@
     "source_type": "oracle_hcm",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 480,
-    "full_description_count": 480,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 487,
+    "full_description_count": 487,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Palantir",
@@ -1029,10 +1029,10 @@
     "sync_priority": 2,
     "active_job_count": 122,
     "full_description_count": 122,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "PayPal",
@@ -1042,12 +1042,12 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 33,
-    "full_description_count": 33,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 32,
+    "full_description_count": 32,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "PepsiCo",
@@ -1059,10 +1059,10 @@
     "sync_priority": 2,
     "active_job_count": 5,
     "full_description_count": 5,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Perplexity",
@@ -1072,12 +1072,12 @@
     "source_type": "ashby",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 47,
-    "full_description_count": 47,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 50,
+    "full_description_count": 50,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Pinterest",
@@ -1089,10 +1089,10 @@
     "sync_priority": 2,
     "active_job_count": 133,
     "full_description_count": 133,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Plaid",
@@ -1104,10 +1104,10 @@
     "sync_priority": 2,
     "active_job_count": 55,
     "full_description_count": 55,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Procter & Gamble",
@@ -1119,10 +1119,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "PwC",
@@ -1147,12 +1147,12 @@
     "source_type": "custom_qualcomm",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 212,
-    "full_description_count": 212,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 211,
+    "full_description_count": 211,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Ramp",
@@ -1164,10 +1164,10 @@
     "sync_priority": 2,
     "active_job_count": 44,
     "full_description_count": 44,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Reddit",
@@ -1179,10 +1179,10 @@
     "sync_priority": 2,
     "active_job_count": 90,
     "full_description_count": 90,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Replit",
@@ -1192,12 +1192,12 @@
     "source_type": "ashby",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 17,
-    "full_description_count": 17,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 18,
+    "full_description_count": 18,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Rippling",
@@ -1222,12 +1222,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 61,
-    "full_description_count": 61,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 63,
+    "full_description_count": 63,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Roblox",
@@ -1237,12 +1237,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 192,
-    "full_description_count": 192,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 186,
+    "full_description_count": 186,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Roche",
@@ -1254,10 +1254,10 @@
     "sync_priority": 2,
     "active_job_count": 3,
     "full_description_count": 3,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Roland Berger",
@@ -1269,10 +1269,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Salesforce",
@@ -1284,10 +1284,10 @@
     "sync_priority": 2,
     "active_job_count": 15,
     "full_description_count": 15,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Samsara",
@@ -1297,12 +1297,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 70,
-    "full_description_count": 70,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 69,
+    "full_description_count": 69,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Scale AI",
@@ -1314,10 +1314,10 @@
     "sync_priority": 2,
     "active_job_count": 67,
     "full_description_count": 67,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "ServiceNow",
@@ -1327,12 +1327,12 @@
     "source_type": "smartrecruiters",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 172,
-    "full_description_count": 172,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 161,
+    "full_description_count": 161,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Sigma Computing",
@@ -1344,10 +1344,10 @@
     "sync_priority": 2,
     "active_job_count": 36,
     "full_description_count": 36,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Snap",
@@ -1359,10 +1359,10 @@
     "sync_priority": 2,
     "active_job_count": 5,
     "full_description_count": 5,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Snowflake",
@@ -1374,10 +1374,10 @@
     "sync_priority": 2,
     "active_job_count": 142,
     "full_description_count": 142,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Stripe",
@@ -1389,10 +1389,10 @@
     "sync_priority": 2,
     "active_job_count": 7,
     "full_description_count": 7,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Tesla",
@@ -1432,12 +1432,12 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 11,
-    "full_description_count": 11,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 9,
+    "full_description_count": 9,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Together AI",
@@ -1449,10 +1449,10 @@
     "sync_priority": 2,
     "active_job_count": 57,
     "full_description_count": 57,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Two Sigma",
@@ -1464,10 +1464,10 @@
     "sync_priority": 2,
     "active_job_count": 32,
     "full_description_count": 32,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Uber",
@@ -1477,12 +1477,12 @@
     "source_type": "custom_uber",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 151,
-    "full_description_count": 151,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 150,
+    "full_description_count": 150,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "UBS",
@@ -1509,10 +1509,10 @@
     "sync_priority": 2,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Valve",
@@ -1524,10 +1524,10 @@
     "sync_priority": 2,
     "active_job_count": 7,
     "full_description_count": 7,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Vercel",
@@ -1539,10 +1539,10 @@
     "sync_priority": 2,
     "active_job_count": 22,
     "full_description_count": 22,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Verkada",
@@ -1552,12 +1552,12 @@
     "source_type": "greenhouse",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 90,
-    "full_description_count": 90,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 89,
+    "full_description_count": 89,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Visa",
@@ -1567,12 +1567,12 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 44,
-    "full_description_count": 44,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 42,
+    "full_description_count": 42,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Waymo",
@@ -1584,10 +1584,10 @@
     "sync_priority": 2,
     "active_job_count": 169,
     "full_description_count": 169,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Wells Fargo",
@@ -1599,10 +1599,10 @@
     "sync_priority": 2,
     "active_job_count": 5,
     "full_description_count": 5,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Writer",
@@ -1614,10 +1614,10 @@
     "sync_priority": 2,
     "active_job_count": 8,
     "full_description_count": 8,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   },
   {
     "name": "Zoom",
@@ -1627,11 +1627,11 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 2,
-    "active_job_count": 5,
-    "full_description_count": 5,
-    "last_attempted": "2026-11-15T15:46:16Z",
+    "active_job_count": 6,
+    "full_description_count": 6,
+    "last_attempted": "2026-11-16T18:45:54Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-15T15:46:16Z"
+    "last_synced": "2026-11-16T18:45:54Z"
   }
 ]

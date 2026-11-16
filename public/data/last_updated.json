@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-11-16T18:45:54Z",
-  "last_attempted": "2026-11-16T18:45:54Z",
+  "last_updated": "2026-11-16T19:22:57Z",
+  "last_attempted": "2026-11-16T19:22:57Z",
   "sync_status": "success",
-  "total_jobs": 6454,
+  "total_jobs": 6462,
   "big_tech_jobs": 773,
-  "fresh_24h_jobs": 43,
-  "sources_synced": 86,
-  "sources_attempted": 86,
+  "fresh_24h_jobs": 133,
+  "sources_synced": 15,
+  "sources_attempted": 15,
   "sources_failed": 0,
   "failed_companies": [],
-  "full_description_jobs": 6444
+  "full_description_jobs": 6449
 }

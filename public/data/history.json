@@ -12645,8 +12645,8 @@
   },
   {
     "date": "2026-11-16",
-    "recorded_at": "2026-11-16T05:45:24Z",
-    "total_jobs": 6478,
+    "recorded_at": "2026-11-16T15:20:43Z",
+    "total_jobs": 6477,
     "companies_with_jobs": 95,
     "comparable_jobs": {
       "adobe:workday": 17,
@@ -12657,7 +12657,7 @@
       "amd:custom_amd": 239,
       "anthropic:greenhouse": 233,
       "apollo-global-management:workday": 1,
-      "apple:custom_apple": 22,
+      "apple:custom_apple": 21,
       "asana:greenhouse": 6,
       "bain:bain": 0,
       "bank-of-america:bank_of_america": 32,

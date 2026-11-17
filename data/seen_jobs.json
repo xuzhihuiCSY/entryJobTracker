@@ -360646,5 +360646,218 @@
   },
   "apple-200656816-0157": {
     "first_seen": "2026-11-17T15:44:53Z"
+  },
+  "openai-1327d083-c932-4aed-aadc-57586521ee60": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "openai-88db99b3-9689-43d1-9223-215be81a0c02": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "cloudflare-8383586": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "snowflake-829e9786-6661-4134-b7cd-aef3bed75c1c": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "snowflake-850fe52e-5137-4fbb-966a-ef8e89cf6245": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "snowflake-f86b9707-4718-43ed-99b8-29913a9118fd": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "snowflake-54526c4b-aec0-48ef-b3dc-1dbff49917d8": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "plaid-8315280a-2498-4b41-9b98-621a61c1f4dc": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "gitlab-8940610002": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-350771": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-350694": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-350139": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-350034": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-349015": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-350787": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "oracle-349661": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "databricks-8925851002": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "roblox-8384186": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "roblox-8268776": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "roblox-8386848": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "roblox-8394163": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "datadog-8346224": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "mongodb-8383708": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "mongodb-8383710": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "airbnb-8394382": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "airbnb-8393726": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "airbnb-8394151": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "airbnb-8393912": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "uber-304864": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8331360": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8209050": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8384879": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8115849": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8336944": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "pinterest-8369211": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "discord-8761356002": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "salesforce-jr367393": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "cisco-2030857": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "paypal-r0139036": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "paypal-r0139050": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "robinhood-8384079": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "amd-96156": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "netflix-jr43668": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "netflix-jr43583": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "netflix-jr43458": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "blackrock-r267006": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "johnson-and-johnson-r-110207": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "johnson-and-johnson-r-109646": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "dell-296327": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "visa-ref090437w": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "visa-ref090486w": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "visa-ref090434w": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-96271901904": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431124464": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431124432": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431124320": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123936": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123760": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123552": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123520": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123440": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123328": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123264": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103431123184": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-101747619488": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-103398716288": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "capital-one-102557675584": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "together-ai-5295895007": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "ford-73832": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "verkada-5296748007": {
+    "first_seen": "2026-11-17T17:44:40Z"
+  },
+  "servicenow-744000161948425": {
+    "first_seen": "2026-11-17T17:44:40Z"
   }
 }

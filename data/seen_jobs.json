@@ -361015,5 +361015,299 @@
   },
   "apple-200627802-0836": {
     "first_seen": "2026-11-18T15:25:13Z"
+  },
+  "openai-2928f960-8f97-4bb6-aafd-3ffbe70d5ea8": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "openai-60f8bcbc-3ca5-42f4-a73b-e864a6340a16": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "openai-2893060b-3795-4780-b538-48bb7d52254b": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "openai-7447dd43-9bf5-445f-bb8c-ba57756c8d04": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "anthropic-5483945008": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "anthropic-5206870008": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "cloudflare-8395705": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "cloudflare-8386684": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "cloudflare-8386246": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ramp-a9cb5fd3-1acb-474e-ab7c-b811eeb5b0c2": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ramp-3cfbf693-58e3-423f-87a8-a93dbd0839b0": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "plaid-39360c45-ad24-4458-b4fe-def71a41c02d": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350842": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350750": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350738": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350821": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350817": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350822": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350622": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350599": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350130": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350037": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-350039": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-349899": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-349578": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "oracle-344970": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "databricks-8920872002": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "databricks-8922572002": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "roblox-8301234": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "samsara-8300773": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "samsara-8329357": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "waymo-8396527": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "waymo-8354441": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "waymo-8380137": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "waymo-8394788": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "affirm-8196112003": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "airbnb-8396777": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "airbnb-8397762": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "airbnb-8360478": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "cursor-62dbe8b8-74d9-464e-b6f0-5370d79332bd": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "modal-8d5641a6-6ef0-4afd-8997-a805a6b9ef95": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304221": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304226": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304849": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304893": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304981": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "uber-304505": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "doordash-8399363": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "doordash-7085669": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "pinterest-8396724": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "pinterest-8274384": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "pinterest-8347997": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "paypal-r0139029": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "paypal-r0139028": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "robinhood-8241579": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "amd-97274": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "amd-99727": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "amd-97273": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "amd-97769": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "qualcomm-3099189": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "qualcomm-3099559": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "qualcomm-3099303": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "qualcomm-3099509": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "qualcomm-3099490": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "netflix-jr43704": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "netflix-jr43707": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "johnson-and-johnson-r-111747": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "johnson-and-johnson-r-099797": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "palantir-e8bfc01c-620c-4b6a-b3f8-cd275228db06": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "palantir-348befa6-dfc6-4838-8bbd-5bc93cb5bfdc": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "palantir-51bafe1f-2e8e-4ba7-9692-880fcb4cbabe": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "palantir-6bfbb28e-f61d-4385-be0f-64d7d78d53cb": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442070096": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442070064": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442070016": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442069904": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442069888": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442069792": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442069584": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103442068560": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103432226464": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-103432226416": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "capital-one-101284108752": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "benchling-baa78673-4c25-4d61-8888-2eac4c63d8c5": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "benchling-6183438d-1ff6-4389-aff9-a0128ff3a407": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "benchling-7b1ffaaf-2374-4b09-8495-899cc4847862": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "benchling-c97e5668-29ee-4810-b7cc-35331ac123f5": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-74073": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-74286": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-73986": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-74543": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-73382": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "ford-74584": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "verkada-5290383007": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "cargurus-8195874": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "servicenow-744000162330509": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "servicenow-744000162190099": {
+    "first_seen": "2026-11-18T17:26:10Z"
+  },
+  "servicenow-744000162158379": {
+    "first_seen": "2026-11-18T17:26:10Z"
   }
 }

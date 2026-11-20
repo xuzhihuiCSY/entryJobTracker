@@ -361768,5 +361768,101 @@
   },
   "servicenow-744000162380039": {
     "first_seen": "2026-11-19T17:31:11Z"
+  },
+  "amazon-f6d24ef9-c053-4d29-8a78-7e8ee78eb7a2": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-07643f08-aed1-43e0-a85f-28236d37bd71": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-42664bfc-d4bb-4774-97f9-bbbcbf0a18df": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-aade9c70-4140-4992-a5c8-d22640964829": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-59344742-44cd-49f1-a9b8-1f57e10f36dd": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-d83057ad-bbaf-4730-94ea-559ca4c21bc2": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-477bfae9-dfe7-46c4-ad98-646c84563c20": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-590529ba-4dc2-47f3-b931-c73e7affc619": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-e6e1a520-c581-4c16-8b21-9065d9fdb497": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-fc04a53d-89e2-4bcf-8544-355de67790c0": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-73d5fbd0-1cd7-46ee-9295-69d077e760fc": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-5396a814-21ba-43c2-a1c1-98a2b9a56636": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-9d073b7d-5331-4617-a2ae-8a8299f0c81b": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-3122d371-b297-449d-a66e-29c6603dea7e": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-7b307a75-4957-4f0d-8adf-a5daa7148914": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-5bd0e135-08b9-49ee-a401-a294e30c792b": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-8e7a0b62-d0ad-4f80-b88e-3a213441e171": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-63bcb3e8-dd0c-49d0-9b25-969e4a1cb92b": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-243cd1be-2b2c-4395-81b0-63f26570de2f": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-8884a355-8ad6-4888-8c17-096ed0cf1da0": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "amazon-5da4490c-12d2-48c7-9e59-881bb32de68e": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "google-90108472175010502": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "google-112546205963035334": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "microsoft-1970393557075583": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "microsoft-1970393557075456": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200695869-0836": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200695991-3956": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200696004-0836": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200696034-0836": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200695261-0836": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "apple-200695274-0836": {
+    "first_seen": "2026-11-20T00:27:43Z"
+  },
+  "nvidia-jr2028901": {
+    "first_seen": "2026-11-20T00:27:43Z"
   }
 }

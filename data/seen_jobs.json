@@ -362431,5 +362431,299 @@
   },
   "apple-200696358-0157": {
     "first_seen": "2026-11-21T06:29:26Z"
+  },
+  "openai-019170f9-ae56-49fc-8450-f505d39180bb": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "openai-0503a31f-5550-44e8-bec3-99b493532000": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "openai-70cfa7de-bf97-41e3-9784-8e123439a1d8": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "anthropic-5490974008": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "anthropic-5490976008": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "anthropic-5490978008": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "anthropic-5489567008": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "anthropic-5490979008": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cloudflare-8400689": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cloudflare-8400651": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cloudflare-8400599": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cloudflare-8399197": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cloudflare-8404184": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "snowflake-e8b43774-6ade-4c0a-ab68-9d92fc4ace7b": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "gitlab-8940626002": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "gitlab-8957054002": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "gitlab-8957066002": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350615": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350605": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-343830": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-351099": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-351098": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350903": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-351086": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-351070": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350824": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-348909": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350902": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350881": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350845": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350929": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350944": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350606": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350604": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350608": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "oracle-350438": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "bytedance-7707438224040265989": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "bytedance-7709707266300184885": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "bytedance-7707442589218998533": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "roblox-8397868": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "mongodb-8406812": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "mongodb-8406857": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "waymo-8407626": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "waymo-8407640": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "airbnb-8406371": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "airbnb-8350696": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "perplexity-d291c382-7252-45e5-8b47-ecec5d6be157": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "uber-305229": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "lyft-8957556002": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "lyft-8957597002": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "instacart-8407369": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "instacart-8407367": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "pinterest-8356222": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "reddit-8399817": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "salesforce-jr359080": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "salesforce-jr368923": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "cisco-2032564": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "paypal-r0139039": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "amd-99756": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "amd-97994": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "amd-101938": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "amd-101934": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "amd-101935": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "qualcomm-3099757": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "johnson-and-johnson-r-108548": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "johnson-and-johnson-r-108444": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ibm-145974": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ibm-142624": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ibm-143029": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ibm-143027": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "hp-3168982": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "palantir-7600fb76-e25e-418c-bf83-d2b1444f2dc6": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-103580553200": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-103576867792": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-103576867168": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-103566019952": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-103566019808": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "capital-one-100950229520": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "benchling-0ad40d59-6e70-4081-8123-4864fc1b12d8": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ford-74134": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ford-74319": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ford-73660": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "ford-74358": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "verkada-5302573007": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "verkada-5304458007": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "verkada-4548335007": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "glean-4508312005": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162883690": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162878715": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162867940": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162837679": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162834109": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162830031": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162827365": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162813819": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162809019": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162797123": {
+    "first_seen": "2026-11-21T16:18:05Z"
+  },
+  "servicenow-744000162794742": {
+    "first_seen": "2026-11-21T16:18:05Z"
   }
 }

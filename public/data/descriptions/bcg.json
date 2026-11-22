@@ -89,6 +89,16 @@
     "fetch_error": "ValueError",
     "fetch_error_code": null
   },
+  "bcg-61435": {
+    "text": "We are expanding our team: As a Delivery AI Product Analyst, you will play a pivotal role in delivering and supporting BCG’s client-facing reorganization solutions, focusing on OrgBuilderTM. You will work closely with case teams, manage client delivery, and support strategic business initiatives. Ideal candidates bring client service experience and a passion for technology.",
+    "status": "summary",
+    "fetched_at": "",
+    "source_url": "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790319261858?post_onboarding_pid=790319261858&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+    "parser_version": 1,
+    "last_attempted": "2026-11-22T16:31:13Z",
+    "fetch_error": "ValueError",
+    "fetch_error_code": null
+  },
   "bcg-60367": {
     "text": "We are seeking a Global Cybersecurity Senior Manager – Architecture to lead security architecture and governance for enterprise identity and access management. Drive the design of secure, resilient identity solutions and support BCG’s Zero Trust strategy. Ideal for experienced professionals with deep expertise in identity security and enterprise authentication technologies.",
     "status": "summary",

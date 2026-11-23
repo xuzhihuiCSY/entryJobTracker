@@ -234,10 +234,10 @@
     "sync_priority": 3,
     "active_job_count": 1,
     "full_description_count": 1,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Bank of America",
@@ -247,12 +247,12 @@
     "source_type": "bank_of_america",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 27,
-    "full_description_count": 25,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 24,
+    "full_description_count": 22,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Barclays",
@@ -384,10 +384,10 @@
     "sync_priority": 3,
     "active_job_count": 17,
     "full_description_count": 17,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Cloudflare",
@@ -502,12 +502,12 @@
     "source_type": "avature",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 39,
-    "full_description_count": 39,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 43,
+    "full_description_count": 43,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Discord",
@@ -577,12 +577,12 @@
     "source_type": "successfactors",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 75,
-    "full_description_count": 73,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 81,
+    "full_description_count": 81,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Figma",
@@ -652,12 +652,12 @@
     "source_type": "goldman_sachs",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 29,
-    "full_description_count": 28,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 25,
+    "full_description_count": 24,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "HP",
@@ -787,12 +787,12 @@
     "source_type": "oracle_hcm",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 527,
-    "full_description_count": 527,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 516,
+    "full_description_count": 516,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "KPMG",
@@ -802,12 +802,12 @@
     "source_type": "kpmg",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 42,
-    "full_description_count": 42,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 44,
+    "full_description_count": 44,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "L'Oreal",
@@ -819,10 +819,10 @@
     "sync_priority": 3,
     "active_job_count": 0,
     "full_description_count": 0,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Linear",
@@ -892,12 +892,12 @@
     "source_type": "mckinsey",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 16,
-    "full_description_count": 16,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 15,
+    "full_description_count": 15,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Modal",
@@ -984,10 +984,10 @@
     "sync_priority": 3,
     "active_job_count": 2,
     "full_description_count": 2,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "OpenAI",
@@ -1132,12 +1132,12 @@
     "source_type": "workday",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 2,
-    "full_description_count": 2,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 4,
+    "full_description_count": 4,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Qualcomm",
@@ -1207,12 +1207,12 @@
     "source_type": "rippling",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 66,
-    "full_description_count": 66,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 65,
+    "full_description_count": 65,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Robinhood",
@@ -1417,12 +1417,12 @@
     "source_type": "oracle_hcm",
     "enabled": true,
     "sync_priority": 3,
-    "active_job_count": 36,
-    "full_description_count": 36,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "active_job_count": 41,
+    "full_description_count": 41,
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "The Coca-Cola Company",
@@ -1494,10 +1494,10 @@
     "sync_priority": 3,
     "active_job_count": 7,
     "full_description_count": 7,
-    "last_attempted": "2026-11-16T19:22:57Z",
+    "last_attempted": "2026-11-23T20:57:44Z",
     "sync_status": "success",
     "last_error": "",
-    "last_synced": "2026-11-16T19:22:57Z"
+    "last_synced": "2026-11-23T20:57:44Z"
   },
   {
     "name": "Unilever",

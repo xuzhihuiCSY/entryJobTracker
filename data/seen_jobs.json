@@ -363853,5 +363853,212 @@
   },
   "nvidia-jr2030205": {
     "first_seen": "2026-11-25T07:51:20Z"
+  },
+  "openai-0d06daee-298b-4594-a67b-8955d07adb22": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "openai-faaf4418-8fea-4781-95b7-8cfc40f8c818": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "openai-d22b6934-3bdc-459f-b801-87195d79be8a": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "openai-e1823ba3-a94c-410f-b064-217a1d71c866": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "openai-f3f3ba4c-cc37-44fe-a8b1-5aa4553c3092": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "anthropic-5494120008": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "cloudflare-8415399": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351580": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351253": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351339": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351337": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351197": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351338": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351340": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351347": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-342909": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-349655": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351358": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-350933": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-350144": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-348959": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "oracle-351367": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "databricks-8569483002": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "databricks-8961261002": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "datadog-8417469": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "datadog-8417250": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "datadog-8416965": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "mongodb-8381944": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "waymo-8415223": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "uber-304859": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "uber-305516": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "uber-304930": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "doordash-8416784": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "instacart-8415777": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "pinterest-8399210": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "pinterest-8376163": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "reddit-8415553": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "salesforce-jr369325": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "paypal-r0139250": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "paypal-r0139235": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "robinhood-8355584": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "robinhood-8355591": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "robinhood-8381244": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "amd-94500": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "amd-102627": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "amd-101903": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "qualcomm-3099922": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "netflix-jr43427": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "blackrock-r267328": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "blackrock-r267343": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "blackrock-r267342": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "visa-ref090736w": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "visa-ref090690w": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "visa-ref090688w": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "visa-ref090692w": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103780588768": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103780588352": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103771598304": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103748487712": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103748487376": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103748486992": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103748486928": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-103748486224": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-101629589632": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-101318746240": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "capital-one-101318745632": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "ford-74559": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "ford-74883": {
+    "first_seen": "2026-11-25T18:44:51Z"
+  },
+  "glean-4757997005": {
+    "first_seen": "2026-11-25T18:44:51Z"
   }
 }

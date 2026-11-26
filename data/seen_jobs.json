@@ -364147,5 +364147,80 @@
   },
   "nvidia-jr2030744": {
     "first_seen": "2026-11-26T07:42:20Z"
+  },
+  "anthropic-5491501008": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417964": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417979": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417977": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417981": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417984": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417970": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "cloudflare-8417967": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "snowflake-a7283f1f-152d-4702-ab7e-3377866818d8": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "snowflake-2897a232-98d8-429b-85a9-4008aaaf7822": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "notion-c777ed1e-e23f-4b76-bc21-039aaf06c1de": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "oracle-351593": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "oracle-351594": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "oracle-351596": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "oracle-351363": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "datadog-8418089": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "mongodb-7870848": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "discord-8942144002": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "discord-8958889002": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "robinhood-8355577": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "amd-91561": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "amd-98734": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "duolingo-8962924002": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "ford-74453": {
+    "first_seen": "2026-11-26T18:32:52Z"
+  },
+  "ford-74620": {
+    "first_seen": "2026-11-26T18:32:52Z"
   }
 }

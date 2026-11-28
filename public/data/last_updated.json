@@ -1,13 +1,15 @@
 {
-  "last_updated": "2026-11-27T20:55:53Z",
-  "last_attempted": "2026-11-27T20:55:53Z",
-  "sync_status": "success",
-  "total_jobs": 6426,
-  "big_tech_jobs": 737,
-  "fresh_24h_jobs": 12,
-  "sources_synced": 6,
+  "last_updated": "2026-11-28T07:09:07Z",
+  "last_attempted": "2026-11-28T07:09:07Z",
+  "sync_status": "partial",
+  "total_jobs": 6425,
+  "big_tech_jobs": 736,
+  "fresh_24h_jobs": 7,
+  "sources_synced": 5,
   "sources_attempted": 6,
-  "sources_failed": 0,
-  "failed_companies": [],
-  "full_description_jobs": 6412
+  "sources_failed": 1,
+  "failed_companies": [
+    "nvidia"
+  ],
+  "full_description_jobs": 6411
 }
